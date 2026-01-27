@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bbc42g3ttmsk"]
+
+[ext_resource type="PackedScene" uid="uid://badcm6unmfp41" path="res://examples/scenes/common/story_player.tscn" id="2"]
+[ext_resource type="Resource" uid="uid://cjgnv37d8bwnc" path="res://ink/mask.ink.json" id="2_8bh55"]
+[ext_resource type="PackedScene" path="res://examples/scenes/common/back_button_margin_container.tscn" id="3"]
+
+[node name="TheIntercept" type="Control" unique_id=1979623121]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_right = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StoryPlayer" parent="." unique_id=638821409 instance=ExtResource("2")]
+layout_mode = 1
+offset_left = 0.0
+offset_right = 0.0
+ink_file = ExtResource("2_8bh55")
+title = "The Intercept"
+
+[node name="BackButtonMarginContainer" parent="." unique_id=898006533 instance=ExtResource("3")]
+layout_mode = 0

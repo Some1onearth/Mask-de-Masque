@@ -1,0 +1,15 @@
+[remap]
+
+importer="inkgd.ink.json"
+type="Resource"
+uid="uid://cjgnv37d8bwnc"
+path="res://.godot/imported/mask.ink.json-e464c00cdde29eeba24a7e19529d94cc.res"
+
+[deps]
+
+source_file="res://ink/mask.ink.json"
+dest_files=["res://.godot/imported/mask.ink.json-e464c00cdde29eeba24a7e19529d94cc.res"]
+
+[params]
+
+compress=true
