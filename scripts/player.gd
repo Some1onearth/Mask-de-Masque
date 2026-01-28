@@ -12,3 +12,6 @@ func _physics_process(delta: float) -> void:
 		velocity = velocity.move_toward(Vector2.ZERO, SPEED) #Vector2 version of the function
 
 	move_and_slide()
+	
+func player():
+	pass
