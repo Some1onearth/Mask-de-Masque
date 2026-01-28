@@ -28,6 +28,15 @@ directories/dtl_directory={
 "test_timeline": "res://Dialogic/timelines/test_timeline.dtl"
 }
 layout/style_directory={}
+layout/style_list=[]
+layout/default_style=""
+
+[display]
+
+window/size/viewport_width=960
+window/size/viewport_height=720
+window/size/resizable=false
+window/size/borderless=true
 
 [editor_plugins]
 
