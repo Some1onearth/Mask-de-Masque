@@ -25,10 +25,16 @@ func _on_chat_detection_body_exited(body: Node2D) -> void:
 		player_in_area = false
 
 func run_dialogue(dialogue_string):
+	Dialogic.timeline_ended.connect(ended_dialogue)
 	is_chatting = true
 	Dialogic.start(dialogue_string)
-
 	
+
+func ended_dialogue():
+	Dialogic.timeline_ended.disconnect(ended_dialogue)
+	is_chatting = false
+	
+		
 func DialogicSignal(arg: String):
 	if arg == "exit":
 		is_chatting = false
