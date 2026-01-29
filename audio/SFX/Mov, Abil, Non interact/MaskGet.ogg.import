@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://rwlsmalqgbci"
+path="res://.godot/imported/MaskGet.ogg-4f66848be793ff5a113b23365d709ecb.oggvorbisstr"
+
+[deps]
+
+source_file="res://audio/SFX/Mov, Abil, Non interact/MaskGet.ogg"
+dest_files=["res://.godot/imported/MaskGet.ogg-4f66848be793ff5a113b23365d709ecb.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

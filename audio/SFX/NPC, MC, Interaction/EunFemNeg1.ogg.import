@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dg8dxd1n6qu2g"
+path="res://.godot/imported/EunFemNeg1.ogg-cac2b45c6d89874b61c64d4bf1858852.oggvorbisstr"
+
+[deps]
+
+source_file="res://audio/SFX/NPC, MC, Interaction/EunFemNeg1.ogg"
+dest_files=["res://.godot/imported/EunFemNeg1.ogg-cac2b45c6d89874b61c64d4bf1858852.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

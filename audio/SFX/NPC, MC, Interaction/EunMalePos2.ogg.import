@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c5tlwlp0et3fv"
+path="res://.godot/imported/EunMalePos2.ogg-75114e83bf4df5cb2e643420a7d47867.oggvorbisstr"
+
+[deps]
+
+source_file="res://audio/SFX/NPC, MC, Interaction/EunMalePos2.ogg"
+dest_files=["res://.godot/imported/EunMalePos2.ogg-75114e83bf4df5cb2e643420a7d47867.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

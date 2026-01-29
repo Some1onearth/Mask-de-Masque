@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ckjs0yjkrq5s0"
+path="res://.godot/imported/GuardFemNeg1.ogg-d43b2a92ae3d0feb94c1bfe37aae1744.oggvorbisstr"
+
+[deps]
+
+source_file="res://audio/SFX/NPC, MC, Interaction/GuardFemNeg1.ogg"
+dest_files=["res://.godot/imported/GuardFemNeg1.ogg-d43b2a92ae3d0feb94c1bfe37aae1744.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

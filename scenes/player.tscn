@@ -1,10 +1,13 @@
 [gd_scene format=3 uid="uid://nx7f0qyeodsh"]
 
 [ext_resource type="Script" uid="uid://cim8fnddckk8e" path="res://scripts/player.gd" id="1_g2els"]
-[ext_resource type="Texture2D" uid="uid://dvigibv6vv08y" path="res://icon.svg" id="2_qhqgy"]
+[ext_resource type="Texture2D" uid="uid://ct7wxwa71igb2" path="res://sprites/NPCs/tile_MC_-sheet.png" id="2_g2els"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_74lek"]
 size = Vector2(16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qhqgy"]
+atlas = ExtResource("2_g2els")
 
 [node name="Player" type="CharacterBody2D" unique_id=489475279]
 script = ExtResource("1_g2els")
@@ -13,5 +16,8 @@ script = ExtResource("1_g2els")
 shape = SubResource("RectangleShape2D_74lek")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1091469843]
-scale = Vector2(0.125, 0.125)
-texture = ExtResource("2_qhqgy")
+texture_filter = 1
+scale = Vector2(0.25, 0.25)
+texture = SubResource("AtlasTexture_qhqgy")
+hframes = 9
+region_rect = Rect2(0, 0, 64, 64)

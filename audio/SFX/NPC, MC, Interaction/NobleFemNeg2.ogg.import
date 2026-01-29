@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://giubrbt28dd3"
+path="res://.godot/imported/NobleFemNeg2.ogg-fe487b7f60acd300adae8c16ff8d9284.oggvorbisstr"
+
+[deps]
+
+source_file="res://audio/SFX/NPC, MC, Interaction/NobleFemNeg2.ogg"
+dest_files=["res://.godot/imported/NobleFemNeg2.ogg-fe487b7f60acd300adae8c16ff8d9284.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

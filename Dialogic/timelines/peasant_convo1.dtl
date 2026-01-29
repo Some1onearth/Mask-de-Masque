@@ -1,0 +1,13 @@
+if {CurrentMask} == "wild":
+	audio "res://audio/SFX/NPC, MC, Interaction/PesFemNeg1.ogg"
+	[speed=0]WAAAHH[speed=1][pause=0.5]- oh my king, you frightened heck outta me.
+	Why are you here? You stand out like a sore thumb.
+elif {CurrentMask} == "peasant":
+	Oh hello. Ya think I can just grab all of the food?
+	I was hoping for a banquet, dunno if this is enough for me.
+elif {CurrentMask} == "eunuch":
+	Excuse me sir, I am simply sifting my way to the delicacies for the night.
+elif {CurrentMask} == "noble":
+	Trouble you for some coin?
+else:
+	BALD! BALD! MY EYES!!!!

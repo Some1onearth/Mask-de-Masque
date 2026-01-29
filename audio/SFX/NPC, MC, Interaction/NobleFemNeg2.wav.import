@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://nsw8aa0yxftc"
+path="res://.godot/imported/NobleFemNeg2.wav-5ba92af7aff3aa3724ee33a14ec6a91b.sample"
+
+[deps]
+
+source_file="res://audio/SFX/NPC, MC, Interaction/NobleFemNeg2.wav"
+dest_files=["res://.godot/imported/NobleFemNeg2.wav-5ba92af7aff3aa3724ee33a14ec6a91b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

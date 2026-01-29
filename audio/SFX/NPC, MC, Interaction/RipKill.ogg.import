@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bopxcye6j0f1n"
+path="res://.godot/imported/RipKill.ogg-e8c7b025604e33514758ffca32bd79e2.oggvorbisstr"
+
+[deps]
+
+source_file="res://audio/SFX/NPC, MC, Interaction/RipKill.ogg"
+dest_files=["res://.godot/imported/RipKill.ogg-e8c7b025604e33514758ffca32bd79e2.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

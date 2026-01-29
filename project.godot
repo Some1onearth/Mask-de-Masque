@@ -15,6 +15,10 @@ run/main_scene="uid://c51hsecpo0x6"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[audio]
+
+buses/default_bus_layout="uid://c8sqv718auldk"
+
 [autoload]
 
 Dialogic="*uid://ds2q0uclmolvu"
@@ -22,18 +26,23 @@ Dialogic="*uid://ds2q0uclmolvu"
 [dialogic]
 
 directories/dch_directory={
+"Peasant": "res://Dialogic/characters/Peasant.dch",
 "testNPC": "res://Dialogic/characters/testNPC.dch"
 }
 directories/dtl_directory={
+"cellar_keeper_convo": "res://Dialogic/timelines/cellar_keeper_convo.dtl",
+"peasant_convo1": "res://Dialogic/timelines/peasant_convo1.dtl",
 "test_timeline": "res://Dialogic/timelines/test_timeline.dtl"
 }
 layout/style_directory={}
 layout/style_list=[]
 layout/default_style=""
 glossary/default_case_sensitive=true
-variables={}
+variables={
+"CurrentMask": "wild"
+}
 extensions_folder="res://addons/dialogic_additions"
-text/letter_speed=0.01
+text/letter_speed=0.02
 text/initial_text_reveal_skippable=true
 text/text_reveal_skip_delay=0.1
 text/advance_delay=0.1
@@ -65,6 +74,7 @@ audio/channel_defaults={
 "volume": 0.0
 }
 }
+audio/type_sound_bus="SFX"
 
 [display]
 

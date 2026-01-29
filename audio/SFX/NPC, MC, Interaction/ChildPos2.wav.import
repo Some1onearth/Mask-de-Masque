@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cb8k66nxs4blc"
+path="res://.godot/imported/ChildPos2.wav-80b9a5472c35cef66ae174fffaacdb49.sample"
+
+[deps]
+
+source_file="res://audio/SFX/NPC, MC, Interaction/ChildPos2.wav"
+dest_files=["res://.godot/imported/ChildPos2.wav-80b9a5472c35cef66ae174fffaacdb49.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

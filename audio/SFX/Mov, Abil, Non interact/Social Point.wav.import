@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ctn6i6t201cb7"
+path="res://.godot/imported/Social Point.wav-6b2ca591a9f52f594e44708fa6df5fa9.sample"
+
+[deps]
+
+source_file="res://audio/SFX/Mov, Abil, Non interact/Social Point.wav"
+dest_files=["res://.godot/imported/Social Point.wav-6b2ca591a9f52f594e44708fa6df5fa9.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

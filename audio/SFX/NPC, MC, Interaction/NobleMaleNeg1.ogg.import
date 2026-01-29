@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cidcl38vouun"
+path="res://.godot/imported/NobleMaleNeg1.ogg-28672aa88bccd07adeb66d1b98f70a35.oggvorbisstr"
+
+[deps]
+
+source_file="res://audio/SFX/NPC, MC, Interaction/NobleMaleNeg1.ogg"
+dest_files=["res://.godot/imported/NobleMaleNeg1.ogg-28672aa88bccd07adeb66d1b98f70a35.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b60la6p8l3at7"
+path="res://.godot/imported/Evil Action.ogg-04c1879acacb93cc22ff62d3a0404d7d.oggvorbisstr"
+
+[deps]
+
+source_file="res://audio/SFX/NPC, MC, Interaction/Evil Action.ogg"
+dest_files=["res://.godot/imported/Evil Action.ogg-04c1879acacb93cc22ff62d3a0404d7d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

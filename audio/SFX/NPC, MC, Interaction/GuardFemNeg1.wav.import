@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dgha82v3ijtdr"
+path="res://.godot/imported/GuardFemNeg1.wav-9bd002cb172755337f5847f00e35d37a.sample"
+
+[deps]
+
+source_file="res://audio/SFX/NPC, MC, Interaction/GuardFemNeg1.wav"
+dest_files=["res://.godot/imported/GuardFemNeg1.wav-9bd002cb172755337f5847f00e35d37a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

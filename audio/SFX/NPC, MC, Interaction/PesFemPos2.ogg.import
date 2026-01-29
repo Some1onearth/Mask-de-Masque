@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dnnv1oipeb54t"
+path="res://.godot/imported/PesFemPos2.ogg-304e236abdc70cdc56e25b661f5e20bb.oggvorbisstr"
+
+[deps]
+
+source_file="res://audio/SFX/NPC, MC, Interaction/PesFemPos2.ogg"
+dest_files=["res://.godot/imported/PesFemPos2.ogg-304e236abdc70cdc56e25b661f5e20bb.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

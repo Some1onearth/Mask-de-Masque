@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c3vxldgsac7t2"
+path="res://.godot/imported/Press Play.ogg-b8d3ee30a22698f3ed3d4a7371efca9a.oggvorbisstr"
+
+[deps]
+
+source_file="res://audio/SFX/Mov, Abil, Non interact/Press Play.ogg"
+dest_files=["res://.godot/imported/Press Play.ogg-b8d3ee30a22698f3ed3d4a7371efca9a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

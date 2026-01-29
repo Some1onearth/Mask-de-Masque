@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://dkdy4cgos84cf"]
+
+[ext_resource type="Script" uid="uid://dqlcq4uuofb2o" path="res://scripts/npc.gd" id="1_6l1x8"]
+[ext_resource type="Texture2D" uid="uid://b65on4v576jrd" path="res://sprites/NPCs/NobleWoman2.png" id="2_6l1x8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7n8xq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4wlns"]
+radius = 48.0
+
+[node name="NPC" type="CharacterBody2D" unique_id=1113225415]
+scale = Vector2(0.25, 0.25)
+script = ExtResource("1_6l1x8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1883437279]
+shape = SubResource("RectangleShape2D_7n8xq")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1905979975]
+texture = ExtResource("2_6l1x8")
+flip_h = true
+
+[node name="chatDetection" type="Area2D" parent="." unique_id=916553418]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="chatDetection" unique_id=509887967]
+shape = SubResource("CircleShape2D_4wlns")
+
+[connection signal="body_entered" from="chatDetection" to="." method="_on_chat_detection_body_entered"]
+[connection signal="body_exited" from="chatDetection" to="." method="_on_chat_detection_body_exited"]

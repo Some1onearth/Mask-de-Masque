@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c3ifqnaef0453"
+path="res://.godot/imported/GuardMaleNeg1.wav-4922b49954e375949b95d146d7f6b3e2.sample"
+
+[deps]
+
+source_file="res://audio/SFX/NPC, MC, Interaction/GuardMaleNeg1.wav"
+dest_files=["res://.godot/imported/GuardMaleNeg1.wav-4922b49954e375949b95d146d7f6b3e2.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://3r7sjh1puyp6"
+path="res://.godot/imported/GuardMalePos1.ogg-3e322835824e556d78727c9c7022adb9.oggvorbisstr"
+
+[deps]
+
+source_file="res://audio/SFX/NPC, MC, Interaction/GuardMalePos1.ogg"
+dest_files=["res://.godot/imported/GuardMalePos1.ogg-3e322835824e556d78727c9c7022adb9.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

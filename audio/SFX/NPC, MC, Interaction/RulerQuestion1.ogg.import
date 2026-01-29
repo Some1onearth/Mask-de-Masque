@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bjdrgwwu6rokf"
+path="res://.godot/imported/RulerQuestion1.ogg-9e4f774353d9f6089406d5f2e111e79f.oggvorbisstr"
+
+[deps]
+
+source_file="res://audio/SFX/NPC, MC, Interaction/RulerQuestion1.ogg"
+dest_files=["res://.godot/imported/RulerQuestion1.ogg-9e4f774353d9f6089406d5f2e111e79f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

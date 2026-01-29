@@ -1,0 +1,16 @@
+audio -
+..hrm?
+if {CurrentMask} == "wild":
+	Who are you?
+	Please go away, you are quite unpleasant to look at.
+elif {CurrentMask} == "peasant":
+	Hi, this is the cellar.
+	Please find your way back up to the main hall and enjoy the rest of the evening.
+elif {CurrentMask} == "eunuch":
+	Uh, uh, sorry sir. I’m just keeping the dungeon clean and swept.
+	Please mind your step on the way out.
+elif {CurrentMask} == "noble":
+	Esteemed guest, how may I help you?
+	If you need anything I’m only a few cells away.
+else:
+	BALD! BALD! MY EYES!!!!
