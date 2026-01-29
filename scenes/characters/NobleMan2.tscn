@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cpiey63ioj8iw" path="res://sprites/NPCs/NobleMan2.png" id="2_7vu4s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7n8xq"]
+size = Vector2(64, 64)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4wlns"]
 radius = 48.0

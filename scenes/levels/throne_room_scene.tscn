@@ -160,18 +160,22 @@ dialogue_timeline_name = "peasant_convo1"
 
 [node name="NobleMan1" parent="." unique_id=1405082143 instance=ExtResource("6_68jnw")]
 position = Vector2(425, 424)
+dialogue_timeline_name = "lavois"
 
 [node name="NobleMan2" parent="." unique_id=1729446940 instance=ExtResource("7_0rku0")]
 position = Vector2(567, 333)
+dialogue_timeline_name = "tenaius"
 
 [node name="NobleWoman1" parent="." unique_id=625761746 instance=ExtResource("8_46rbl")]
 position = Vector2(438, 262)
+dialogue_timeline_name = "gurrigen"
 
 [node name="NobleWoman2" parent="." unique_id=209896505 instance=ExtResource("9_om1q8")]
 position = Vector2(561, 231)
+dialogue_timeline_name = "felani"
 
 [node name="PeasantFemale1" parent="." unique_id=1113225415 instance=ExtResource("9_l2w01")]
 position = Vector2(419, 579)
-dialogue_timeline_name = "test_timeline"
+dialogue_timeline_name = "peasant_12"
 
 [editable path="NobleWoman2"]
