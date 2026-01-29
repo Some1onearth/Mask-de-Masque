@@ -45,6 +45,7 @@ directories/dtl_directory={
 "cellar_keeper_convo": "res://Dialogic/timelines/cellar_keeper_convo.dtl",
 "coreen": "res://Dialogic/timelines/coreen.dtl",
 "felani": "res://Dialogic/timelines/felani.dtl",
+"fonao_opening": "res://Dialogic/timelines/fonao_opening.dtl",
 "gurrigen": "res://Dialogic/timelines/gurrigen.dtl",
 "jurin": "res://Dialogic/timelines/jurin.dtl",
 "lavois": "res://Dialogic/timelines/lavois.dtl",
