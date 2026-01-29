@@ -3,6 +3,14 @@
 [ext_resource type="TileSet" uid="uid://c2vy5x5qolqcr" path="res://sprites/tilemaps/tile_set.tres" id="1_pgbu0"]
 [ext_resource type="PackedScene" uid="uid://nx7f0qyeodsh" path="res://scenes/player.tscn" id="2_73bac"]
 [ext_resource type="Script" uid="uid://c3niwrngpmhjo" path="res://scripts/flicker_light.gd" id="3_m3640"]
+[ext_resource type="PackedScene" uid="uid://yxyrtn1ps8s" path="res://scenes/PeasantFemale1.tscn" id="4_7ue0x"]
+[ext_resource type="PackedScene" uid="uid://da4jnci6fuwr8" path="res://scenes/PeasantFemale2.tscn" id="5_e7ohu"]
+[ext_resource type="PackedScene" uid="uid://dicyopjua05ro" path="res://scenes/PeasantMale1.tscn" id="6_gygle"]
+[ext_resource type="PackedScene" uid="uid://bb3no248d21t" path="res://scenes/PeasantMale2.tscn" id="7_auopt"]
+[ext_resource type="PackedScene" uid="uid://c06gl86pt37pt" path="res://scenes/NobleMan2.tscn" id="8_vwu56"]
+[ext_resource type="PackedScene" uid="uid://b6am2lkvarakd" path="res://scenes/Eunuch2.tscn" id="9_gygle"]
+[ext_resource type="PackedScene" uid="uid://bv5suct4t2ecj" path="res://scenes/Guardsman1.tscn" id="10_auopt"]
+[ext_resource type="PackedScene" uid="uid://s0nugt3e8lft" path="res://scenes/Guardsman2.tscn" id="11_vwu56"]
 
 [sub_resource type="Gradient" id="Gradient_5ec7d"]
 offsets = PackedFloat32Array(0, 0.6082474, 1)
@@ -146,3 +154,33 @@ shadow_filter_smooth = 6.0
 texture = SubResource("GradientTexture2D_73bac")
 texture_scale = 3.47
 script = ExtResource("3_m3640")
+
+[node name="NPC" parent="." unique_id=1113225415 instance=ExtResource("4_7ue0x")]
+position = Vector2(-6, -217)
+
+[node name="NPC2" parent="." unique_id=1384281574 instance=ExtResource("5_e7ohu")]
+position = Vector2(316, -170)
+
+[node name="NPC3" parent="." unique_id=922556008 instance=ExtResource("6_gygle")]
+position = Vector2(-44, -40)
+
+[node name="NPC4" parent="." unique_id=1679750083 instance=ExtResource("6_gygle")]
+position = Vector2(48, -84)
+
+[node name="NPC5" parent="." unique_id=1577181537 instance=ExtResource("7_auopt")]
+position = Vector2(203, -119)
+
+[node name="NPC6" parent="." unique_id=2073342611 instance=ExtResource("7_auopt")]
+position = Vector2(316, -197)
+
+[node name="NPC7" parent="." unique_id=419949184 instance=ExtResource("8_vwu56")]
+position = Vector2(233, -223)
+
+[node name="NPC8" parent="." unique_id=1398819311 instance=ExtResource("9_gygle")]
+position = Vector2(313, -34)
+
+[node name="NPC9" parent="." unique_id=442727457 instance=ExtResource("10_auopt")]
+position = Vector2(104, -239)
+
+[node name="NPC10" parent="." unique_id=393760981 instance=ExtResource("11_vwu56")]
+position = Vector2(184, -237)
