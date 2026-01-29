@@ -1,0 +1,20 @@
+if {CurrentMask} == "wild":
+	Goodness Gracious!
+	I’m thankful for having worn brown pants.
+elif {CurrentMask} == "peasant":
+	You remind me of my younger, less fortunate self.
+	Back when I had a small loan of…
+	What?
+	My parents barely gave me anything back then.
+	Now that they’re gone, it's been a breeze!
+elif {CurrentMask} == "eunuch":
+	Can you get me a glass of water?
+	I’m anxious to see the King without my wife here.
+elif {CurrentMask} == "noble":
+	My daughter is picky.
+	No matter who she meets they end up leaving.
+	Perhaps this noble looking at me may have enough money to satisfy.
+	…
+	Oops, I spoke my thoughts outloud again didn’t I?
+else:
+	BALD! BALD! MY EYES!!!!

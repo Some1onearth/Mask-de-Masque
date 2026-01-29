@@ -1,0 +1,19 @@
+if {CurrentMask} == "wild":
+	Hideous beast! 
+	Save yourself from embarrassment and leave now before the Guards do.
+elif {CurrentMask} == "peasant":
+	What are you doing here? 
+	You can’t even afford a decent pair of shoes. Shoo!
+elif {CurrentMask} == "eunuch":
+	The King hasn’t come out yet.
+	I’m excited to see what he looks like.
+	Surely with the title of “fairest in the land”, it's got to be worth dressing up for.
+	Are you looking to impress the King as well?
+	My sister is a tailor.
+	She could help you.
+	Just don’t tell her that I’m wearing her dress.
+elif {CurrentMask} == "noble":
+	I hope you aren’t as bad as the others in here.
+	Every noble is shallow these days.
+else:
+	BALD! BALD! MY EYES!!!!

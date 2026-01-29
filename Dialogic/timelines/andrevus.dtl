@@ -1,0 +1,12 @@
+if {CurrentMask} == "wild":
+	audio "res://audio/SFX/NPC, MC, Interaction/PesFemNeg1.ogg"
+	AH, help!
+	Why aren’t the guards helping me!
+elif {CurrentMask} == "peasant":
+	I arrived here late, and the guards won’t LET ME IN!
+elif {CurrentMask} == "eunuch":
+	I arrived here late, and the guards won’t LET ME IN!
+elif {CurrentMask} == "noble":
+	I arrived here late, and the guards won’t LET ME IN!
+else:
+	BALD! BALD! MY EYES!!!!
