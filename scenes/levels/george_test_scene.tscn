@@ -34,3 +34,4 @@ position = Vector2(501, 366)
 
 [node name="NPC" parent="." unique_id=1578888081 instance=ExtResource("2_ljexu")]
 position = Vector2(549, 170)
+dialogue_timeline_name = "peasant_convo1"
