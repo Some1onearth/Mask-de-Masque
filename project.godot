@@ -26,12 +26,32 @@ Dialogic="*uid://ds2q0uclmolvu"
 [dialogic]
 
 directories/dch_directory={
+"Andrevus": "res://Dialogic/characters/Andrevus.dch",
+"Coreen": "res://Dialogic/characters/Coreen.dch",
+"Felani": "res://Dialogic/characters/Felani.dch",
+"Gurrigen": "res://Dialogic/characters/Gurrigen.dch",
+"Jurin": "res://Dialogic/characters/Jurin.dch",
+"Lavois": "res://Dialogic/characters/Lavois.dch",
+"Melani": "res://Dialogic/characters/Melani.dch",
+"Narcisan": "res://Dialogic/characters/Narcisan.dch",
 "Peasant": "res://Dialogic/characters/Peasant.dch",
+"Peasant_12": "res://Dialogic/characters/Peasant_12.dch",
+"Ruler": "res://Dialogic/characters/Ruler.dch",
+"Tenaius": "res://Dialogic/characters/Tenaius.dch",
 "testNPC": "res://Dialogic/characters/testNPC.dch"
 }
 directories/dtl_directory={
+"andrevus": "res://Dialogic/timelines/andrevus.dtl",
 "cellar_keeper_convo": "res://Dialogic/timelines/cellar_keeper_convo.dtl",
-"peasant_convo1": "res://Dialogic/timelines/peasant_convo1.dtl",
+"coreen": "res://Dialogic/timelines/coreen.dtl",
+"felani": "res://Dialogic/timelines/felani.dtl",
+"gurrigen": "res://Dialogic/timelines/gurrigen.dtl",
+"jurin": "res://Dialogic/timelines/jurin.dtl",
+"lavois": "res://Dialogic/timelines/lavois.dtl",
+"melani": "res://Dialogic/timelines/melani.dtl",
+"narcisan": "res://Dialogic/timelines/narcisan.dtl",
+"peasant_12": "res://Dialogic/timelines/peasant_12.dtl",
+"tenaius": "res://Dialogic/timelines/tenaius.dtl",
 "test_timeline": "res://Dialogic/timelines/test_timeline.dtl"
 }
 layout/style_directory={}

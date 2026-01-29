@@ -1,0 +1,13 @@
+if {CurrentMask} == "wild":
+	Don’t talk to me.
+elif {CurrentMask} == "peasant":
+	Don’t talk to me.
+elif {CurrentMask} == "eunuch":
+	I want to be alone.
+elif {CurrentMask} == "noble":
+	It’s nice to be outside.
+	I don’t really care for the King’s party. 
+	You seem nice.
+	My dad Gurrigen would like you.
+else:
+	BALD! BALD! MY EYES!!!!

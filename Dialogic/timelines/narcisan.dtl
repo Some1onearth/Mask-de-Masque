@@ -1,0 +1,21 @@
+if {CurrentMask} == "wild":
+	Finally, someone who’s ugly here.
+	Oh. Don’t get upset.
+	I mostly didn’t mean it.
+	If someone painted us, I bet we’d both look good.
+	You’ve probably never had yourself painted.
+	I’ve got like 10 portraits of myself at home.
+	You can have one of mine and pretend it’s your mirror if you like.
+elif {CurrentMask} == "peasant":
+	Leave me alone.
+	I’m currently thinking of what pose I should make when the King comes out.
+elif {CurrentMask} == "eunuch":
+	Do you have any skills in painting?
+	I need someone to capture my reaction when the King shows himself.
+	It would sell for a lot, I’m sure!
+elif {CurrentMask} == "noble":
+	Do you have a personal painter?
+	They say that the more portraits of you in your home reveals how important you are.
+	Or was it unimportant?
+else:
+	BALD! BALD! MY EYES!!!!
