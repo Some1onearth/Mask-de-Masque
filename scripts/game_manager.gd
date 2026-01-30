@@ -21,7 +21,6 @@ func switch_level_with_door(from_scene:Node, to_scene:String, spawn_door:String)
 	new_scene.add_child(player)
 	
 	#Replace old scene
-	#from_scene.queue_free()
 	get_tree().call_deferred("change_scene_to_node", new_scene)
 	
 	#Move player to correct door

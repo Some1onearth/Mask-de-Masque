@@ -2,7 +2,7 @@ class_name DoorTrigger extends Area2D
 
 @export var next_scene:String ##Name of level like "main_hall_scene"
 @export var connected_door:String ##Name of the door in the next scene player will spawn at
-@export var lock_threshold:int
+@export var lock_threshold:int ##Point threshold where player's points must be greater or equal
 
 @export var spawn:Node2D ##Holds position of where player will come out at
 

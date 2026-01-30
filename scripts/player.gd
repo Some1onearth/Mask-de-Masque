@@ -68,4 +68,3 @@ func maskSwap(mask_name:String):
 	player_sprite.frame = sprite_down
 	
 	print("mask changed to %s" % mask_name)
-	pass

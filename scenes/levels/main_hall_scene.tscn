@@ -136,7 +136,7 @@ script = ExtResource("3_m3640")
 
 [node name="Candle Light5" type="PointLight2D" parent="Lights" unique_id=1424724745]
 texture_filter = 1
-position = Vector2(216, -219)
+position = Vector2(216.04001, -200.95999)
 color = Color(1, 0.85433334, 0.53999996, 1)
 energy = 0.7
 shadow_enabled = true
@@ -147,7 +147,7 @@ script = ExtResource("3_m3640")
 
 [node name="Candle Light6" type="PointLight2D" parent="Lights" unique_id=1900823273]
 texture_filter = 1
-position = Vector2(71, -219)
+position = Vector2(71.04, -200.95999)
 color = Color(1, 0.85433334, 0.53999996, 1)
 energy = 0.7
 shadow_enabled = true
