@@ -1,0 +1,33 @@
+No no! I’m not ready to reveal my winning beauty to the guests yet!
+…
+What’s this? Can’t say that I recognise your face.
+audio "res://audio/SFX/NPC, MC, Interaction/RulerQuestion1.ogg"
+What business can I help you with?
+- Wear the Wild Mask
+	You wear a mask?
+	Wait! Before you kill me, I must know who my assailant is!
+	Y-You’re the monster from the dungeon! Someone he–l…
+	audio "res://audio/SFX/NPC, MC, Interaction/RulerKilled1.ogg"
+- Wear the Peasant Mask
+	You wear a mask?
+	Are you looking for charity?
+	You came all this way just to beg for something more than what you had?
+	Ridiculous!
+	I need every penny to maintain this face.
+	audio "res://audio/SFX/NPC, MC, Interaction/RulerKilled1.ogg"
+- Wear the Eunuch Mask
+	You wear a mask?
+	So you’re not a real noble.
+	Well I’m sorry but I can’t marry someone who isn’t of nobility.
+	Or has terrible choices in fashion.
+	You see, I need keep a perfect image.
+	audio "res://audio/SFX/NPC, MC, Interaction/RulerKilled2.ogg"
+- Wear the Noble Mask
+	Is that a mask?
+	You must of really wanted a sneak peek of the royal complexion
+	Or perhaps you want to know my secret?
+	As if I’ll tell!
+	I am the fairest of them all.
+	audio "res://audio/SFX/NPC, MC, Interaction/RulerKilled2.ogg"
+
+Fonao: Not anymore.

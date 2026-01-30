@@ -6,7 +6,7 @@ elif {CurrentMask} == "peasant":
 	Do you think she will notice me?
 elif {CurrentMask} == "eunuch":
 	audio "res://audio/SFX/NPC, MC, Interaction/PesMalePos2.ogg"
-	Can I help you with anything?
+	Do you need a hand with anything?
 elif {CurrentMask} == "noble":
 	audio "res://audio/SFX/NPC, MC, Interaction/PesMalePos2.ogg"
 	Good evening
