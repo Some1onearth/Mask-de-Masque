@@ -176,6 +176,7 @@ script = ExtResource("3_4iaa8")
 
 [node name="NPC" parent="." unique_id=1113225415 instance=ExtResource("4_feyvm")]
 position = Vector2(647, 422)
+dialogue_timeline_name = "cellar_keeper_convo"
 
 [node name="door_trigger" parent="." unique_id=1784326111 instance=ExtResource("5_7p73a")]
 position = Vector2(649, 350)
