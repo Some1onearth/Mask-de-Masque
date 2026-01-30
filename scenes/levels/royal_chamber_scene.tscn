@@ -3,7 +3,7 @@
 [ext_resource type="TileSet" uid="uid://c2vy5x5qolqcr" path="res://sprites/tilemaps/tile_set.tres" id="1_r1orf"]
 [ext_resource type="PackedScene" uid="uid://nx7f0qyeodsh" path="res://scenes/player.tscn" id="2_a8ofo"]
 [ext_resource type="Script" uid="uid://c3niwrngpmhjo" path="res://scripts/flicker_light.gd" id="3_36bae"]
-[ext_resource type="PackedScene" path="res://scenes/characters/Ruler.tscn" id="4_40ahv"]
+[ext_resource type="PackedScene" uid="uid://k7q61nako2ac" path="res://scenes/characters/Ruler.tscn" id="4_40ahv"]
 
 [sub_resource type="Gradient" id="Gradient_5ec7d"]
 offsets = PackedFloat32Array(0, 0.6082474, 1)
