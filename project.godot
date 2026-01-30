@@ -23,6 +23,7 @@ buses/default_bus_layout="uid://c8sqv718auldk"
 
 Dialogic="*uid://ds2q0uclmolvu"
 game_manager="*uid://pnnhoe0gdckr"
+DialogicVariableListener="*uid://dnxnojfldr7tx"
 
 [dialogic]
 
