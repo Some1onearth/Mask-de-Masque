@@ -1,20 +1,17 @@
-[gd_scene format=4 uid="uid://dg3tl7lq16po2"]
+[gd_scene format=4 uid="uid://rjv7h4bpvf7f"]
 
 [ext_resource type="TileSet" uid="uid://c2vy5x5qolqcr" path="res://sprites/tilemaps/tile_set.tres" id="1_7ebx3"]
 [ext_resource type="PackedScene" uid="uid://nx7f0qyeodsh" path="res://scenes/player.tscn" id="2_v4ikf"]
 [ext_resource type="Script" uid="uid://c3niwrngpmhjo" path="res://scripts/flicker_light.gd" id="3_uee3q"]
 [ext_resource type="PackedScene" uid="uid://cn1q77jq5o7v7" path="res://scenes/characters/Eunuch1.tscn" id="5_kfho5"]
-[ext_resource type="PackedScene" uid="uid://cwpixmk5pgve4" path="res://scenes/door_trigger.tscn" id="7_4a325"]
-[ext_resource type="PackedScene" uid="uid://dkb6jg1r3mgrp" path="res://scenes/levels/main_hall_scene_left.tscn" id="8_6lpiq"]
 [ext_resource type="PackedScene" uid="uid://b6am2lkvarakd" path="res://scenes/characters/Eunuch2.tscn" id="9_0jhkr"]
-[ext_resource type="PackedScene" uid="uid://cfwg38m1d702w" path="res://scenes/levels/main_hall_scene_right.tscn" id="9_w5pm2"]
 [ext_resource type="PackedScene" uid="uid://bv5suct4t2ecj" path="res://scenes/characters/Guardsman1.tscn" id="10_f3cax"]
 
 [sub_resource type="Gradient" id="Gradient_ggckr"]
 offsets = PackedFloat32Array(0, 0.6082474, 1)
 colors = PackedColorArray(1, 1, 1, 1, 0.35738832, 0.35738832, 0.35738832, 1, 0, 0, 0, 1)
 
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_dq5pl"]
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ismyy"]
 gradient = SubResource("Gradient_ggckr")
 fill = 1
 fill_from = Vector2(0.5, 0.5)
@@ -26,7 +23,7 @@ fill_to = Vector2(0.8803419, 0.12820514)
 noise_type = 0
 frequency = 0.0265
 
-[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_fdvd6"]
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_bfe6v"]
 noise = SubResource("FastNoiseLite_34ge8")
 color_ramp = SubResource("Gradient_c2n0p")
 
@@ -34,7 +31,7 @@ color_ramp = SubResource("Gradient_c2n0p")
 offsets = PackedFloat32Array(0, 0.096219935, 0.16494845, 1)
 colors = PackedColorArray(1, 1, 1, 1, 0.6706895, 0.6706895, 0.6706895, 1, 0.38703823, 0.38703823, 0.38703823, 1, 0, 0, 0, 1)
 
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_l8ica"]
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_73bac"]
 gradient = SubResource("Gradient_pkw05")
 fill = 1
 fill_from = Vector2(0.5, 0.5)
@@ -64,7 +61,7 @@ tile_map_data = PackedByteArray("AAANAPL/AwAUAAMAAAANAPP/AwAUAAUAAAAEAPP/AwAUAAU
 tile_set = ExtResource("1_7ebx3")
 
 [node name="Player" parent="." unique_id=489475279 instance=ExtResource("2_v4ikf")]
-position = Vector2(281, -299)
+position = Vector2(281, -295)
 motion_mode = 1
 SPEED = 150.0
 
@@ -74,10 +71,10 @@ texture_filter = 1
 color = Color(1, 0.85433334, 0.53999996, 1)
 shadow_enabled = true
 shadow_filter_smooth = 6.0
-texture = SubResource("GradientTexture2D_dq5pl")
+texture = SubResource("GradientTexture2D_ismyy")
 texture_scale = 3.65
 script = ExtResource("3_uee3q")
-noiseTex = SubResource("NoiseTexture2D_fdvd6")
+noiseTex = SubResource("NoiseTexture2D_bfe6v")
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1997019367]
 zoom = Vector2(2, 2)
@@ -94,7 +91,7 @@ color = Color(1, 0.85433334, 0.53999996, 1)
 energy = 0.14
 shadow_enabled = true
 shadow_filter_smooth = 6.0
-texture = SubResource("GradientTexture2D_l8ica")
+texture = SubResource("GradientTexture2D_73bac")
 texture_scale = 3.47
 script = ExtResource("3_uee3q")
 
@@ -105,7 +102,7 @@ color = Color(1, 0.85433334, 0.53999996, 1)
 energy = 0.74
 shadow_enabled = true
 shadow_filter_smooth = 6.0
-texture = SubResource("GradientTexture2D_l8ica")
+texture = SubResource("GradientTexture2D_73bac")
 texture_scale = 3.47
 script = ExtResource("3_uee3q")
 
@@ -116,7 +113,7 @@ color = Color(1, 0.85433334, 0.53999996, 1)
 energy = 0.04
 shadow_enabled = true
 shadow_filter_smooth = 6.0
-texture = SubResource("GradientTexture2D_l8ica")
+texture = SubResource("GradientTexture2D_73bac")
 texture_scale = 3.47
 script = ExtResource("3_uee3q")
 
@@ -127,7 +124,7 @@ color = Color(1, 0.85433334, 0.53999996, 1)
 energy = 0.74
 shadow_enabled = true
 shadow_filter_smooth = 6.0
-texture = SubResource("GradientTexture2D_l8ica")
+texture = SubResource("GradientTexture2D_73bac")
 texture_scale = 3.47
 script = ExtResource("3_uee3q")
 
@@ -138,7 +135,7 @@ color = Color(1, 0.85433334, 0.53999996, 1)
 energy = 0.14
 shadow_enabled = true
 shadow_filter_smooth = 6.0
-texture = SubResource("GradientTexture2D_l8ica")
+texture = SubResource("GradientTexture2D_73bac")
 texture_scale = 3.47
 script = ExtResource("3_uee3q")
 
@@ -149,7 +146,7 @@ color = Color(1, 0.85433334, 0.53999996, 1)
 energy = 0.14
 shadow_enabled = true
 shadow_filter_smooth = 6.0
-texture = SubResource("GradientTexture2D_l8ica")
+texture = SubResource("GradientTexture2D_73bac")
 texture_scale = 3.47
 script = ExtResource("3_uee3q")
 
@@ -160,7 +157,7 @@ color = Color(1, 0.85433334, 0.53999996, 1)
 energy = 0.14
 shadow_enabled = true
 shadow_filter_smooth = 6.0
-texture = SubResource("GradientTexture2D_l8ica")
+texture = SubResource("GradientTexture2D_73bac")
 texture_scale = 3.47
 script = ExtResource("3_uee3q")
 
@@ -171,7 +168,7 @@ color = Color(1, 0.85433334, 0.53999996, 1)
 energy = 0.14
 shadow_enabled = true
 shadow_filter_smooth = 6.0
-texture = SubResource("GradientTexture2D_l8ica")
+texture = SubResource("GradientTexture2D_73bac")
 texture_scale = 3.47
 script = ExtResource("3_uee3q")
 
@@ -182,7 +179,7 @@ color = Color(1, 0.85433334, 0.53999996, 1)
 energy = 0.14
 shadow_enabled = true
 shadow_filter_smooth = 6.0
-texture = SubResource("GradientTexture2D_l8ica")
+texture = SubResource("GradientTexture2D_73bac")
 texture_scale = 3.47
 script = ExtResource("3_uee3q")
 
@@ -222,16 +219,3 @@ dialogue_timeline_name = "melani"
 [node name="Jurin" parent="." unique_id=900358999 instance=ExtResource("5_kfho5")]
 position = Vector2(-33, -12)
 dialogue_timeline_name = "jurin"
-
-[node name="door_trigger_left" parent="." unique_id=1784326111 instance=ExtResource("7_4a325")]
-position = Vector2(-8, -318)
-next_scene = ExtResource("8_6lpiq")
-
-[node name="door_trigger_right" parent="." unique_id=226669881 instance=ExtResource("7_4a325")]
-position = Vector2(280, -318)
-next_scene = ExtResource("9_w5pm2")
-
-[node name="door_trigger_centre" parent="." unique_id=544841208 instance=ExtResource("7_4a325")]
-position = Vector2(128, -318)
-next_scene = ExtResource("9_w5pm2")
-lock_threshold = 5
