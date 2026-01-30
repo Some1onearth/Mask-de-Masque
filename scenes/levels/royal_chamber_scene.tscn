@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://nx7f0qyeodsh" path="res://scenes/player.tscn" id="2_a8ofo"]
 [ext_resource type="Script" uid="uid://c3niwrngpmhjo" path="res://scripts/flicker_light.gd" id="3_36bae"]
 [ext_resource type="PackedScene" uid="uid://k7q61nako2ac" path="res://scenes/characters/Ruler.tscn" id="4_40ahv"]
+[ext_resource type="PackedScene" uid="uid://cwpixmk5pgve4" path="res://scenes/door_trigger.tscn" id="5_a8ofo"]
 
 [sub_resource type="Gradient" id="Gradient_5ec7d"]
 offsets = PackedFloat32Array(0, 0.6082474, 1)
@@ -135,3 +136,13 @@ script = ExtResource("3_36bae")
 [node name="Ruler" parent="." unique_id=1113225415 instance=ExtResource("4_40ahv")]
 position = Vector2(279, 202)
 dialogue_timeline_name = "ruler"
+
+[node name="throne_room_door" parent="." unique_id=1784326111 instance=ExtResource("5_a8ofo")]
+position = Vector2(280, 304)
+next_scene = "throne_room_scene"
+connected_door = "royal_chamber_door"
+
+[node name="Spawn" parent="throne_room_door" index="1" unique_id=518652434]
+position = Vector2(0, -16)
+
+[editable path="throne_room_door"]
