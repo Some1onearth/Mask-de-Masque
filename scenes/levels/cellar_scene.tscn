@@ -5,7 +5,6 @@
 [ext_resource type="Script" uid="uid://c3niwrngpmhjo" path="res://scripts/flicker_light.gd" id="3_4iaa8"]
 [ext_resource type="PackedScene" uid="uid://blnox7yxtmklu" path="res://scenes/characters/CellarKeeper.tscn" id="4_feyvm"]
 [ext_resource type="PackedScene" uid="uid://cwpixmk5pgve4" path="res://scenes/door_trigger.tscn" id="5_7p73a"]
-[ext_resource type="PackedScene" uid="uid://dfybbxk7e387e" path="res://scenes/levels/main_hall_scene.tscn" id="6_g7nuj"]
 
 [sub_resource type="Gradient" id="Gradient_5ec7d"]
 offsets = PackedFloat32Array(0, 0.32646048, 1)
@@ -180,4 +179,8 @@ dialogue_timeline_name = "cellar_keeper_convo"
 
 [node name="door_trigger" parent="." unique_id=1784326111 instance=ExtResource("5_7p73a")]
 position = Vector2(649, 350)
-next_scene = ExtResource("6_g7nuj")
+
+[node name="main_hall_door" parent="." unique_id=1647840153 instance=ExtResource("5_7p73a")]
+position = Vector2(368, 472)
+next_scene = "main_hall_scene"
+connected_door = "cellar_door"

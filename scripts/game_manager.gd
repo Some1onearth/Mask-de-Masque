@@ -1,23 +1,38 @@
 class_name GameManager extends Node
 
-@export var main_theme:AudioStream
-@export var title_theme:AudioStream
-@onready var audio_player:AudioStreamPlayer = $MusicPlayer
-
-
-#Audio Management
-func switch_track(track:AudioStream):
-	audio_player.stream = track
-
-#TODO:switch the audio when changing between main menu and game
+var player:Player
 
 #Scene Management
-func switch_scene(from_scene, to_scene):
+##Changes the scene, moving the player between them and to a door's position
+func switch_level_with_door(from_scene:Node, to_scene:String, spawn_door:String):
 	#Unparent player from old scene
+	player = from_scene.get_node("Player")
+	player.get_parent().remove_child(player)
 	
 	#Instantiate next scene
-	#Delete duplicate player
+	var new_scene := load_level(to_scene)
+	
+	#Delete any duplicate player
+	var dupe_player = new_scene.get_node("Player")
+	if dupe_player:
+		dupe_player.free()
+	
 	#Parent player to new scene
-	#Make new scene active in scene_tree
+	new_scene.add_child(player)
+	
+	#Replace old scene
+	#from_scene.queue_free()
+	get_tree().call_deferred("change_scene_to_node", new_scene)
+	
 	#Move player to correct door
-	pass
+	var target_door = new_scene.get_node(spawn_door) as DoorTrigger
+	if target_door:
+		player.global_position = target_door.spawn.global_position
+
+##Loads a level by name from the levels folder, creates and instance of the scene *but hasn't added it to tree yet
+func load_level(level_name:String) -> Node:
+	var level_path:String = "res://scenes/levels/%s.tscn" % level_name
+	var level_resource := load(level_path) as PackedScene
+	if level_resource:
+		return level_resource.instantiate()
+	return null
