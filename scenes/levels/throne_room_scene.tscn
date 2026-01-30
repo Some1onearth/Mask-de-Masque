@@ -156,7 +156,7 @@ script = ExtResource("3_g2xf8")
 
 [node name="Eunuch2" parent="." unique_id=607847649 instance=ExtResource("5_l2w01")]
 position = Vector2(586, 461)
-dialogue_timeline_name = "peasant_convo1"
+dialogue_timeline_name = "coreen"
 
 [node name="NobleMan1" parent="." unique_id=1405082143 instance=ExtResource("6_68jnw")]
 position = Vector2(425, 424)

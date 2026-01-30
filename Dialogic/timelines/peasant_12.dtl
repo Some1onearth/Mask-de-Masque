@@ -1,18 +1,23 @@
 if {CurrentMask} == "wild":
+	audio "res://audio/SFX/NPC, MC, Interaction/PesFemNeg2.ogg"
 	WHA-
 	I can’t believe they let in someone as doggedly me without my husband without coffee!
 elif {CurrentMask} == "peasant":
+	audio "res://audio/SFX/NPC, MC, Interaction/PesFemNeg2.ogg"
 	How did you get in?
 	I had to bribe my way in to see the beauty of his majesty.
-	His features truly shine during 
+	His features truly shine during
 elif {CurrentMask} == "eunuch":
+	audio "res://audio/SFX/NPC, MC, Interaction/PesFemPos2.ogg"
 	AH- Sorry my good sir.
 	If you need further help with your extravagant proclivities please let me know!
 elif {CurrentMask} == "noble":
+	audio "res://audio/SFX/NPC, MC, Interaction/PesFemPos2.ogg"
 	Good evening my good fellow.
 	I can’t wait to see his majesty up close.
 	I’ve been waiting for this day since he came into power.
 	I hope he notices me.
 	He is my celebrity affair exception. And my husband’s as well.
 else:
+	audio "res://audio/SFX/NPC, MC, Interaction/PesFemNeg2.ogg"
 	BALD! BALD! MY EYES!!!!

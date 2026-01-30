@@ -157,6 +157,7 @@ script = ExtResource("3_m3640")
 
 [node name="PeasantFemale1" parent="." unique_id=1113225415 instance=ExtResource("4_7ue0x")]
 position = Vector2(-6, -217)
+dialogue_timeline_name = "coreen"
 
 [node name="PeasantFemale2" parent="." unique_id=1384281574 instance=ExtResource("5_e7ohu")]
 position = Vector2(316, -170)
