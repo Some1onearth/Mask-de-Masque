@@ -61,7 +61,7 @@ tile_map_data = PackedByteArray("AAANAPL/AwAUAAMAAAANAPP/AwAUAAUAAAAEAPP/AwAUAAU
 tile_set = ExtResource("1_78nqk")
 
 [node name="Player" parent="." unique_id=489475279 instance=ExtResource("2_0xtoi")]
-position = Vector2(-9, -296)
+position = Vector2(-7, -298)
 motion_mode = 1
 SPEED = 150.0
 
@@ -204,14 +204,18 @@ offset_right = 286.0
 offset_bottom = -306.0
 color = Color(0.17254902, 0.17254902, 0.17254902, 0.39607844)
 
-[node name="NPC" parent="." unique_id=1113225415 instance=ExtResource("4_vrde5")]
+[node name="Guardsman1" parent="." unique_id=1113225415 instance=ExtResource("4_vrde5")]
 position = Vector2(111, -301)
+dialogue_timeline_name = "guardsman1"
 
-[node name="NPC2" parent="." unique_id=2008654414 instance=ExtResource("5_47klr")]
+[node name="Narcisan" parent="." unique_id=2008654414 instance=ExtResource("5_47klr")]
 position = Vector2(11, -296)
+dialogue_timeline_name = "narcisan"
 
-[node name="NPC3" parent="." unique_id=1103127856 instance=ExtResource("6_mecwo")]
+[node name="Melani" parent="." unique_id=1103127856 instance=ExtResource("6_mecwo")]
 position = Vector2(318, -218)
+dialogue_timeline_name = "melani"
 
-[node name="NPC4" parent="." unique_id=900358999 instance=ExtResource("5_47klr")]
+[node name="Jurin" parent="." unique_id=900358999 instance=ExtResource("5_47klr")]
 position = Vector2(-33, -12)
+dialogue_timeline_name = "jurin"

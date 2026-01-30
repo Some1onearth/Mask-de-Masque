@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://b67jagotnadto"]
+[gd_scene format=4 uid="uid://rjv7h4bpvf7f"]
 
 [ext_resource type="TileSet" uid="uid://c2vy5x5qolqcr" path="res://sprites/tilemaps/tile_set.tres" id="1_7ebx3"]
 [ext_resource type="PackedScene" uid="uid://nx7f0qyeodsh" path="res://scenes/player.tscn" id="2_v4ikf"]
@@ -204,14 +204,18 @@ offset_right = 286.0
 offset_bottom = -306.0
 color = Color(0.17254902, 0.17254902, 0.17254902, 0.39607844)
 
-[node name="NPC" parent="." unique_id=1113225415 instance=ExtResource("10_f3cax")]
+[node name="Guardsman1" parent="." unique_id=1113225415 instance=ExtResource("10_f3cax")]
 position = Vector2(111, -301)
+dialogue_timeline_name = "guardsman1"
 
-[node name="NPC2" parent="." unique_id=2008654414 instance=ExtResource("5_kfho5")]
+[node name="Narcisan" parent="." unique_id=2008654414 instance=ExtResource("5_kfho5")]
 position = Vector2(11, -296)
+dialogue_timeline_name = "narcisan"
 
-[node name="NPC3" parent="." unique_id=1103127856 instance=ExtResource("9_0jhkr")]
+[node name="Melani" parent="." unique_id=1103127856 instance=ExtResource("9_0jhkr")]
 position = Vector2(318, -218)
+dialogue_timeline_name = "melani"
 
-[node name="NPC4" parent="." unique_id=900358999 instance=ExtResource("5_kfho5")]
+[node name="Jurin" parent="." unique_id=900358999 instance=ExtResource("5_kfho5")]
 position = Vector2(-33, -12)
+dialogue_timeline_name = "jurin"
