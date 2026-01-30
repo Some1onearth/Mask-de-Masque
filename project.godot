@@ -44,6 +44,7 @@ directories/dtl_directory={
 "andrevus": "res://Dialogic/timelines/andrevus.dtl",
 "cellar_keeper_convo": "res://Dialogic/timelines/cellar_keeper_convo.dtl",
 "coreen": "res://Dialogic/timelines/coreen.dtl",
+"eunuch_throne": "res://Dialogic/timelines/eunuch_throne.dtl",
 "felani": "res://Dialogic/timelines/felani.dtl",
 "fonao_opening": "res://Dialogic/timelines/fonao_opening.dtl",
 "gurrigen": "res://Dialogic/timelines/gurrigen.dtl",
