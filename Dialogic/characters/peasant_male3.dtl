@@ -1,0 +1,15 @@
+if {CurrentMask} == "wild":
+	audio "res://audio/SFX/NPC, MC, Interaction/PesMaleNeg2.ogg"
+	What do you want?
+elif {CurrentMask} == "peasant":
+	audio "res://audio/SFX/NPC, MC, Interaction/PesMalePos2.ogg"
+	I love potatoes.
+elif {CurrentMask} == "eunuch":
+	audio "res://audio/SFX/NPC, MC, Interaction/PesMalePos2.ogg"
+	I'm just making sure the potatoes don't get cold.
+elif {CurrentMask} == "noble":
+	audio "res://audio/SFX/NPC, MC, Interaction/PesMalePos2.ogg"
+	Would you like a potato?
+else:
+	audio "res://audio/SFX/NPC, MC, Interaction/PesMalePos2.ogg"
+	BALD! BALD! MY EYES!!!!
