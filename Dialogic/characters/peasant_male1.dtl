@@ -1,6 +1,8 @@
 if {CurrentMask} == "wild":
 	audio "res://audio/SFX/NPC, MC, Interaction/PesMaleNeg1.ogg"
 	You remind me of my mother.
+	if {SocialPoints} < {ThresholdMainHall}:
+		set {SocialPoints} += 1
 elif {CurrentMask} == "peasant":
 	audio "res://audio/SFX/NPC, MC, Interaction/PesMalePos1.ogg"
 	Have you seen so much food before?
