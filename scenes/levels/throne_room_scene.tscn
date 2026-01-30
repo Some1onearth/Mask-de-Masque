@@ -154,22 +154,28 @@ texture = SubResource("GradientTexture2D_73bac")
 texture_scale = 3.47
 script = ExtResource("3_g2xf8")
 
-[node name="NPC2" parent="." unique_id=607847649 instance=ExtResource("5_l2w01")]
+[node name="EunuchThrone" parent="." unique_id=607847649 instance=ExtResource("5_l2w01")]
 position = Vector2(586, 461)
-dialogue_timeline_name = "peasant_convo1"
+dialogue_timeline_name = "eunuch_throne"
 
-[node name="NPC3" parent="." unique_id=1405082143 instance=ExtResource("6_68jnw")]
+[node name="Lavois" parent="." unique_id=1405082143 instance=ExtResource("6_68jnw")]
 position = Vector2(425, 424)
+dialogue_timeline_name = "lavois"
 
-[node name="NPC4" parent="." unique_id=1729446940 instance=ExtResource("7_0rku0")]
+[node name="Tenaius" parent="." unique_id=1729446940 instance=ExtResource("7_0rku0")]
 position = Vector2(567, 333)
+dialogue_timeline_name = "tenaius"
 
-[node name="NPC5" parent="." unique_id=625761746 instance=ExtResource("8_46rbl")]
+[node name="Gurrigen" parent="." unique_id=625761746 instance=ExtResource("8_46rbl")]
 position = Vector2(438, 262)
+dialogue_timeline_name = "gurrigen"
 
-[node name="NPC6" parent="." unique_id=209896505 instance=ExtResource("9_om1q8")]
+[node name="Felani" parent="." unique_id=209896505 instance=ExtResource("9_om1q8")]
 position = Vector2(561, 231)
+dialogue_timeline_name = "felani"
 
-[node name="NPC" parent="." unique_id=1113225415 instance=ExtResource("9_l2w01")]
+[node name="PeasantFemale12" parent="." unique_id=1113225415 instance=ExtResource("9_l2w01")]
 position = Vector2(419, 579)
-dialogue_timeline_name = "test_timeline"
+dialogue_timeline_name = "peasant_12"
+
+[editable path="Felani"]

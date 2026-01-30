@@ -1,13 +1,18 @@
 if {CurrentMask} == "wild":
+	audio "res://audio/SFX/NPC, MC, Interaction/EunMaleNeg2.ogg"
 	Don’t talk to me.
 elif {CurrentMask} == "peasant":
+	audio "res://audio/SFX/NPC, MC, Interaction/EunMaleNeg2.ogg"
 	Don’t talk to me.
 elif {CurrentMask} == "eunuch":
+	audio "res://audio/SFX/NPC, MC, Interaction/EunMaleNeg2.ogg"
 	I want to be alone.
 elif {CurrentMask} == "noble":
+	audio "res://audio/SFX/NPC, MC, Interaction/EunMalePos2.ogg"
 	It’s nice to be outside.
-	I don’t really care for the King’s party. 
+	I don’t really care for the King’s party.
 	You seem nice.
 	My dad Gurrigen would like you.
 else:
+	audio "res://audio/SFX/NPC, MC, Interaction/EunMaleNeg2.ogg"
 	BALD! BALD! MY EYES!!!!

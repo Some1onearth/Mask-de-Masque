@@ -1,18 +1,23 @@
 if {CurrentMask} == "wild":
+	audio "res://audio/SFX/NPC, MC, Interaction/NobleMaleNeg2.ogg"
 	Someone like you managed to reach the Throne Room?
 	Are the Guards slacking off or what?
 elif {CurrentMask} == "peasant":
+	audio "res://audio/SFX/NPC, MC, Interaction/NobleMaleNeg2.ogg"
 	Do you know that I’m the King’s cousin?
 	You’d better stay away from the Guards unless you want to be taken to the Dungeon.
 elif {CurrentMask} == "eunuch":
+	audio "res://audio/SFX/NPC, MC, Interaction/NobleMalePos2.ogg"
 	Being the cousin of the King is a curse at times.
 	I’ll never be complimented as highly because of that face of his.
 	I remember the first time I saw him
 	I cried to sleep that night.
 	Perhaps I’ll cry tonight too.
 elif {CurrentMask} == "noble":
+	audio "res://audio/SFX/NPC, MC, Interaction/NobleMalePos2.ogg"
 	I’m the King’s cousin.
 	It’s such a shame that I’ll never have a chance at the throne.
-	Not unless he dies or something. 
+	Not unless he dies or something.
 else:
+	audio "res://audio/SFX/NPC, MC, Interaction/NobleMaleNeg2.ogg"
 	BALD! BALD! MY EYES!!!!

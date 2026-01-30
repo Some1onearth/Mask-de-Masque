@@ -1,0 +1,15 @@
+if {CurrentMask} == "wild":
+	audio "res://audio/SFX/NPC, MC, Interaction/PesMaleNeg2.ogg"
+	Begone!
+elif {CurrentMask} == "peasant":
+	audio "res://audio/SFX/NPC, MC, Interaction/PesMalePos2.ogg"
+	Do you think I can sit down?
+elif {CurrentMask} == "eunuch":
+	audio "res://audio/SFX/NPC, MC, Interaction/PesMalePos2.ogg"
+	Your work here is wonderful!
+elif {CurrentMask} == "noble":
+	audio "res://audio/SFX/NPC, MC, Interaction/PesMalePos2.ogg"
+	Feel free to take a seat!
+else:
+	audio "res://audio/SFX/NPC, MC, Interaction/PesMalePos2.ogg"
+	BALD! BALD! MY EYES!!!!

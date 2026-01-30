@@ -1,20 +1,25 @@
 if {CurrentMask} == "wild":
+	audio "res://audio/SFX/NPC, MC, Interaction/NobleFemNeg1.ogg"
 	Goodness Gracious!
 	I’m thankful for having worn brown pants.
 elif {CurrentMask} == "peasant":
+	audio "res://audio/SFX/NPC, MC, Interaction/NobleFemPos1.ogg"
 	You remind me of my younger, less fortunate self.
 	Back when I had a small loan of…
 	What?
 	My parents barely gave me anything back then.
 	Now that they’re gone, it's been a breeze!
 elif {CurrentMask} == "eunuch":
+	audio "res://audio/SFX/NPC, MC, Interaction/NobleFemPos1.ogg"
 	Can you get me a glass of water?
 	I’m anxious to see the King without my wife here.
 elif {CurrentMask} == "noble":
+	audio "res://audio/SFX/NPC, MC, Interaction/NobleFemPos1.ogg"
 	My daughter is picky.
 	No matter who she meets they end up leaving.
 	Perhaps this noble looking at me may have enough money to satisfy.
 	…
 	Oops, I spoke my thoughts outloud again didn’t I?
 else:
+	audio "res://audio/SFX/NPC, MC, Interaction/NobleFemNeg1.ogg"
 	BALD! BALD! MY EYES!!!!

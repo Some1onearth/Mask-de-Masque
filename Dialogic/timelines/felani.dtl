@@ -1,10 +1,13 @@
 if {CurrentMask} == "wild":
-	Hideous beast! 
+	audio "res://audio/SFX/NPC, MC, Interaction/NobleFemNeg2.ogg"
+	Hideous beast!
 	Save yourself from embarrassment and leave now before the Guards do.
 elif {CurrentMask} == "peasant":
-	What are you doing here? 
+	audio "res://audio/SFX/NPC, MC, Interaction/NobleFemNeg2.ogg"
+	What are you doing here?
 	You can’t even afford a decent pair of shoes. Shoo!
 elif {CurrentMask} == "eunuch":
+	audio "res://audio/SFX/NPC, MC, Interaction/NobleFemPos2.ogg"
 	The King hasn’t come out yet.
 	I’m excited to see what he looks like.
 	Surely with the title of “fairest in the land”, it's got to be worth dressing up for.
@@ -13,7 +16,9 @@ elif {CurrentMask} == "eunuch":
 	She could help you.
 	Just don’t tell her that I’m wearing her dress.
 elif {CurrentMask} == "noble":
+	audio "res://audio/SFX/NPC, MC, Interaction/NobleFemPos2.ogg"
 	I hope you aren’t as bad as the others in here.
 	Every noble is shallow these days.
 else:
+	audio "res://audio/SFX/NPC, MC, Interaction/NobleFemNeg2.ogg"
 	BALD! BALD! MY EYES!!!!

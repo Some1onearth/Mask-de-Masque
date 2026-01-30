@@ -155,32 +155,42 @@ texture = SubResource("GradientTexture2D_73bac")
 texture_scale = 3.47
 script = ExtResource("3_m3640")
 
-[node name="NPC" parent="." unique_id=1113225415 instance=ExtResource("4_7ue0x")]
+[node name="Coreen" parent="." unique_id=1113225415 instance=ExtResource("4_7ue0x")]
 position = Vector2(-6, -217)
+dialogue_timeline_name = "coreen"
 
-[node name="NPC2" parent="." unique_id=1384281574 instance=ExtResource("5_e7ohu")]
+[node name="PeasantFemale2" parent="." unique_id=1384281574 instance=ExtResource("5_e7ohu")]
 position = Vector2(316, -170)
+dialogue_timeline_name = "peasant_female2"
 
-[node name="NPC3" parent="." unique_id=922556008 instance=ExtResource("6_gygle")]
+[node name="PeasantMale1" parent="." unique_id=922556008 instance=ExtResource("6_gygle")]
 position = Vector2(-44, -40)
+dialogue_timeline_name = "peasant_male1"
 
-[node name="NPC4" parent="." unique_id=1679750083 instance=ExtResource("6_gygle")]
+[node name="PeasantMale2" parent="." unique_id=1679750083 instance=ExtResource("6_gygle")]
 position = Vector2(48, -84)
+dialogue_timeline_name = "peasant_male2"
 
-[node name="NPC5" parent="." unique_id=1577181537 instance=ExtResource("7_auopt")]
+[node name="PeasantMale3" parent="." unique_id=1577181537 instance=ExtResource("7_auopt")]
 position = Vector2(203, -119)
+dialogue_timeline_name = "peasant_male3"
 
-[node name="NPC6" parent="." unique_id=2073342611 instance=ExtResource("7_auopt")]
+[node name="PeasantMale4" parent="." unique_id=2073342611 instance=ExtResource("7_auopt")]
 position = Vector2(316, -197)
+dialogue_timeline_name = "peasant_male4"
 
-[node name="NPC7" parent="." unique_id=419949184 instance=ExtResource("8_vwu56")]
+[node name="Andrevus" parent="." unique_id=419949184 instance=ExtResource("8_vwu56")]
 position = Vector2(233, -223)
+dialogue_timeline_name = "andrevus"
 
-[node name="NPC8" parent="." unique_id=1398819311 instance=ExtResource("9_gygle")]
+[node name="Eunuch2" parent="." unique_id=1398819311 instance=ExtResource("9_gygle")]
 position = Vector2(313, -34)
+dialogue_timeline_name = "eunuch2"
 
-[node name="NPC9" parent="." unique_id=442727457 instance=ExtResource("10_auopt")]
+[node name="Guardsman1" parent="." unique_id=442727457 instance=ExtResource("10_auopt")]
 position = Vector2(104, -239)
+dialogue_timeline_name = "guardsman1"
 
-[node name="NPC10" parent="." unique_id=393760981 instance=ExtResource("11_vwu56")]
+[node name="Guardsman2" parent="." unique_id=393760981 instance=ExtResource("11_vwu56")]
 position = Vector2(184, -237)
+dialogue_timeline_name = "guardsman2"

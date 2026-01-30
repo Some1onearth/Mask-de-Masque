@@ -1,16 +1,20 @@
-audio -
 ..hrm?
 if {CurrentMask} == "wild":
+	audio "res://audio/SFX/NPC, MC, Interaction/GuardMaleNeg1.ogg"
 	Who are you?
 	Please go away, you are quite unpleasant to look at.
 elif {CurrentMask} == "peasant":
+	audio "res://audio/SFX/NPC, MC, Interaction/GuardMalePos1.ogg"
 	Hi, this is the cellar.
 	Please find your way back up to the main hall and enjoy the rest of the evening.
 elif {CurrentMask} == "eunuch":
+	audio "res://audio/SFX/NPC, MC, Interaction/GuardMalePos1.ogg"
 	Uh, uh, sorry sir. I’m just keeping the dungeon clean and swept.
 	Please mind your step on the way out.
 elif {CurrentMask} == "noble":
+	audio "res://audio/SFX/NPC, MC, Interaction/GuardMalePos1.ogg"
 	Esteemed guest, how may I help you?
 	If you need anything I’m only a few cells away.
 else:
+	audio "res://audio/SFX/NPC, MC, Interaction/GuardMaleNeg1.ogg"
 	BALD! BALD! MY EYES!!!!
