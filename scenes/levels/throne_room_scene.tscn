@@ -9,6 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://ol8sf7djxp6t" path="res://scenes/characters/NobleWoman1.tscn" id="8_46rbl"]
 [ext_resource type="PackedScene" uid="uid://yxyrtn1ps8s" path="res://scenes/characters/PeasantFemale1.tscn" id="9_l2w01"]
 [ext_resource type="PackedScene" uid="uid://dkdy4cgos84cf" path="res://scenes/characters/NobleWoman2.tscn" id="9_om1q8"]
+[ext_resource type="PackedScene" uid="uid://cwpixmk5pgve4" path="res://scenes/door_trigger.tscn" id="10_0rku0"]
+[ext_resource type="PackedScene" uid="uid://b5aqkxi2qxe28" path="res://scenes/levels/royal_chamber_scene.tscn" id="11_46rbl"]
 
 [sub_resource type="Gradient" id="Gradient_5ec7d"]
 offsets = PackedFloat32Array(0, 0.6082474, 1)
@@ -177,5 +179,10 @@ dialogue_timeline_name = "felani"
 [node name="PeasantFemale12" parent="." unique_id=1113225415 instance=ExtResource("9_l2w01")]
 position = Vector2(419, 579)
 dialogue_timeline_name = "peasant_12"
+
+[node name="door_trigger" parent="." unique_id=1784326111 instance=ExtResource("10_0rku0")]
+position = Vector2(505, 148)
+next_scene = ExtResource("11_46rbl")
+lock_threshold = 10
 
 [editable path="Felani"]

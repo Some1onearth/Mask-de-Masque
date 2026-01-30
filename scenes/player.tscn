@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://ct7wxwa71igb2" path="res://sprites/NPCs/tile_MC_-sheet.png" id="2_g2els"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_74lek"]
-size = Vector2(16, 16)
+size = Vector2(10, 10)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qhqgy"]
 atlas = ExtResource("2_g2els")
