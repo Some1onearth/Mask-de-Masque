@@ -6,10 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://bv5suct4t2ecj" path="res://scenes/characters/Guardsman1.tscn" id="4_vrde5"]
 [ext_resource type="PackedScene" uid="uid://cn1q77jq5o7v7" path="res://scenes/characters/Eunuch1.tscn" id="5_47klr"]
 [ext_resource type="PackedScene" uid="uid://b6am2lkvarakd" path="res://scenes/characters/Eunuch2.tscn" id="6_mecwo"]
-[ext_resource type="PackedScene" uid="uid://cwpixmk5pgve4" path="res://scenes/door_trigger.tscn" id="7_vrde5"]
-[ext_resource type="PackedScene" uid="uid://dkb6jg1r3mgrp" path="res://scenes/levels/main_hall_scene_left.tscn" id="8_47klr"]
-[ext_resource type="PackedScene" uid="uid://cfwg38m1d702w" path="res://scenes/levels/main_hall_scene_right.tscn" id="9_mecwo"]
-[ext_resource type="PackedScene" uid="uid://bhnksl2iuw0j7" path="res://scenes/levels/throne_room_scene.tscn" id="10_47klr"]
 
 [sub_resource type="Gradient" id="Gradient_ggckr"]
 offsets = PackedFloat32Array(0, 0.6082474, 1)
@@ -223,16 +219,3 @@ dialogue_timeline_name = "melani"
 [node name="Jurin" parent="." unique_id=900358999 instance=ExtResource("5_47klr")]
 position = Vector2(-33, -12)
 dialogue_timeline_name = "jurin"
-
-[node name="door_trigger_left" parent="." unique_id=1784326111 instance=ExtResource("7_vrde5")]
-position = Vector2(-8, -318)
-next_scene = ExtResource("8_47klr")
-
-[node name="door_trigger_right" parent="." unique_id=226669881 instance=ExtResource("7_vrde5")]
-position = Vector2(280, -318)
-next_scene = ExtResource("9_mecwo")
-
-[node name="door_trigger_centre" parent="." unique_id=544841208 instance=ExtResource("7_vrde5")]
-position = Vector2(128, -318)
-next_scene = ExtResource("10_47klr")
-lock_threshold = 5
