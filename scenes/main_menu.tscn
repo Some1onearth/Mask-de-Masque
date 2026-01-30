@@ -1,0 +1,181 @@
+[gd_scene format=3 uid="uid://jny4tar0qf1v"]
+
+[ext_resource type="Script" uid="uid://c2hmkjc571jkj" path="res://scripts/main_menu.gd" id="1_rqnwo"]
+[ext_resource type="Texture2D" uid="uid://b8ee2q4trjg5d" path="res://sprites/Background.png" id="2_8ln24"]
+[ext_resource type="Texture2D" uid="uid://dckk6qoxjejw3" path="res://sprites/title.png" id="3_yxyf3"]
+[ext_resource type="Script" uid="uid://bt6x3ym5ea17f" path="res://scripts/controller_button.gd" id="4_cwbyw"]
+[ext_resource type="StyleBox" path="res://scenes/buttonfocustheme.tres" id="4_g3nua"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pwqkt"]
+bg_color = Color(0.156863, 0.0823529, 0.0352941, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5xen7"]
+bg_color = Color(0.156863, 0.0823529, 0.0352941, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m6qpe"]
+bg_color = Color(0.709804, 0.105882, 0.517647, 1)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[node name="MainMenu" type="Node2D" unique_id=1376498642]
+script = ExtResource("1_rqnwo")
+
+[node name="Universe" type="Sprite2D" parent="." unique_id=1640550537]
+position = Vector2(507.66833, 363.76068)
+scale = Vector2(0.7824354, 0.7759306)
+texture = ExtResource("2_8ln24")
+
+[node name="Title" type="Sprite2D" parent="." unique_id=1648864762]
+position = Vector2(1725, 598)
+texture = ExtResource("3_yxyf3")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=228310217]
+offset_right = 40.49893
+offset_bottom = 41.206623
+scale = Vector2(25.06239, 17.958279)
+color = Color(0.003921569, 0.11372549, 0.29411766, 0.63529414)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=388922040]
+offset_left = 312.0
+offset_top = 520.0
+offset_right = 688.0
+offset_bottom = 819.0
+
+[node name="Start" type="Button" parent="VBoxContainer" unique_id=91299204]
+layout_mode = 2
+theme_override_font_sizes/font_size = 43
+theme_override_styles/normal = SubResource("StyleBoxFlat_pwqkt")
+theme_override_styles/hover_pressed = ExtResource("4_g3nua")
+theme_override_styles/focus = ExtResource("4_g3nua")
+text = "Play"
+script = ExtResource("4_cwbyw")
+
+[node name="Credits" type="Button" parent="VBoxContainer" unique_id=2115426057]
+layout_mode = 2
+theme_override_font_sizes/font_size = 43
+theme_override_styles/normal = SubResource("StyleBoxFlat_5xen7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_m6qpe")
+theme_override_styles/focus = ExtResource("4_g3nua")
+text = "Credits"
+
+[node name="Quit" type="Button" parent="VBoxContainer" unique_id=1446540604]
+layout_mode = 2
+theme_override_font_sizes/font_size = 43
+theme_override_styles/normal = SubResource("StyleBoxFlat_5xen7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_m6qpe")
+theme_override_styles/focus = ExtResource("4_g3nua")
+text = "Quit"
+
+[node name="CreditsWindow" type="CanvasLayer" parent="." unique_id=242482935]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="CreditsWindow" unique_id=514617265]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.117647, 0.117647, 0.117647, 0.811765)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CreditsWindow/ColorRect" unique_id=1634883529]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -952.5
+offset_right = 952.5
+offset_bottom = 530.0
+grow_horizontal = 2
+
+[node name="Programmers" type="RichTextLabel" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=1202050544]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_font_sizes/normal_font_size = 61
+theme_override_font_sizes/bold_font_size = 61
+theme_override_font_sizes/bold_italics_font_size = 61
+theme_override_font_sizes/italics_font_size = 61
+theme_override_font_sizes/mono_font_size = 61
+bbcode_enabled = true
+text = "[pulse freq=1][rainbow freq=1][center]Programmers"
+fit_content = true
+tab_size = 24
+
+[node name="Programmers2" type="Label" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=2010497413]
+layout_mode = 2
+theme_override_font_sizes/font_size = 46
+text = "dinopoke
+jonathan.wang18"
+horizontal_alignment = 1
+
+[node name="Artists" type="RichTextLabel" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=1137453620]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_font_sizes/normal_font_size = 61
+theme_override_font_sizes/bold_font_size = 61
+theme_override_font_sizes/bold_italics_font_size = 61
+theme_override_font_sizes/italics_font_size = 61
+theme_override_font_sizes/mono_font_size = 61
+bbcode_enabled = true
+text = "[pulse freq=1][rainbow freq=1][center]Creative Lead
+"
+fit_content = true
+tab_size = 24
+
+[node name="Artists2" type="Label" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=865624260]
+layout_mode = 2
+theme_override_font_sizes/font_size = 46
+text = "LyricalLark"
+horizontal_alignment = 1
+
+[node name="Producer" type="RichTextLabel" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=1482688960]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_font_sizes/normal_font_size = 61
+theme_override_font_sizes/bold_font_size = 61
+theme_override_font_sizes/bold_italics_font_size = 61
+theme_override_font_sizes/italics_font_size = 61
+theme_override_font_sizes/mono_font_size = 61
+bbcode_enabled = true
+text = "[pulse freq=1][rainbow freq=1][center]Producer"
+fit_content = true
+tab_size = 24
+
+[node name="Artists3" type="Label" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=19982895]
+layout_mode = 2
+theme_override_font_sizes/font_size = 46
+text = "Some1onearth
+
+"
+horizontal_alignment = 1
+
+[node name="Back" type="Button" parent="CreditsWindow" unique_id=135489902]
+offset_left = 202.0
+offset_top = 601.0
+offset_right = 794.0
+offset_bottom = 698.0
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 71
+theme_override_styles/normal = SubResource("StyleBoxFlat_5xen7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_m6qpe")
+theme_override_styles/focus = ExtResource("4_g3nua")
+text = "Back"
+
+[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="CreditsWindow/Back" to="." method="_on_back_pressed"]

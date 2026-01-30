@@ -3,6 +3,7 @@
 [ext_resource type="TileSet" uid="uid://c2vy5x5qolqcr" path="res://sprites/tilemaps/tile_set.tres" id="1_klfji"]
 [ext_resource type="PackedScene" uid="uid://nx7f0qyeodsh" path="res://scenes/player.tscn" id="2_feyvm"]
 [ext_resource type="Script" uid="uid://c3niwrngpmhjo" path="res://scripts/flicker_light.gd" id="3_4iaa8"]
+[ext_resource type="PackedScene" uid="uid://blnox7yxtmklu" path="res://scenes/characters/CellarKeeper.tscn" id="4_feyvm"]
 
 [sub_resource type="Gradient" id="Gradient_5ec7d"]
 offsets = PackedFloat32Array(0, 0.32646048, 1)
@@ -170,3 +171,6 @@ shadow_filter_smooth = 6.0
 texture = SubResource("GradientTexture2D_73bac")
 texture_scale = 2.05
 script = ExtResource("3_4iaa8")
+
+[node name="NPC" parent="." unique_id=1113225415 instance=ExtResource("4_feyvm")]
+position = Vector2(647, 422)
