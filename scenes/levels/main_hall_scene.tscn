@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://s0nugt3e8lft" path="res://scenes/characters/Guardsman2.tscn" id="11_vwu56"]
 [ext_resource type="PackedScene" uid="uid://cwpixmk5pgve4" path="res://scenes/door_trigger.tscn" id="12_auopt"]
 [ext_resource type="PackedScene" uid="uid://brqgg8f0hk6ld" path="res://scenes/levels/balcony_scene_left.tscn" id="13_vwu56"]
+[ext_resource type="PackedScene" uid="uid://rjv7h4bpvf7f" path="res://scenes/levels/balcony_scene_right.tscn" id="14_e80uw"]
 
 [sub_resource type="Gradient" id="Gradient_5ec7d"]
 offsets = PackedFloat32Array(0, 0.6082474, 1)
@@ -197,12 +198,12 @@ dialogue_timeline_name = "guardsman1"
 position = Vector2(184, -237)
 dialogue_timeline_name = "guardsman2"
 
-[node name="door_trigger" parent="." unique_id=1784326111 instance=ExtResource("12_auopt")]
+[node name="door_trigger_left" parent="." unique_id=1784326111 instance=ExtResource("12_auopt")]
 position = Vector2(-8, -254)
 next_scene = ExtResource("13_vwu56")
 lock_threshold = 3
 
-[node name="door_trigger2" parent="." unique_id=282787576 instance=ExtResource("12_auopt")]
+[node name="door_trigger_right" parent="." unique_id=282787576 instance=ExtResource("12_auopt")]
 position = Vector2(279, -254)
-next_scene = ExtResource("13_vwu56")
+next_scene = ExtResource("14_e80uw")
 lock_threshold = 3
