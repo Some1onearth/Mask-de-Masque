@@ -25,8 +25,12 @@ func _physics_process(delta: float) -> void:
 	#animation stuff
 	if velocity.y > 0:
 		player_sprite.frame = sprite_down
-	if velocity.y < 0:
+	elif velocity.y < 0:
 		player_sprite.frame = sprite_up
+	if velocity.x > 0:
+		player_sprite.flip_h = false
+	elif velocity.x < 0:
+		player_sprite.flip_h = true
 	
 	move_and_slide()
 	
@@ -64,7 +68,4 @@ func maskSwap(mask_name:String):
 	player_sprite.frame = sprite_down
 	
 	print("mask changed to %s" % mask_name)
-	pass
-	
-func player():
 	pass

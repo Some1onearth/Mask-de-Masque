@@ -9,6 +9,6 @@ func _on_body_entered(body: Node2D) -> void:
 		return
 	print("SocialPoints: %s" % Dialogic.VAR.SocialPoints)
 	if Dialogic.VAR.SocialPoints >= lock_threshold:
-		get_tree().change_scene_to_packed(next_scene)
+		get_tree().call_deferred("change_scene_to_packed", next_scene)
 	else:
 		print("You need %s SocialPoints to enter this room" % lock_threshold)
