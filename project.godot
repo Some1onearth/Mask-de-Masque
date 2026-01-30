@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Mask De Mask"
-run/main_scene="uid://c51hsecpo0x6"
+run/main_scene="uid://jny4tar0qf1v"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
