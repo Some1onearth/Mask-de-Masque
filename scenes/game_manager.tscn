@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://pnnhoe0gdckr"]
+
+[ext_resource type="Script" uid="uid://drjigusdjno65" path="res://scripts/game_manager.gd" id="1_glms7"]
+[ext_resource type="AudioStream" uid="uid://cffqyxx6mm0sv" path="res://audio/music/De Maskus Main Theme.wav" id="2_oo155"]
+[ext_resource type="AudioStream" uid="uid://cgh0ddq2vp5bx" path="res://audio/music/MaskTitleTheme.wav" id="2_udu3i"]
+
+[node name="GameManager" type="Node" unique_id=1773621663]
+script = ExtResource("1_glms7")
+main_theme = ExtResource("2_oo155")
+title_theme = ExtResource("2_udu3i")
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="." unique_id=886794630]
+stream = ExtResource("2_oo155")
+autoplay = true
+bus = &"Music"
