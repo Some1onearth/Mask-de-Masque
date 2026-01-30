@@ -13,6 +13,8 @@ elif {CurrentMask} == "noble":
 	I don’t really care for the King’s party.
 	You seem nice.
 	My dad Gurrigen would like you.
+	if {SocialPoints} < {ThresholdBalcony}:
+		set {SocialPoints} += 1
 else:
 	audio "res://audio/SFX/NPC, MC, Interaction/EunMaleNeg2.ogg"
 	BALD! BALD! MY EYES!!!!

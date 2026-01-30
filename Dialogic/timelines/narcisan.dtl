@@ -7,6 +7,8 @@ if {CurrentMask} == "wild":
 	You’ve probably never had yourself painted.
 	I’ve got like 10 portraits of myself at home.
 	You can have one of mine and pretend it’s your mirror if you like.
+	if {SocialPoints} < {ThresholdBalcony}:
+	set {SocialPoints} += 1
 elif {CurrentMask} == "peasant":
 	audio "res://audio/SFX/NPC, MC, Interaction/EunMaleNeg1.ogg"
 	Leave me alone.

@@ -13,6 +13,8 @@ elif {CurrentMask} == "eunuch":
 	If you see my sister in the Throne Room can you tell her I know she took my dress.
 	The guards aren’t letting me go because I’m not dressed well enough for the celebration.
 	Can’t believe I’m stuck because I didn’t make any spares.
+	if {SocialPoints} < {ThresholdBalcony}:
+		set {SocialPoints} += 1
 elif {CurrentMask} == "noble":
 	audio "res://audio/SFX/NPC, MC, Interaction/EunFemPos1.ogg"
 	Nice to meet you!

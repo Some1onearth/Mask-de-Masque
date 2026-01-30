@@ -10,6 +10,8 @@ elif {CurrentMask} == "peasant":
 	Don’t worry.
 	I think that everyone should be able to see the King.
 	You can stick with me if you like.
+	if {SocialPoints} < {ThresholdThrone}:
+		set {SocialPoints} += 1
 elif {CurrentMask} == "eunuch":
 	audio "res://audio/SFX/NPC, MC, Interaction/NobleMalePos1.ogg"
 	Do you know if the king likes loud voices?

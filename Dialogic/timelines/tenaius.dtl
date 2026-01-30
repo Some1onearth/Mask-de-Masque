@@ -13,6 +13,8 @@ elif {CurrentMask} == "eunuch":
 	I remember the first time I saw him
 	I cried to sleep that night.
 	Perhaps I’ll cry tonight too.
+	if {SocialPoints} < {ThresholdThrone}:
+		set {SocialPoints} += 1
 elif {CurrentMask} == "noble":
 	audio "res://audio/SFX/NPC, MC, Interaction/NobleMalePos2.ogg"
 	I’m the King’s cousin.

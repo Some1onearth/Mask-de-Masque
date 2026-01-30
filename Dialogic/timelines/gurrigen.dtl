@@ -20,6 +20,8 @@ elif {CurrentMask} == "noble":
 	Perhaps this noble looking at me may have enough money to satisfy.
 	…
 	Oops, I spoke my thoughts outloud again didn’t I?
+	if {SocialPoints} < {ThresholdThrone}:
+		set {SocialPoints} += 1	
 else:
 	audio "res://audio/SFX/NPC, MC, Interaction/NobleFemNeg1.ogg"
 	BALD! BALD! MY EYES!!!!

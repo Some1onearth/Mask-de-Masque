@@ -11,7 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://b6am2lkvarakd" path="res://scenes/characters/Eunuch2.tscn" id="9_gygle"]
 [ext_resource type="PackedScene" uid="uid://bv5suct4t2ecj" path="res://scenes/characters/Guardsman1.tscn" id="10_auopt"]
 [ext_resource type="PackedScene" uid="uid://s0nugt3e8lft" path="res://scenes/characters/Guardsman2.tscn" id="11_vwu56"]
-[ext_resource type="PackedScene" uid="uid://cwpixmk5pgve4" path="res://scenes/door_trigger.tscn" id="12_auopt"]
+[ext_resource type="PackedScene" path="res://scenes/door_trigger.tscn" id="12_auopt"]
 [ext_resource type="PackedScene" uid="uid://brqgg8f0hk6ld" path="res://scenes/levels/balcony_scene_left.tscn" id="13_vwu56"]
 
 [sub_resource type="Gradient" id="Gradient_5ec7d"]

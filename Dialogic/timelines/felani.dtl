@@ -15,6 +15,8 @@ elif {CurrentMask} == "eunuch":
 	My sister is a tailor.
 	She could help you.
 	Just don’t tell her that I’m wearing her dress.
+	if {SocialPoints} < {ThresholdThrone}:
+		set {SocialPoints} += 1
 elif {CurrentMask} == "noble":
 	audio "res://audio/SFX/NPC, MC, Interaction/NobleFemPos2.ogg"
 	I hope you aren’t as bad as the others in here.
