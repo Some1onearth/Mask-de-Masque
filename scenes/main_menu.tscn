@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://c2hmkjc571jkj" path="res://scripts/main_menu.gd" id="1_rqnwo"]
 [ext_resource type="Texture2D" uid="uid://b8ee2q4trjg5d" path="res://sprites/Background.png" id="2_8ln24"]
-[ext_resource type="Texture2D" uid="uid://dckk6qoxjejw3" path="res://sprites/title.png" id="3_yxyf3"]
 [ext_resource type="Script" uid="uid://bt6x3ym5ea17f" path="res://scripts/controller_button.gd" id="4_cwbyw"]
 [ext_resource type="StyleBox" uid="uid://d0mil3c4uu112" path="res://scenes/buttonfocustheme.tres" id="4_g3nua"]
 
@@ -40,15 +39,24 @@ position = Vector2(507.66833, 363.76068)
 scale = Vector2(0.7824354, 0.7759306)
 texture = ExtResource("2_8ln24")
 
-[node name="Title" type="Sprite2D" parent="." unique_id=1648864762]
-position = Vector2(1725, 598)
-texture = ExtResource("3_yxyf3")
-
 [node name="ColorRect" type="ColorRect" parent="." unique_id=228310217]
 offset_right = 40.49893
 offset_bottom = 41.206623
 scale = Vector2(25.06239, 17.958279)
 color = Color(0.003921569, 0.11372549, 0.29411766, 0.63529414)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=57613622]
+offset_left = 168.0
+offset_top = 269.0
+offset_right = 811.0
+offset_bottom = 369.0
+theme_override_font_sizes/normal_font_size = 67
+theme_override_font_sizes/bold_font_size = 58
+theme_override_font_sizes/bold_italics_font_size = 57
+theme_override_font_sizes/italics_font_size = 63
+theme_override_font_sizes/mono_font_size = 53
+bbcode_enabled = true
+text = "[pulse freq=1][rainbow freq=1][center]De Maskus"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=388922040]
 offset_left = 312.0
@@ -105,71 +113,132 @@ grow_horizontal = 2
 [node name="Programmers" type="RichTextLabel" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=1202050544]
 layout_mode = 2
 size_flags_vertical = 0
-theme_override_font_sizes/normal_font_size = 61
-theme_override_font_sizes/bold_font_size = 61
-theme_override_font_sizes/bold_italics_font_size = 61
-theme_override_font_sizes/italics_font_size = 61
-theme_override_font_sizes/mono_font_size = 61
+theme_override_font_sizes/normal_font_size = 20
+theme_override_font_sizes/bold_font_size = 20
+theme_override_font_sizes/bold_italics_font_size = 20
+theme_override_font_sizes/italics_font_size = 20
+theme_override_font_sizes/mono_font_size = 20
 bbcode_enabled = true
-text = "[pulse freq=1][rainbow freq=1][center]Programmers"
+text = "[pulse freq=1][rainbow freq=1][center]Programming, Writer, Level Design"
 fit_content = true
 tab_size = 24
 
 [node name="Programmers2" type="Label" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=2010497413]
 layout_mode = 2
-theme_override_font_sizes/font_size = 46
+theme_override_font_sizes/font_size = 20
 text = "dinopoke
-jonathan.wang18"
+jonathan.wang18
+jamesm"
 horizontal_alignment = 1
 
-[node name="Artists" type="RichTextLabel" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=1137453620]
+[node name="Audio" type="RichTextLabel" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=1137453620]
 layout_mode = 2
 size_flags_vertical = 0
-theme_override_font_sizes/normal_font_size = 61
-theme_override_font_sizes/bold_font_size = 61
-theme_override_font_sizes/bold_italics_font_size = 61
-theme_override_font_sizes/italics_font_size = 61
-theme_override_font_sizes/mono_font_size = 61
+theme_override_font_sizes/normal_font_size = 20
+theme_override_font_sizes/bold_font_size = 20
+theme_override_font_sizes/bold_italics_font_size = 20
+theme_override_font_sizes/italics_font_size = 20
+theme_override_font_sizes/mono_font_size = 20
 bbcode_enabled = true
-text = "[pulse freq=1][rainbow freq=1][center]Creative Lead
-"
+text = "[pulse freq=1][rainbow freq=1][center]Pixel Artist, Audio Composer & SFX, Writer"
 fit_content = true
 tab_size = 24
 
 [node name="Artists2" type="Label" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=865624260]
 layout_mode = 2
-theme_override_font_sizes/font_size = 46
-text = "LyricalLark"
+theme_override_font_sizes/font_size = 20
+text = "Lyrical Lark"
+horizontal_alignment = 1
+
+[node name="Artists4" type="RichTextLabel" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=1132452614]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_font_sizes/normal_font_size = 20
+theme_override_font_sizes/bold_font_size = 20
+theme_override_font_sizes/bold_italics_font_size = 20
+theme_override_font_sizes/italics_font_size = 20
+theme_override_font_sizes/mono_font_size = 20
+bbcode_enabled = true
+text = "[pulse freq=1][rainbow freq=1][center]Character Art"
+fit_content = true
+tab_size = 24
+
+[node name="Artists5" type="Label" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=79054352]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Kazuna Astral"
+horizontal_alignment = 1
+
+[node name="Artists6" type="RichTextLabel" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=1165174476]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_font_sizes/normal_font_size = 20
+theme_override_font_sizes/bold_font_size = 20
+theme_override_font_sizes/bold_italics_font_size = 20
+theme_override_font_sizes/italics_font_size = 20
+theme_override_font_sizes/mono_font_size = 20
+bbcode_enabled = true
+text = "[pulse freq=1][rainbow freq=1][center]Logo"
+fit_content = true
+tab_size = 24
+
+[node name="Artists7" type="Label" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=278728191]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Soalxlia"
 horizontal_alignment = 1
 
 [node name="Producer" type="RichTextLabel" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=1482688960]
 layout_mode = 2
 size_flags_vertical = 0
-theme_override_font_sizes/normal_font_size = 61
-theme_override_font_sizes/bold_font_size = 61
-theme_override_font_sizes/bold_italics_font_size = 61
-theme_override_font_sizes/italics_font_size = 61
-theme_override_font_sizes/mono_font_size = 61
+theme_override_font_sizes/normal_font_size = 12
+theme_override_font_sizes/bold_font_size = 12
+theme_override_font_sizes/bold_italics_font_size = 12
+theme_override_font_sizes/italics_font_size = 12
+theme_override_font_sizes/mono_font_size = 12
 bbcode_enabled = true
-text = "[pulse freq=1][rainbow freq=1][center]Producer"
+text = "[pulse freq=1][rainbow freq=1][center]Producer, Writer, Level Designer, Glorified Admin"
 fit_content = true
 tab_size = 24
 
 [node name="Artists3" type="Label" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=19982895]
 layout_mode = 2
-theme_override_font_sizes/font_size = 46
-text = "Some1onearth
+theme_override_font_sizes/font_size = 12
+text = "Some1onearth"
+horizontal_alignment = 1
 
-"
+[node name="External" type="RichTextLabel" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=1993419711]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_font_sizes/normal_font_size = 20
+theme_override_font_sizes/bold_font_size = 20
+theme_override_font_sizes/bold_italics_font_size = 20
+theme_override_font_sizes/italics_font_size = 20
+theme_override_font_sizes/mono_font_size = 20
+bbcode_enabled = true
+text = "[pulse freq=1][rainbow freq=1][center]External Assets"
+fit_content = true
+tab_size = 24
+
+[node name="Artists9" type="Label" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=1371576302]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "KennyNL
+https://kenney.nl/assets/tiny-town 
+https://kenney.nl/assets/tiny-dungeon
+https://kenney.nl/assets/roguelike-rpg-pack
+https://kenney.nl/assets/roguelike-indoors
+Dialogic plugin
+https://github.com/dialogic-godot/dialogic "
 horizontal_alignment = 1
 
 [node name="Back" type="Button" parent="CreditsWindow" unique_id=135489902]
-offset_left = 202.0
-offset_top = 601.0
-offset_right = 794.0
-offset_bottom = 698.0
+offset_left = 246.0
+offset_top = 608.0
+offset_right = 750.0
+offset_bottom = 691.0
 size_flags_vertical = 8
-theme_override_font_sizes/font_size = 71
+theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = SubResource("StyleBoxFlat_5xen7")
 theme_override_styles/hover = SubResource("StyleBoxFlat_m6qpe")
 theme_override_styles/focus = ExtResource("4_g3nua")

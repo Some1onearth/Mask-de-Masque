@@ -1,0 +1,394 @@
+[gd_scene format=4 uid="uid://bhe4y5u35hl31"]
+
+[ext_resource type="TileSet" uid="uid://c2vy5x5qolqcr" path="res://sprites/tilemaps/tile_set.tres" id="1_8asfs"]
+[ext_resource type="PackedScene" uid="uid://nx7f0qyeodsh" path="res://scenes/player.tscn" id="2_cb0mq"]
+[ext_resource type="Script" uid="uid://c3niwrngpmhjo" path="res://scripts/flicker_light.gd" id="3_v0xja"]
+[ext_resource type="PackedScene" uid="uid://k7q61nako2ac" path="res://scenes/characters/Ruler.tscn" id="4_g2mg3"]
+[ext_resource type="PackedScene" uid="uid://cwpixmk5pgve4" path="res://scenes/door_trigger.tscn" id="5_dv1fb"]
+[ext_resource type="Texture2D" uid="uid://c512xai57i8oy" path="res://sprites/slash.png" id="6_v0xja"]
+[ext_resource type="Texture2D" uid="uid://7b41a758df21" path="res://sprites/NPCs/MC-RulerMask.png" id="7_g2mg3"]
+
+[sub_resource type="Animation" id="Animation_8asfs"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(280, 220)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../Ruler:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(279, 202)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../Ruler:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../Ruler:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../Slash:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../Slash:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.06666667)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath(".:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("../McRulerMask:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_cb0mq"]
+resource_name = "ending cutscene"
+length = 10.066667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(280, 220)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../Ruler:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(279, 202), Vector2(279, 202)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../Ruler:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../Ruler:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.4, 1.1, 1.41, 1.7, 2.0183332, 2.3083334, 2.6, 2.89, 3.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.64829963, 0.16266775, 0.03189885, 1), Color(0.64705884, 0.16078432, 0.03137255, 0), Color(0.64829963, 0.16266775, 0.03189885, 1), Color(0.64705884, 0.16078432, 0.03137255, 0), Color(0.64829963, 0.16266775, 0.03189885, 1), Color(0.64705884, 0.16078432, 0.03137255, 0), Color(0.64829963, 0.16266775, 0.03189885, 1), Color(0.64705884, 0.16078432, 0.03137255, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../Slash:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../Slash:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.23333335, 0.6666666),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.06666667)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath(".:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0.01, 4.423333, 4.733333, 5.1, 5.41, 5.7333336, 6.043333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("../McRulerMask:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 7.3333335),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_v0xja"]
+_data = {
+&"RESET": SubResource("Animation_8asfs"),
+&"ending cutscene": SubResource("Animation_cb0mq")
+}
+
+[sub_resource type="Gradient" id="Gradient_5ec7d"]
+offsets = PackedFloat32Array(0, 0.6082474, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0.35738832, 0.35738832, 0.35738832, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_uqlxv"]
+gradient = SubResource("Gradient_5ec7d")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.8803419, 0.12820514)
+
+[sub_resource type="Gradient" id="Gradient_ismyy"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_ismyy"]
+noise_type = 0
+frequency = 0.0265
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_icf51"]
+noise = SubResource("FastNoiseLite_ismyy")
+color_ramp = SubResource("Gradient_ismyy")
+
+[sub_resource type="Gradient" id="Gradient_pgbu0"]
+offsets = PackedFloat32Array(0, 0.096219935, 0.16494845, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0.6706895, 0.6706895, 0.6706895, 1, 0.38703823, 0.38703823, 0.38703823, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_gkqnc"]
+gradient = SubResource("Gradient_pgbu0")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.8076923, 0.1923077)
+
+[node name="RoyalChamber" type="Node2D" unique_id=1680860714]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1063968160]
+root_node = NodePath("../Player")
+libraries/ = SubResource("AnimationLibrary_v0xja")
+
+[node name="TileMapLayerBase" type="TileMapLayer" parent="." unique_id=1119344093]
+texture_filter = 1
+position = Vector2(143, 321)
+tile_set = ExtResource("1_8asfs")
+collision_enabled = false
+
+[node name="TileMapLayerFloor" type="TileMapLayer" parent="." unique_id=2069368519]
+texture_filter = 1
+position = Vector2(143, 321)
+tile_map_data = PackedByteArray("AAAFAPj/BQAJAAIAAAAFAPn/BQAJAAIAAAAFAPr/BQAJAAIAAAAFAPv/BQAJAAIAAAAFAPz/BQAJAAIAAAAFAP3/BQAJAAIAAAAFAP7/BQAJAAIAAAAGAPj/BQAJAAIAAAAGAPn/BQAJAAIAAAAGAPr/BQAJAAIAAAAGAPv/BQAJAAIAAAAGAPz/BQAJAAIAAAAGAP3/BQAJAAIAAAAGAP7/BQAJAAIAAAAHAPj/BQAJAAIAAAAHAPn/BQAJAAIAAAAHAPr/BQAJAAIAAAAHAPv/BQAJAAIAAAAHAPz/BQAJAAIAAAAHAP3/BQAJAAIAAAAHAP7/BQAJAAIAAAAIAPj/BQAJAAIAAAAIAPn/BQAJAAIAAAAIAPr/BQAJAAIAAAAIAPv/BQAJAAIAAAAIAPz/BQAJAAIAAAAIAP3/BQAJAAIAAAAIAP7/BQAJAAIAAAAJAPj/BQAJAAIAAAAJAPn/BQAJAAIAAAAJAPr/BQAJAAIAAAAJAPv/BQAJAAIAAAAJAPz/BQAJAAIAAAAJAP3/BQAJAAIAAAAJAP7/BQAJAAIAAAAKAPj/BQAJAAIAAAAKAPn/BQAJAAIAAAAKAPr/BQAJAAIAAAAKAPv/BQAJAAIAAAAKAPz/BQAJAAIAAAAKAP3/BQAJAAIAAAAKAP7/BQAJAAIAAAALAPj/BQAJAAIAAAALAPn/BQAJAAIAAAALAPr/BQAJAAIAAAALAPv/BQAJAAIAAAALAPz/BQAJAAIAAAALAP3/BQAJAAIAAAALAP7/BQAJAAIAAAAMAPj/BQAJAAIAAAAMAPn/BQAJAAIAAAAMAPr/BQAJAAIAAAAMAPv/BQAJAAIAAAAMAPz/BQAJAAIAAAAMAP3/BQAJAAIAAAAMAP7/BQAJAAIAAAACAPj/BQAJAAIAAAACAPn/BQAJAAIAAAACAPr/BQAJAAIAAAACAPv/BQAJAAIAAAACAPz/BQAJAAIAAAACAP3/BQAJAAIAAAACAP7/BQAJAAIAAAADAPj/BQAJAAIAAAADAPn/BQAJAAIAAAADAPr/BQAJAAIAAAADAPv/BQAJAAIAAAADAPz/BQAJAAIAAAADAP3/BQAJAAIAAAADAP7/BQAJAAIAAAAEAPj/BQAJAAIAAAAEAPn/BQAJAAIAAAAEAPr/BQAJAAIAAAAEAPv/BQAJAAIAAAAEAPz/BQAJAAIAAAAEAP3/BQAJAAIAAAAEAP7/BQAJAAIAAAANAPj/BQAJAAIAAAANAPn/BQAJAAIAAAANAPr/BQAJAAIAAAANAPv/BQAJAAIAAAANAPz/BQAJAAIAAAANAP3/BQAJAAIAAAANAP7/BQAJAAIAAAAOAPj/BQAJAAIAAAAOAPn/BQAJAAIAAAAOAPr/BQAJAAIAAAAOAPv/BQAJAAIAAAAOAPz/BQAJAAIAAAAOAP3/BQAJAAIAAAAOAP7/BQAJAAIAAAACAPT/BQAJAAIAAAACAPX/BQAJAAIAAAACAPb/BQAJAAIAAAACAPf/BQAJAAIAAAADAPT/BQAJAAIAAAADAPX/BQAJAAIAAAADAPb/BQAJAAIAAAADAPf/BQAJAAIAAAAEAPT/BQAJAAIAAAAEAPX/BQAJAAIAAAAEAPb/BQAJAAIAAAAEAPf/BQAJAAIAAAAFAPT/BQAJAAIAAAAFAPX/BQAJAAIAAAAFAPb/BQAJAAIAAAAFAPf/BQAJAAIAAAAGAPT/BQAJAAIAAAAGAPX/BQAJAAIAAAAGAPb/BQAJAAIAAAAGAPf/BQAJAAIAAAAHAPT/BQAJAAIAAAAHAPX/BQAJAAIAAAAHAPb/BQAJAAIAAAAHAPf/BQAJAAIAAAAIAPT/BQAJAAIAAAAIAPX/BQAJAAIAAAAIAPb/BQAJAAIAAAAIAPf/BQAJAAIAAAAJAPT/BQAJAAIAAAAJAPX/BQAJAAIAAAAJAPb/BQAJAAIAAAAJAPf/BQAJAAIAAAAKAPT/BQAJAAIAAAAKAPX/BQAJAAIAAAAKAPb/BQAJAAIAAAAKAPf/BQAJAAIAAAALAPT/BQAJAAIAAAALAPX/BQAJAAIAAAALAPb/BQAJAAIAAAALAPf/BQAJAAIAAAAMAPT/BQAJAAIAAAAMAPX/BQAJAAIAAAAMAPb/BQAJAAIAAAAMAPf/BQAJAAIAAAANAPT/BQAJAAIAAAANAPX/BQAJAAIAAAANAPb/BQAJAAIAAAANAPf/BQAJAAIAAAAOAPT/BQAJAAIAAAAOAPX/BQAJAAIAAAAOAPb/BQAJAAIAAAAOAPf/BQAJAAIAAAA=")
+tile_set = ExtResource("1_8asfs")
+collision_enabled = false
+
+[node name="TileMapLayerWalls" type="TileMapLayer" parent="." unique_id=538387089]
+texture_filter = 1
+position = Vector2(143, 321)
+tile_map_data = PackedByteArray("AAACAP//BQAeAA0AAAACAAAABQAfAA8AAAADAP//BQAcAAwAAAADAAAABQAgAA8AAAAEAAAABQAgAA8AAAAEAP//BQAcAAwAAAACAP7/BQAdAA0AAAACAP3/BQAdAA0AAAACAPz/BQAdAA0AAAACAPv/BQAdAA0AAAACAPr/BQAdAA0AAAACAPn/BQAdAA0AAAACAPj/BQAdAA0AAAACAPb/BQAdAA0AAAACAPT/BQAdAA0AAAANAPT/BQAbAA8AAAACAPX/BQAdAA0AAAACAPf/BQAdAA0AAAANAP//BQAcAAwAAAAMAP//BQAcAAwAAAALAP//BQAcAAwAAAAKAP//BQAcAAwAAAAFAP//BQAcAAwAAAADAPT/BQAbAA8AAAAEAPT/BQAbAA8AAAAFAPT/BQAbAA8AAAAGAPT/BQAbAA8AAAAHAPT/BQAbAA8AAAAIAPT/BQAbAA8AAAAJAPT/BQAbAA8AAAAKAPT/BQAbAA8AAAALAPT/BQAbAA8AAAAMAPT/BQAbAA8AAAAGAP//BQAcAAwAAAAHAP//BQAcAAwAAAAFAAAABQAgAA8AAAAGAAAABQAgAA8AAAAHAAAABQAgAA8AAAAIAAAABQAgAA8AAAAJAAAABQAgAA8AAAAKAAAABQAgAA8AAAALAAAABQAgAA8AAAAMAAAABQAgAA8AAAANAAAABQAgAA8AAAAOAPX/BQAdAA0AAAAOAPb/BQAdAA0AAAAOAPf/BQAdAA0AAAAOAPj/BQAdAA0AAAAOAPn/BQAdAA0AAAAOAPr/BQAdAA0AAAAOAPv/BQAdAA0AAAAOAPz/BQAdAA0AAAAOAP3/BQAdAA0AAAAOAP7/BQAdAA0AAAAOAP//BQAfAA0AAAAOAPT/BQAdAA0AAAAOAAAABQAhAA8AAAADAPP/BQAgAA8AAAAEAPP/BQAgAA8AAAAFAPP/BQAgAA8AAAAGAPP/BQAgAA8AAAAHAPP/BQAgAA8AAAAIAPP/BQAgAA8AAAAJAPP/BQAgAA8AAAAKAPP/BQAgAA8AAAALAPP/BQAgAA8AAAAMAPP/BQAgAA8AAAANAPP/BQAgAA8AAAADAPL/BQAgAA8AAAAEAPL/BQAgAA8AAAAFAPL/BQAgAA8AAAAGAPL/BQAgAA8AAAAHAPL/BQAgAA8AAAAIAPL/BQAgAA8AAAAJAPL/BQAgAA8AAAAKAPL/BQAgAA8AAAALAPL/BQAgAA8AAAAMAPL/BQAgAA8AAAANAPL/BQAgAA8AAAACAPP/BQAdAA0AAAACAPL/BQAdAA0AAAAOAPP/BQAdAA0AAAAOAPL/BQAdAA0AAAACAPH/BQAeAAwAAAANAPH/BQAcAAwAAAAOAPH/BQAfAAwAAAAMAPH/BQAcAAwAAAALAPH/BQAcAAwAAAAKAPH/BQAcAAwAAAAJAPH/BQAcAAwAAAAIAPH/BQAcAAwAAAAHAPH/BQAcAAwAAAAGAPH/BQAcAAwAAAAFAPH/BQAcAAwAAAAEAPH/BQAcAAwAAAADAPH/BQAcAAwAAAAHAPX/AwAMAAcAAAAIAPX/AwANAAcAAAAIAPb/AwALAAUAAAAHAPb/AwAKAAUAAAAJAPX/AwADAAMAAAANAPv/AwAaAAkAAAANAPr/AwAaAAgAAAAJAP//BQAcAAwAAAA=")
+tile_set = ExtResource("1_8asfs")
+
+[node name="TileMapLayerDecoration" type="TileMapLayer" parent="." unique_id=511100698]
+texture_filter = 1
+position = Vector2(143, 321)
+tile_map_data = PackedByteArray("AAAIAAAABQAkAAMAAAADAPL/BQAxAAMAAAANAPL/BQAxAAMAAAADAPP/BQAxAAQAAAANAPP/BQAxAAQAAAANAPT/BQAxAAUAAAADAPT/BQAxAAUAAAANAPb/AwAUAAUAAAANAPX/AwAUAAEAAAADAPb/AwAUAAUAAAADAPX/AwAUAAEAAAADAP3/AwAUAAEAAAANAP3/AwAUAAEAAAADAP7/AwAUAAUAAAANAP7/AwAUAAUAAAAFAPf/BQAKABAAAAALAPf/BQAMABAAAAAGAPf/BQALABAAAAAHAPf/BQALABAAAAAIAPf/BQALABAAAAAJAPf/BQALABAAAAAKAPf/BQALABAAAAAFAPj/BQAKABEAAAAFAPn/BQAKABEAAAAFAPr/BQAKABEAAAAFAPv/BQAKABEAAAAFAPz/BQAKABEAAAAFAP3/BQAKABEAAAAFAP7/BQAKABIAAAAGAP7/BQALABIAAAAHAP7/BQALABIAAAAIAP7/BQALABIAAAAJAP7/BQALABIAAAAKAP7/BQALABIAAAALAP7/BQAMABIAAAALAP3/BQAMABEAAAALAPz/BQAMABEAAAALAPv/BQAMABEAAAALAPr/BQAMABEAAAALAPn/BQAMABEAAAALAPj/BQAMABEAAAAJAPj/BQALABEAAAAKAPj/BQALABEAAAAIAPj/BQALABEAAAAHAPj/BQALABEAAAAGAPj/BQALABEAAAAGAPn/BQALABEAAAAGAPr/BQALABEAAAAGAPv/BQALABEAAAAHAPv/BQALABEAAAAHAPz/BQALABEAAAAIAPz/BQALABEAAAAJAPz/BQALABEAAAAJAPv/BQALABEAAAAJAPr/BQALABEAAAAJAPn/BQALABEAAAAIAPn/BQALABEAAAAHAPn/BQALABEAAAAHAPr/BQALABEAAAAIAPr/BQALABEAAAAIAPv/BQALABEAAAAKAPn/BQALABEAAAAKAPr/BQALABEAAAAKAPv/BQALABEAAAAKAPz/BQALABEAAAAJAP3/BQALABEAAAAIAP3/BQALABEAAAAHAP3/BQALABEAAAAGAP3/BQALABEAAAAGAPz/BQALABEAAAAKAP3/BQALABEAAAAHAPP/AwAWABAAAAAHAPT/AwAWABEAAAAIAPP/AwAWABAAAAAIAPT/AwAWABEAAAALAPP/BQAvAAIAAAAFAPP/BQAvAAIAAAALAPT/BQAvAAMAAAAFAPT/BQAvAAMAAAA=")
+tile_set = ExtResource("1_8asfs")
+
+[node name="Player" parent="." unique_id=489475279 instance=ExtResource("2_cb0mq")]
+position = Vector2(280, 220)
+motion_mode = 1
+SPEED = 150.0
+
+[node name="PointLight2D" type="PointLight2D" parent="Player" unique_id=950577058]
+visible = false
+texture_filter = 1
+color = Color(1, 0.85433334, 0.53999996, 1)
+shadow_enabled = true
+shadow_filter_smooth = 6.0
+texture = SubResource("GradientTexture2D_uqlxv")
+texture_scale = 3.65
+script = ExtResource("3_v0xja")
+noiseTex = SubResource("NoiseTexture2D_icf51")
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1514802338]
+zoom = Vector2(6.28, 6.28)
+
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1573380049]
+position = Vector2(143, 321)
+color = Color(0.74978, 0.74978, 0.74977994, 1)
+
+[node name="Lights" type="Node2D" parent="." unique_id=1899403537]
+position = Vector2(143, 321)
+
+[node name="Candle Light2" type="PointLight2D" parent="Lights" unique_id=1213902669]
+texture_filter = 1
+position = Vector2(55, -170)
+color = Color(1, 0.85433334, 0.53999996, 1)
+energy = 0.7
+shadow_enabled = true
+shadow_filter_smooth = 6.0
+texture = SubResource("GradientTexture2D_gkqnc")
+texture_scale = 3.47
+script = ExtResource("3_v0xja")
+
+[node name="Candle Light3" type="PointLight2D" parent="Lights" unique_id=541350396]
+texture_filter = 1
+position = Vector2(214, -170)
+color = Color(1, 0.85433334, 0.53999996, 1)
+energy = 0.7
+shadow_enabled = true
+shadow_filter_smooth = 6.0
+texture = SubResource("GradientTexture2D_gkqnc")
+texture_scale = 3.47
+script = ExtResource("3_v0xja")
+
+[node name="Candle Light5" type="PointLight2D" parent="Lights" unique_id=1065165511]
+texture_filter = 1
+position = Vector2(216, -41)
+color = Color(1, 0.85433334, 0.53999996, 1)
+energy = 0.7
+shadow_enabled = true
+shadow_filter_smooth = 6.0
+texture = SubResource("GradientTexture2D_gkqnc")
+texture_scale = 3.47
+script = ExtResource("3_v0xja")
+
+[node name="Candle Light6" type="PointLight2D" parent="Lights" unique_id=461827254]
+texture_filter = 1
+position = Vector2(56.999992, -42)
+color = Color(1, 0.85433334, 0.53999996, 1)
+energy = 0.7
+shadow_enabled = true
+shadow_filter_smooth = 6.0
+texture = SubResource("GradientTexture2D_gkqnc")
+texture_scale = 3.47
+script = ExtResource("3_v0xja")
+
+[node name="Ruler" parent="." unique_id=1113225415 instance=ExtResource("4_g2mg3")]
+position = Vector2(279, 202)
+dialogue_timeline_name = "ruler"
+
+[node name="throne_room_door" parent="." unique_id=1784326111 instance=ExtResource("5_dv1fb")]
+position = Vector2(280, 304)
+next_scene = "throne_room_scene"
+connected_door = "royal_chamber_door"
+
+[node name="Spawn" parent="throne_room_door" index="1" unique_id=518652434]
+position = Vector2(0, -16)
+
+[node name="Slash" type="Sprite2D" parent="." unique_id=1332402731]
+modulate = Color(1, 1, 1, 0.06666667)
+position = Vector2(279.00003, 197)
+scale = Vector2(0.625, 0.6041667)
+texture = ExtResource("6_v0xja")
+
+[node name="McRulerMask" type="Sprite2D" parent="." unique_id=833275175]
+position = Vector2(280, 220)
+scale = Vector2(0.25000036, 0.25000036)
+texture = ExtResource("7_g2mg3")
+
+[editable path="throne_room_door"]

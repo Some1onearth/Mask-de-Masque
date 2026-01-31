@@ -36,3 +36,4 @@ What business can I help you with?
 	audio "res://audio/SFX/NPC, MC, Interaction/RulerKilled2.ogg"
 
 Fonao: Not anymore.
+[background arg="res://sprites/Portraits/RulerAngryHalf.png" fade="0.0"]

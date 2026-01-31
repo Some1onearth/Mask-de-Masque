@@ -120,6 +120,8 @@ audio/type_sound_bus="SFX"
 
 window/size/viewport_width=960
 window/size/viewport_height=720
+window/size/mode=3
+window/stretch/mode="viewport"
 
 [editor_plugins]
 
