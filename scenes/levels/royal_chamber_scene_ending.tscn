@@ -8,120 +8,9 @@
 [ext_resource type="Texture2D" uid="uid://c512xai57i8oy" path="res://sprites/slash.png" id="6_v0xja"]
 [ext_resource type="Texture2D" uid="uid://7b41a758df21" path="res://sprites/NPCs/MC-RulerMask.png" id="7_g2mg3"]
 
-[sub_resource type="Animation" id="Animation_8asfs"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(280, 220)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("../Ruler:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(279, 202)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("../Ruler:rotation")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("../Ruler:modulate")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("../Slash:visible")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/6/type = "value"
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/path = NodePath("../Slash:modulate")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 0.06666667)]
-}
-tracks/7/type = "value"
-tracks/7/imported = false
-tracks/7/enabled = true
-tracks/7/path = NodePath(".:modulate")
-tracks/7/interp = 1
-tracks/7/loop_wrap = true
-tracks/7/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-tracks/8/type = "value"
-tracks/8/imported = false
-tracks/8/enabled = true
-tracks/8/path = NodePath("../McRulerMask:visible")
-tracks/8/interp = 1
-tracks/8/loop_wrap = true
-tracks/8/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-
 [sub_resource type="Animation" id="Animation_cb0mq"]
 resource_name = "ending cutscene"
-length = 10.066667
+length = 14.833333
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -177,7 +66,7 @@ tracks/4/path = NodePath("../Ruler:modulate")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(0.4, 1.1, 1.41, 1.7, 2.0183332, 2.3083334, 2.6, 2.89, 3.2),
+"times": PackedFloat32Array(6, 6.7, 7.01, 7.3, 7.6183333, 7.9083333, 8.2, 8.49, 8.8),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 1), Color(0.64829963, 0.16266775, 0.03189885, 1), Color(0.64705884, 0.16078432, 0.03137255, 0), Color(0.64829963, 0.16266775, 0.03189885, 1), Color(0.64705884, 0.16078432, 0.03137255, 0), Color(0.64829963, 0.16266775, 0.03189885, 1), Color(0.64705884, 0.16078432, 0.03137255, 0), Color(0.64829963, 0.16266775, 0.03189885, 1), Color(0.64705884, 0.16078432, 0.03137255, 0)]
@@ -189,7 +78,7 @@ tracks/5/path = NodePath("../Slash:visible")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.4),
+"times": PackedFloat32Array(5.056667, 5.1566668, 5.456667),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [false, true, false]
@@ -201,7 +90,7 @@ tracks/6/path = NodePath("../Slash:modulate")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
-"times": PackedFloat32Array(0, 0.23333335, 0.6666666),
+"times": PackedFloat32Array(5.056667, 5.2900004, 5.7233334),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.06666667)]
@@ -213,10 +102,10 @@ tracks/7/path = NodePath(".:modulate")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
-"times": PackedFloat32Array(0.01, 4.423333, 4.733333, 5.1, 5.41, 5.7333336, 6.043333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0.01, 0.32333326, 0.6333332, 1, 1.31, 1.6333337, 2.9666667, 3.5, 9.7, 10.01, 10.376667, 10.686667, 11.010001, 11.320001),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
 }
 tracks/8/type = "value"
 tracks/8/imported = false
@@ -225,15 +114,38 @@ tracks/8/path = NodePath("../McRulerMask:visible")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
-"times": PackedFloat32Array(0, 7.3333335),
+"times": PackedFloat32Array(0, 12.266666),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [false, true]
 }
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("../ColorRect:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 14.633333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Sprite2D:frame")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(-0.23333333, 2.8333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [1, 0]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_v0xja"]
 _data = {
-&"RESET": SubResource("Animation_8asfs"),
 &"ending cutscene": SubResource("Animation_cb0mq")
 }
 
@@ -272,6 +184,7 @@ fill_to = Vector2(0.8076923, 0.1923077)
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1063968160]
 root_node = NodePath("../Player")
 libraries/ = SubResource("AnimationLibrary_v0xja")
+autoplay = &"ending cutscene"
 
 [node name="TileMapLayerBase" type="TileMapLayer" parent="." unique_id=1119344093]
 texture_filter = 1
@@ -302,6 +215,9 @@ tile_set = ExtResource("1_8asfs")
 position = Vector2(280, 220)
 motion_mode = 1
 SPEED = 150.0
+
+[node name="Sprite2D" parent="Player" index="1" unique_id=1091469843]
+frame = 1
 
 [node name="PointLight2D" type="PointLight2D" parent="Player" unique_id=950577058]
 visible = false
@@ -381,14 +297,55 @@ connected_door = "royal_chamber_door"
 position = Vector2(0, -16)
 
 [node name="Slash" type="Sprite2D" parent="." unique_id=1332402731]
-modulate = Color(1, 1, 1, 0.06666667)
+visible = false
+modulate = Color(1, 1, 1, 0)
 position = Vector2(279.00003, 197)
 scale = Vector2(0.625, 0.6041667)
 texture = ExtResource("6_v0xja")
 
 [node name="McRulerMask" type="Sprite2D" parent="." unique_id=833275175]
+visible = false
 position = Vector2(280, 220)
 scale = Vector2(0.25000036, 0.25000036)
 texture = ExtResource("7_g2mg3")
 
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1230432694]
+visible = false
+offset_left = 183.0
+offset_top = 166.0
+offset_right = 387.0
+offset_bottom = 283.0
+color = Color(0, 0, 0, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect" unique_id=167158051]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -952.5
+offset_right = 952.5
+offset_bottom = 530.0
+grow_horizontal = 2
+
+[node name="Programmers" type="RichTextLabel" parent="ColorRect/VBoxContainer" unique_id=1944831500]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_font_sizes/normal_font_size = 20
+theme_override_font_sizes/bold_font_size = 20
+theme_override_font_sizes/bold_italics_font_size = 20
+theme_override_font_sizes/italics_font_size = 20
+theme_override_font_sizes/mono_font_size = 20
+bbcode_enabled = true
+text = "[pulse freq=1][rainbow freq=1][center]Congratulations"
+fit_content = true
+tab_size = 24
+
+[node name="Programmers2" type="Label" parent="ColorRect/VBoxContainer" unique_id=436990350]
+layout_mode = 2
+theme_override_font_sizes/font_size = 19
+text = "You are the
+new Ruler!"
+horizontal_alignment = 1
+
+[editable path="Player"]
 [editable path="throne_room_door"]
