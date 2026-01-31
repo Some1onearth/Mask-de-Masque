@@ -2,21 +2,43 @@
 
 [ext_resource type="Texture2D" uid="uid://babgkmab73mth" path="res://sprites/NPCs/tile_MC_Masks-sheet.png" id="1_ahhtf"]
 [ext_resource type="Script" uid="uid://bnwgxlj0agykv" path="res://scripts/hud.gd" id="1_oo0fn"]
+[ext_resource type="Texture2D" uid="uid://chy43dwyslpwp" path="res://sprites/tilemaps/tiny-town-tiles.png" id="3_5ysmq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oo0fn"]
 atlas = ExtResource("1_ahhtf")
 region = Rect2(0, 0, 64, 0)
 
-[node name="Control" type="CanvasLayer" unique_id=508368260 node_paths=PackedStringArray("current_mask_rect")]
-script = ExtResource("1_oo0fn")
-current_mask_rect = NodePath("CurrentMaskRect")
+[sub_resource type="AtlasTexture" id="AtlasTexture_6fi6k"]
+atlas = ExtResource("3_5ysmq")
+region = Rect2(144, 112, 16, 16)
 
-[node name="CurrentMaskRect" type="TextureRect" parent="." unique_id=1485727153]
+[node name="Control" type="CanvasLayer" unique_id=508368260 node_paths=PackedStringArray("current_mask_rect", "social_text_label")]
+script = ExtResource("1_oo0fn")
+current_mask_rect = NodePath("VBoxContainer/CurrentMaskRect")
+social_text_label = NodePath("VBoxContainer/SocialTextLabel")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=163135059]
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_top = -32.0
+offset_top = -66.0
 offset_right = 64.0
-offset_bottom = 32.0
+offset_bottom = 66.0
 grow_vertical = 2
+size_flags_horizontal = 0
+
+[node name="CurrentMaskRect" type="TextureRect" parent="VBoxContainer" unique_id=1485727153]
+layout_mode = 2
 texture = SubResource("AtlasTexture_oo0fn")
+
+[node name="SocialScoreTextureRect" type="TextureRect" parent="VBoxContainer" unique_id=450013994]
+layout_mode = 2
+texture = SubResource("AtlasTexture_6fi6k")
+stretch_mode = 3
+
+[node name="SocialTextLabel" type="RichTextLabel" parent="VBoxContainer" unique_id=1603008651]
+layout_mode = 2
+size_flags_vertical = 4
+bbcode_enabled = true
+text = "[center]10[/center]"
+fit_content = true

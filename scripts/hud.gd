@@ -1,6 +1,7 @@
 extends Node
 
 @export var current_mask_rect:TextureRect
+@export var social_text_label:RichTextLabel
 
 func _physics_process(delta: float) -> void:
 	var x = -1
@@ -15,3 +16,11 @@ func _physics_process(delta: float) -> void:
 		
 	if x != -1:
 		current_mask_rect.texture.region = Rect2(Vector2(x, 0), Vector2(64, 64))
+
+func _ready() -> void:
+	social_text_label.text = ""
+	Dialogic.VAR.variable_changed.connect(_on_dialogic_variable_changed)
+	
+func _on_dialogic_variable_changed(info: Dictionary):
+	if(info['variable'] == "SocialPoints"):
+		social_text_label.text = "[center]%s[/center]" %info['new_value']
