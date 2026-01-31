@@ -1,4 +1,4 @@
-extends Node
+extends CanvasLayer
 
 @export var current_mask_rect:TextureRect
 @export var current_mask_text:RichTextLabel
@@ -23,10 +23,15 @@ func _physics_process(delta: float) -> void:
 		current_mask_rect.texture.region = Rect2(Vector2(x, 0), Vector2(64, 64))
 
 func _ready() -> void:
+	visible = false
 	current_mask_text.text = ""
 	social_text_label.text = ""
 	Dialogic.VAR.variable_changed.connect(_on_dialogic_variable_changed)
+	game_manager.game_started.connect(_on_game_started)
 	
 func _on_dialogic_variable_changed(info: Dictionary):
 	if(info['variable'] == "SocialPoints"):
 		social_text_label.text = "[center]%s[/center]" %info['new_value']
+
+func _on_game_started():
+	visible = true
