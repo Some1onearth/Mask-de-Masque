@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://d1bb4rdqo7xo6"]
+
+[ext_resource type="Texture2D" uid="uid://babgkmab73mth" path="res://sprites/NPCs/tile_MC_Masks-sheet.png" id="1_ahhtf"]
+[ext_resource type="Script" uid="uid://bnwgxlj0agykv" path="res://scripts/hud.gd" id="1_oo0fn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oo0fn"]
+atlas = ExtResource("1_ahhtf")
+region = Rect2(0, 0, 64, 0)
+
+[node name="Control" type="CanvasLayer" unique_id=508368260 node_paths=PackedStringArray("current_mask_rect")]
+script = ExtResource("1_oo0fn")
+current_mask_rect = NodePath("CurrentMaskRect")
+
+[node name="CurrentMaskRect" type="TextureRect" parent="." unique_id=1485727153]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -32.0
+offset_right = 64.0
+offset_bottom = 32.0
+grow_vertical = 2
+texture = SubResource("AtlasTexture_oo0fn")
