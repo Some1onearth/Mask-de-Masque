@@ -29,6 +29,7 @@ func _on_chat_detection_body_exited(body: Node2D) -> void:
 func run_dialogue(dialogue_string):
 	Dialogic.timeline_ended.connect(ended_dialogue)
 	is_chatting = true
+	game_manager.in_conversation = true
 	Dialogic.start(dialogue_string)
 	
 
@@ -36,8 +37,10 @@ func ended_dialogue():
 	Dialogic.timeline_ended.disconnect(ended_dialogue)
 	is_chatting = false
 	print("After convo SocialPoints:%s" % Dialogic.VAR.SocialPoints)
+	game_manager.in_conversation = false
 	
 		
 func DialogicSignal(arg: String):
 	if arg == "exit":
 		is_chatting = false
+		game_manager.in_conversation = false

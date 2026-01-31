@@ -14,6 +14,9 @@ func _ready() -> void:
 	player_sprite.frame = sprite_down
 
 func _physics_process(delta: float) -> void:
+	if game_manager.in_conversation == true:
+		return
+	
 	# Get the input direction and handle the movement/deceleration.
 	# Custom gameplay actions set in Project > Project Settings > Input Map.
 	var direction := Input.get_vector("left", "right", "up", "down")

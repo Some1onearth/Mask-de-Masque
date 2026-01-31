@@ -1,6 +1,7 @@
 class_name GameManager extends Node
 
 var player:Player
+var in_conversation:bool = false
 
 #Scene Management
 ##Changes the scene, moving the player between them and to a door's position
