@@ -4,7 +4,11 @@ extends Node
 
 func _ready():
 	game_manager.game_started.emit()
-	run_dialogue(dialogue_timeline_name)
+	#Check to run intro dialogue
+	if game_manager.intro_dialogue:
+		run_dialogue(dialogue_timeline_name)
+		#Disable intro for walking back into cellar
+		game_manager.intro_dialogue = false
 
 # TODO maybe refactor this and npc's code into game manager
 func run_dialogue(dialogue_string):

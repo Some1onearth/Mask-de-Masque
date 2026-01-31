@@ -1,6 +1,7 @@
 class_name GameManager extends Node
 
 signal game_started
+var intro_dialogue:bool = false
 
 var player:Player
 var in_conversation:bool = false
