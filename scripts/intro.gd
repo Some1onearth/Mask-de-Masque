@@ -3,6 +3,7 @@ extends Node
 @export var dialogue_timeline_name:String
 
 func _ready():
+	game_manager.game_started.emit()
 	run_dialogue(dialogue_timeline_name)
 
 # TODO maybe refactor this and npc's code into game manager
