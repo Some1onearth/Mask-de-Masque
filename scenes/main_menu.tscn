@@ -128,7 +128,7 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 20
 text = "dinopoke
 jonathan.wang18
-jamesm"
+jemztones"
 horizontal_alignment = 1
 
 [node name="Audio" type="RichTextLabel" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=1137453620]
