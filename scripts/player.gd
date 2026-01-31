@@ -51,8 +51,12 @@ func _physics_process(delta: float) -> void:
 	
 func maskSwap(mask_name:String):
 	current_mask = mask_name
-	#sets the variable in Dialogic
-	Dialogic.VAR.CurrentMask = current_mask
+	if Dialogic:
+		#sets the variable in Dialogic
+		Dialogic.VAR.CurrentMask = current_mask
+	if Hud:
+		#swaps mask on HUD
+		Hud.swap_hud_mask(mask_name)
 	
 	#change sprites
 	match mask_name:
@@ -68,6 +72,7 @@ func maskSwap(mask_name:String):
 		"noble":
 			sprite_up = 8
 			sprite_down = 7
+	#makes the player face forwards so we see the mask
 	player_sprite.frame = sprite_down
 	
 	print("mask changed to %s" % mask_name)
