@@ -8,5 +8,6 @@ class_name AudioManager extends Node
 #Audio Management
 func switch_track(track:AudioStream):
 	audio_player.stream = track
+	audio_player.play()
 
 #TODO:switch the audio when changing between main menu and game

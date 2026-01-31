@@ -10,5 +10,5 @@ main_theme = ExtResource("2_liach")
 title_theme = ExtResource("3_3asnw")
 
 [node name="MusicPlayer" type="AudioStreamPlayer" parent="." unique_id=182650246]
-stream = ExtResource("2_liach")
+stream = ExtResource("3_3asnw")
 autoplay = true
