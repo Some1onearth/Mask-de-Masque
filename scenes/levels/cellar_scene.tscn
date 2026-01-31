@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://bnuqv523gh1ja"]
 
+[ext_resource type="Script" uid="uid://fc5lqtdkyc8u" path="res://scripts/intro.gd" id="1_7p73a"]
 [ext_resource type="TileSet" uid="uid://c2vy5x5qolqcr" path="res://sprites/tilemaps/tile_set.tres" id="1_klfji"]
 [ext_resource type="PackedScene" uid="uid://nx7f0qyeodsh" path="res://scenes/player.tscn" id="2_feyvm"]
 [ext_resource type="Script" uid="uid://c3niwrngpmhjo" path="res://scripts/flicker_light.gd" id="3_4iaa8"]
@@ -38,6 +39,8 @@ fill_to = Vector2(0.8076923, 0.1923077)
 
 [node name="World" type="Node2D" unique_id=1924761951]
 y_sort_enabled = true
+script = ExtResource("1_7p73a")
+dialogue_timeline_name = "fonao_opening"
 
 [node name="TileMapLayerBase" type="TileMapLayer" parent="." unique_id=946597989]
 texture_filter = 1
