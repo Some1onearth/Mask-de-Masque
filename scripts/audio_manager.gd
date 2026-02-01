@@ -35,10 +35,15 @@ class_name AudioManager extends Node
 	],
 }
 
+func _ready() -> void:
+	#small delay before playing music on first load
+	await get_tree().create_timer(0.5).timeout
+	music_player.play()
+
 #Music
+##Switches the music track (NOTE: Must call play_music() to actually play the sound)
 func switch_track(track:AudioStream):
 	music_player.stream = track
-	music_player.play()
 
 func stop_music():
 	music_player.stop()

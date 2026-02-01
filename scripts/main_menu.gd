@@ -5,6 +5,7 @@ func _ready() -> void:
 
 func _on_start_pressed() -> void:
 	audio_manager.switch_track(audio_manager.main_theme)
+	audio_manager.play_music()
 	game_manager.intro_dialogue = true
 	get_tree().change_scene_to_file("res://scenes/levels/cellar_scene.tscn")
 
