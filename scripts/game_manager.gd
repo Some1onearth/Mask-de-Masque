@@ -39,3 +39,6 @@ func load_level(level_name:String) -> Node:
 	if level_resource:
 		return level_resource.instantiate()
 	return null
+	
+func change_scene(scene_name:String) -> void:
+	get_tree().change_scene_to_file("res://scenes/levels/%s.tscn" % scene_name)

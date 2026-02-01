@@ -37,3 +37,4 @@ What business can I help you with?
 
 Fonao: Not anymore.
 [background arg="res://sprites/Portraits/RulerAngryHalf.png" fade="0.0"]
+do game_manager.change_scene("royal_chamber_scene_ending")
