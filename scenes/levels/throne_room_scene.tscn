@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://yxyrtn1ps8s" path="res://scenes/characters/PeasantFemale1.tscn" id="9_l2w01"]
 [ext_resource type="PackedScene" uid="uid://dkdy4cgos84cf" path="res://scenes/characters/NobleWoman2.tscn" id="9_om1q8"]
 [ext_resource type="PackedScene" uid="uid://cwpixmk5pgve4" path="res://scenes/door_trigger.tscn" id="10_0rku0"]
+[ext_resource type="PackedScene" uid="uid://bv5suct4t2ecj" path="res://scenes/characters/Guardsman1.tscn" id="11_0rku0"]
 
 [sub_resource type="Gradient" id="Gradient_5ec7d"]
 offsets = PackedFloat32Array(0, 0.6082474, 1)
@@ -306,6 +307,9 @@ scale = Vector2(3, 1)
 
 [node name="Spawn" parent="balcony_door" index="1" unique_id=518652434]
 position = Vector2(0, -24)
+
+[node name="Guardsman1" parent="." unique_id=26523779 instance=ExtResource("11_0rku0")]
+position = Vector2(485, 146)
 
 [editable path="Felani"]
 [editable path="balcony_door"]

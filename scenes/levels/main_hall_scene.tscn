@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://c06gl86pt37pt" path="res://scenes/characters/NobleMan2.tscn" id="8_vwu56"]
 [ext_resource type="PackedScene" uid="uid://b6am2lkvarakd" path="res://scenes/characters/Eunuch2.tscn" id="9_gygle"]
 [ext_resource type="PackedScene" uid="uid://bv5suct4t2ecj" path="res://scenes/characters/Guardsman1.tscn" id="10_auopt"]
+[ext_resource type="Texture2D" uid="uid://dovxowchp15ev" path="res://sprites/NPCs/PeasantFemaleNew-sheet.png" id="10_vwu56"]
 [ext_resource type="PackedScene" uid="uid://s0nugt3e8lft" path="res://scenes/characters/Guardsman2.tscn" id="11_vwu56"]
 [ext_resource type="PackedScene" uid="uid://cwpixmk5pgve4" path="res://scenes/door_trigger.tscn" id="12_auopt"]
 
@@ -209,6 +210,10 @@ texture_filter = 1
 position = Vector2(312, -40)
 dialogue_timeline_name = "eunuch2"
 
+[node name="Sprite2D" parent="Eunuch2" index="1" unique_id=1905979975]
+texture = ExtResource("10_vwu56")
+hframes = 2
+
 [node name="Guardsman1" parent="." unique_id=442727457 instance=ExtResource("10_auopt")]
 texture_filter = 1
 position = Vector2(104, -240)
@@ -239,4 +244,5 @@ connected_door = "main_hall_door"
 [node name="Spawn" parent="cellar_door" index="1" unique_id=518652434]
 position = Vector2(0, -24)
 
+[editable path="Eunuch2"]
 [editable path="cellar_door"]

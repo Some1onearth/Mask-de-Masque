@@ -2,8 +2,25 @@
 
 [ext_resource type="Script" uid="uid://c2hmkjc571jkj" path="res://scripts/main_menu.gd" id="1_rqnwo"]
 [ext_resource type="Texture2D" uid="uid://b8ee2q4trjg5d" path="res://sprites/Background.png" id="2_8ln24"]
+[ext_resource type="FontFile" uid="uid://d2junjjrm2g55" path="res://addons/ErraticCursive_Font_1_0/Web Open Font Format (.woff)/ErraticCursive-Regular.woff" id="3_8ln24"]
 [ext_resource type="Script" uid="uid://bt6x3ym5ea17f" path="res://scripts/controller_button.gd" id="4_cwbyw"]
 [ext_resource type="StyleBox" uid="uid://d0mil3c4uu112" path="res://scenes/buttonfocustheme.tres" id="4_g3nua"]
+
+[sub_resource type="FontFile" id="FontFile_rtw2f"]
+cache/0/variation_coordinates = {}
+cache/0/face_index = 0
+cache/0/embolden = 0.0
+cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
+cache/0/spacing_top = 0
+cache/0/spacing_bottom = 0
+cache/0/spacing_space = 0
+cache/0/spacing_glyph = 0
+cache/0/baseline_offset = 0.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pwqkt"]
 bg_color = Color(0.156863, 0.0823529, 0.0352941, 1)
@@ -46,17 +63,21 @@ scale = Vector2(25.06239, 17.958279)
 color = Color(0.003921569, 0.11372549, 0.29411766, 0.63529414)
 
 [node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=57613622]
-offset_left = 168.0
-offset_top = 269.0
-offset_right = 811.0
-offset_bottom = 369.0
-theme_override_font_sizes/normal_font_size = 67
-theme_override_font_sizes/bold_font_size = 58
+offset_left = 61.0
+offset_top = 190.0
+offset_right = 918.0
+offset_bottom = 448.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("3_8ln24")
+theme_override_fonts/bold_font = SubResource("FontFile_rtw2f")
+theme_override_font_sizes/normal_font_size = 195
+theme_override_font_sizes/bold_font_size = 50
 theme_override_font_sizes/bold_italics_font_size = 57
 theme_override_font_sizes/italics_font_size = 63
 theme_override_font_sizes/mono_font_size = 53
-bbcode_enabled = true
-text = "[pulse freq=1][rainbow freq=1][center]De Maskus"
+text = "De Maskus"
+horizontal_alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=388922040]
 offset_left = 312.0
@@ -90,7 +111,6 @@ theme_override_styles/focus = ExtResource("4_g3nua")
 text = "Quit"
 
 [node name="CreditsWindow" type="CanvasLayer" parent="." unique_id=242482935]
-visible = false
 
 [node name="ColorRect" type="ColorRect" parent="CreditsWindow" unique_id=514617265]
 anchors_preset = 15
@@ -98,7 +118,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.117647, 0.117647, 0.117647, 0.811765)
+color = Color(0.09411765, 0.09411765, 0.09411765, 0.9372549)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CreditsWindow/ColorRect" unique_id=1634883529]
 layout_mode = 1
@@ -113,15 +133,19 @@ grow_horizontal = 2
 [node name="Programmers" type="RichTextLabel" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=1202050544]
 layout_mode = 2
 size_flags_vertical = 0
+theme_override_colors/default_color = Color(0.9852814, 0.9852814, 0.9852814, 1)
+theme_override_colors/font_shadow_color = Color(0.6331255, 0.02485081, 0.11335621, 1)
+theme_override_fonts/normal_font = ExtResource("3_8ln24")
 theme_override_font_sizes/normal_font_size = 20
 theme_override_font_sizes/bold_font_size = 20
 theme_override_font_sizes/bold_italics_font_size = 20
 theme_override_font_sizes/italics_font_size = 20
 theme_override_font_sizes/mono_font_size = 20
 bbcode_enabled = true
-text = "[pulse freq=1][rainbow freq=1][center]Programming, Writer, Level Design"
+text = "Programming, Writer, Level Design"
 fit_content = true
 tab_size = 24
+horizontal_alignment = 1
 
 [node name="Programmers2" type="Label" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=2010497413]
 layout_mode = 2
@@ -134,15 +158,19 @@ horizontal_alignment = 1
 [node name="Audio" type="RichTextLabel" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=1137453620]
 layout_mode = 2
 size_flags_vertical = 0
+theme_override_colors/default_color = Color(0.9852814, 0.9852814, 0.9852814, 1)
+theme_override_colors/font_shadow_color = Color(0.6331255, 0.02485081, 0.11335621, 1)
+theme_override_fonts/normal_font = ExtResource("3_8ln24")
 theme_override_font_sizes/normal_font_size = 20
 theme_override_font_sizes/bold_font_size = 20
 theme_override_font_sizes/bold_italics_font_size = 20
 theme_override_font_sizes/italics_font_size = 20
 theme_override_font_sizes/mono_font_size = 20
 bbcode_enabled = true
-text = "[pulse freq=1][rainbow freq=1][center]Pixel Artist, Audio Composer & SFX, Writer"
+text = "Programming, Writer, Level Design"
 fit_content = true
 tab_size = 24
+horizontal_alignment = 1
 
 [node name="Artists2" type="Label" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=865624260]
 layout_mode = 2
@@ -153,15 +181,19 @@ horizontal_alignment = 1
 [node name="Artists4" type="RichTextLabel" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=1132452614]
 layout_mode = 2
 size_flags_vertical = 0
+theme_override_colors/default_color = Color(0.9852814, 0.9852814, 0.9852814, 1)
+theme_override_colors/font_shadow_color = Color(0.6331255, 0.02485081, 0.11335621, 1)
+theme_override_fonts/normal_font = ExtResource("3_8ln24")
 theme_override_font_sizes/normal_font_size = 20
 theme_override_font_sizes/bold_font_size = 20
 theme_override_font_sizes/bold_italics_font_size = 20
 theme_override_font_sizes/italics_font_size = 20
 theme_override_font_sizes/mono_font_size = 20
 bbcode_enabled = true
-text = "[pulse freq=1][rainbow freq=1][center]Character Art"
+text = "Programming, Writer, Level Design"
 fit_content = true
 tab_size = 24
+horizontal_alignment = 1
 
 [node name="Artists5" type="Label" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=79054352]
 layout_mode = 2
@@ -172,15 +204,19 @@ horizontal_alignment = 1
 [node name="Artists6" type="RichTextLabel" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=1165174476]
 layout_mode = 2
 size_flags_vertical = 0
+theme_override_colors/default_color = Color(0.9852814, 0.9852814, 0.9852814, 1)
+theme_override_colors/font_shadow_color = Color(0.6331255, 0.02485081, 0.11335621, 1)
+theme_override_fonts/normal_font = ExtResource("3_8ln24")
 theme_override_font_sizes/normal_font_size = 20
 theme_override_font_sizes/bold_font_size = 20
 theme_override_font_sizes/bold_italics_font_size = 20
 theme_override_font_sizes/italics_font_size = 20
 theme_override_font_sizes/mono_font_size = 20
 bbcode_enabled = true
-text = "[pulse freq=1][rainbow freq=1][center]Logo"
+text = "Programming, Writer, Level Design"
 fit_content = true
 tab_size = 24
+horizontal_alignment = 1
 
 [node name="Artists7" type="Label" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=278728191]
 layout_mode = 2
@@ -188,18 +224,45 @@ theme_override_font_sizes/font_size = 20
 text = "Soalxlia"
 horizontal_alignment = 1
 
+[node name="Artists8" type="RichTextLabel" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=1514030943]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/default_color = Color(0.9852814, 0.9852814, 0.9852814, 1)
+theme_override_colors/font_shadow_color = Color(0.6331255, 0.02485081, 0.11335621, 1)
+theme_override_fonts/normal_font = ExtResource("3_8ln24")
+theme_override_font_sizes/normal_font_size = 20
+theme_override_font_sizes/bold_font_size = 20
+theme_override_font_sizes/bold_italics_font_size = 20
+theme_override_font_sizes/italics_font_size = 20
+theme_override_font_sizes/mono_font_size = 20
+bbcode_enabled = true
+text = "Programming, Writer, Level Design"
+fit_content = true
+tab_size = 24
+horizontal_alignment = 1
+
+[node name="Artists10" type="Label" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=1410554378]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Jonathan Wood, Lyrical Lark, Some1onearth"
+horizontal_alignment = 1
+
 [node name="Producer" type="RichTextLabel" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=1482688960]
 layout_mode = 2
 size_flags_vertical = 0
+theme_override_colors/default_color = Color(0.9852814, 0.9852814, 0.9852814, 1)
+theme_override_colors/font_shadow_color = Color(0.6331255, 0.02485081, 0.11335621, 1)
+theme_override_fonts/normal_font = ExtResource("3_8ln24")
 theme_override_font_sizes/normal_font_size = 12
 theme_override_font_sizes/bold_font_size = 12
 theme_override_font_sizes/bold_italics_font_size = 12
 theme_override_font_sizes/italics_font_size = 12
 theme_override_font_sizes/mono_font_size = 12
 bbcode_enabled = true
-text = "[pulse freq=1][rainbow freq=1][center]Producer, Writer, Level Designer, Glorified Admin"
+text = "Programming, Writer, Level Design"
 fit_content = true
 tab_size = 24
+horizontal_alignment = 1
 
 [node name="Artists3" type="Label" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=19982895]
 layout_mode = 2
@@ -210,19 +273,23 @@ horizontal_alignment = 1
 [node name="External" type="RichTextLabel" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=1993419711]
 layout_mode = 2
 size_flags_vertical = 0
-theme_override_font_sizes/normal_font_size = 20
-theme_override_font_sizes/bold_font_size = 20
-theme_override_font_sizes/bold_italics_font_size = 20
-theme_override_font_sizes/italics_font_size = 20
-theme_override_font_sizes/mono_font_size = 20
+theme_override_colors/default_color = Color(0.9852814, 0.9852814, 0.9852814, 1)
+theme_override_colors/font_shadow_color = Color(0.6331255, 0.02485081, 0.11335621, 1)
+theme_override_fonts/normal_font = ExtResource("3_8ln24")
+theme_override_font_sizes/normal_font_size = 15
+theme_override_font_sizes/bold_font_size = 15
+theme_override_font_sizes/bold_italics_font_size = 15
+theme_override_font_sizes/italics_font_size = 15
+theme_override_font_sizes/mono_font_size = 15
 bbcode_enabled = true
-text = "[pulse freq=1][rainbow freq=1][center]External Assets"
+text = "Programming, Writer, Level Design"
 fit_content = true
 tab_size = 24
+horizontal_alignment = 1
 
 [node name="Artists9" type="Label" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=1371576302]
 layout_mode = 2
-theme_override_font_sizes/font_size = 20
+theme_override_font_sizes/font_size = 15
 text = "KennyNL
 https://kenney.nl/assets/tiny-town 
 https://kenney.nl/assets/tiny-dungeon
@@ -234,11 +301,11 @@ horizontal_alignment = 1
 
 [node name="Back" type="Button" parent="CreditsWindow" unique_id=135489902]
 offset_left = 246.0
-offset_top = 608.0
+offset_top = 628.0
 offset_right = 750.0
 offset_bottom = 691.0
 size_flags_vertical = 8
-theme_override_font_sizes/font_size = 60
+theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxFlat_5xen7")
 theme_override_styles/hover = SubResource("StyleBoxFlat_m6qpe")
 theme_override_styles/focus = ExtResource("4_g3nua")

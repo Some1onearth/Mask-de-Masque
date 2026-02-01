@@ -1,16 +1,16 @@
 if {CurrentMask} == "wild":
-	audio "res://audio/SFX/NPC, MC, Interaction/NobleFemNeg1.ogg"
+	audio "res://audio/SFX/NPC, MC, Interaction/GuardMaleNeg1.wav"
 	AH, help!
 	Why aren’t the guards helping me!
 elif {CurrentMask} == "peasant":
-	audio "res://audio/SFX/NPC, MC, Interaction/NobleFemNeg1.ogg"
+	audio "res://audio/SFX/NPC, MC, Interaction/NobleMalePos1.ogg"
 	I arrived here late, and the guards won’t LET ME IN!
 elif {CurrentMask} == "eunuch":
-	audio "res://audio/SFX/NPC, MC, Interaction/NobleFemNeg1.ogg"
+	audio "res://audio/SFX/NPC, MC, Interaction/NobleMalePos2.ogg"
 	I arrived here late, and the guards won’t LET ME IN!
 elif {CurrentMask} == "noble":
-	audio "res://audio/SFX/NPC, MC, Interaction/NobleFemNeg1.ogg"
+	audio "res://audio/SFX/NPC, MC, Interaction/NobleMalePos1.ogg"
 	I arrived here late, and the guards won’t LET ME IN!
 else:
-	audio "res://audio/SFX/NPC, MC, Interaction/NobleFemNeg1.ogg"
+	audio "res://audio/SFX/NPC, MC, Interaction/NobleMalePos1.ogg"
 	BALD! BALD! MY EYES!!!!

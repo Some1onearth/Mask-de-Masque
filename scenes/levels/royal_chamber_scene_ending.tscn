@@ -1,11 +1,13 @@
 [gd_scene format=4 uid="uid://bhe4y5u35hl31"]
 
 [ext_resource type="TileSet" uid="uid://c2vy5x5qolqcr" path="res://sprites/tilemaps/tile_set.tres" id="1_8asfs"]
+[ext_resource type="Script" uid="uid://c2hmkjc571jkj" path="res://scripts/main_menu.gd" id="1_g2mg3"]
 [ext_resource type="PackedScene" uid="uid://nx7f0qyeodsh" path="res://scenes/player.tscn" id="2_cb0mq"]
 [ext_resource type="Script" uid="uid://c3niwrngpmhjo" path="res://scripts/flicker_light.gd" id="3_v0xja"]
 [ext_resource type="PackedScene" uid="uid://k7q61nako2ac" path="res://scenes/characters/Ruler.tscn" id="4_g2mg3"]
 [ext_resource type="Texture2D" uid="uid://c512xai57i8oy" path="res://sprites/slash.png" id="6_v0xja"]
 [ext_resource type="Texture2D" uid="uid://7b41a758df21" path="res://sprites/NPCs/MC-RulerMask.png" id="7_g2mg3"]
+[ext_resource type="StyleBox" uid="uid://d0mil3c4uu112" path="res://scenes/buttonfocustheme.tres" id="8_dv1fb"]
 
 [sub_resource type="Animation" id="Animation_v0xja"]
 length = 0.001
@@ -241,7 +243,27 @@ fill = 1
 fill_from = Vector2(0.5, 0.5)
 fill_to = Vector2(0.82905984, 0.13247864)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ulcy5"]
+bg_color = Color(0.156863, 0.0823529, 0.0352941, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ba5bf"]
+bg_color = Color(0.709804, 0.105882, 0.517647, 1)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
 [node name="RoyalChamber" type="Node2D" unique_id=1680860714]
+script = ExtResource("1_g2mg3")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1063968160]
 root_node = NodePath("../Player")
@@ -369,7 +391,6 @@ scale = Vector2(0.25000036, 0.25000036)
 texture = ExtResource("7_g2mg3")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1230432694]
-visible = false
 z_index = 3
 offset_left = 183.0
 offset_top = 166.0
@@ -406,5 +427,20 @@ theme_override_font_sizes/font_size = 19
 text = "You are the
 new Ruler!"
 horizontal_alignment = 1
+
+[node name="Main Menu" type="Button" parent="ColorRect" unique_id=364775536]
+layout_mode = 0
+offset_left = 55.0
+offset_top = 91.0
+offset_right = 147.0
+offset_bottom = 113.0
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_ulcy5")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ba5bf")
+theme_override_styles/focus = ExtResource("8_dv1fb")
+text = "Main Menu"
+
+[connection signal="pressed" from="ColorRect/Main Menu" to="." method="_on_main_menu_pressed"]
 
 [editable path="Player"]
