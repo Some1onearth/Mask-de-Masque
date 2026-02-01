@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://crjh3g0nmujgi"
+path="res://.godot/imported/Walk on Dirt-SandSingle1.wav-fb81c384b4e9c77aee0fa9b9811fccf6.sample"
+
+[deps]
+
+source_file="res://audio/SFX/Mov, Abil, Non interact/footsteps/Walk on Dirt-SandSingle1.wav"
+dest_files=["res://.godot/imported/Walk on Dirt-SandSingle1.wav-fb81c384b4e9c77aee0fa9b9811fccf6.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

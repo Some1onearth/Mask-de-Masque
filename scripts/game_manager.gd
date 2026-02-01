@@ -25,12 +25,16 @@ func switch_level_with_door(from_scene:Node, to_scene:String, spawn_door:String)
 	new_scene.add_child(player)
 	
 	#Replace old scene
+	if audio_manager: #if audio manager exists
+		audio_manager.tilemaps.clear() #clear tilemaps (for footsteps)
 	get_tree().call_deferred("change_scene_to_node", new_scene)
 	
 	#Move player to correct door
 	var target_door = new_scene.get_node(spawn_door) as DoorTrigger
 	if target_door:
 		player.global_position = target_door.spawn.global_position
+
+
 
 ##Loads a level by name from the levels folder, creates and instance of the scene *but hasn't added it to tree yet
 func load_level(level_name:String) -> Node:

@@ -1,6 +1,8 @@
 class_name Player extends CharacterBody2D
 
 @export var SPEED = 300.0
+@export var footstep_interval = 0.5 ##How many footsteps per second
+var footstep_cooldown = 0
 
 #sprites draw from atlas texture so just change the frame of animation
 @onready var player_sprite:Sprite2D = $Sprite2D
@@ -26,7 +28,7 @@ func _physics_process(delta: float) -> void:
 		velocity = velocity.move_toward(Vector2.ZERO, SPEED) #Vector2 version of the function
 	
 	#animation stuff
-	if velocity.y > 0:
+	if velocity.y >= 0:
 		player_sprite.frame = sprite_down
 	elif velocity.y < 0:
 		player_sprite.frame = sprite_up
@@ -36,6 +38,18 @@ func _physics_process(delta: float) -> void:
 		player_sprite.flip_h = true
 	
 	move_and_slide()
+	
+	#Footstep sounds
+	if audio_manager:
+		#If player is moving
+		if velocity.length() > 0.1:
+			if footstep_cooldown <= 0:
+				audio_manager.play_footstep(global_position)
+				footstep_cooldown = footstep_interval
+		#else:
+			#audio_manager.stop_footstep()
+			#footstep_cooldown = 0
+		footstep_cooldown = move_toward(footstep_cooldown, 0, delta)
 	
 	#Mask stuff
 	#PLACEHOLDER INPUT FOR TESTING CHANGE LATER
@@ -57,6 +71,8 @@ func maskSwap(mask_name:String):
 	if Hud:
 		#swaps mask on HUD
 		Hud.swap_hud_mask(mask_name)
+	if audio_manager:
+		audio_manager.play_mask_switch_sound()
 	
 	#change sprites
 	match mask_name:

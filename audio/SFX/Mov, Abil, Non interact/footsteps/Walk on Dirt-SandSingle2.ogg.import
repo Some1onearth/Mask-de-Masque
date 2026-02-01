@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://db4wkk3sx0ldp"
+path="res://.godot/imported/Walk on Dirt-SandSingle2.ogg-12064c6bb335c2ecf5b1856da6b8abc7.oggvorbisstr"
+
+[deps]
+
+source_file="res://audio/SFX/Mov, Abil, Non interact/footsteps/Walk on Dirt-SandSingle2.ogg"
+dest_files=["res://.godot/imported/Walk on Dirt-SandSingle2.ogg-12064c6bb335c2ecf5b1856da6b8abc7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

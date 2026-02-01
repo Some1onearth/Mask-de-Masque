@@ -3,9 +3,9 @@ if {CurrentMask} == "wild":
 	What do you want?
 elif {CurrentMask} == "peasant":
 	audio "res://audio/SFX/NPC, MC, Interaction/PesMalePos2.ogg"
-	I love potatoes.
 	if {SocialPoints} < {ThresholdMainHall}:
-	set {SocialPoints} += 1
+		I love potatoes.
+		set {SocialPoints} += 1
 elif {CurrentMask} == "eunuch":
 	audio "res://audio/SFX/NPC, MC, Interaction/PesMalePos2.ogg"
 	I'm just making sure the potatoes don't get cold.

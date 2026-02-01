@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ds10hwuhamyld"
+path="res://.godot/imported/Walk on CarpetSingle1.ogg-c19f495ebb6d5ee189d9b462a5680139.oggvorbisstr"
+
+[deps]
+
+source_file="res://audio/SFX/Mov, Abil, Non interact/footsteps/Walk on CarpetSingle1.ogg"
+dest_files=["res://.godot/imported/Walk on CarpetSingle1.ogg-c19f495ebb6d5ee189d9b462a5680139.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
