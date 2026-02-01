@@ -4,7 +4,12 @@ extends Light2D
 @export var speed = 5
 @export var minEnergy = 0.9
 @export var maxEnergy = 1.1
+@export var randomStart = true
 var time_passed := 0.0
+
+func _ready() -> void:
+	if randomStart:
+		time_passed += randf_range(0, TAU)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

@@ -32,8 +32,8 @@ noise = SubResource("FastNoiseLite_ismyy")
 color_ramp = SubResource("Gradient_ismyy")
 
 [sub_resource type="Gradient" id="Gradient_pgbu0"]
-offsets = PackedFloat32Array(0, 0.096219935, 0.16494845, 1)
-colors = PackedColorArray(1, 1, 1, 1, 0.6706895, 0.6706895, 0.6706895, 1, 0.38703823, 0.38703823, 0.38703823, 1, 0, 0, 0, 1)
+offsets = PackedFloat32Array(0, 0.096219935, 0.42144638, 1)
+colors = PackedColorArray(0.7, 0.7, 0.7, 1, 1, 1, 1, 0.42352942, 1, 1, 1, 0.19607843, 0, 0, 0, 0)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_73bac"]
 gradient = SubResource("Gradient_pgbu0")
@@ -42,6 +42,7 @@ fill_from = Vector2(0.5, 0.5)
 fill_to = Vector2(0.8076923, 0.1923077)
 
 [node name="World" type="Node2D" unique_id=1924761951]
+y_sort_enabled = true
 
 [node name="TileMapLayerBase" type="TileMapLayer" parent="." unique_id=946597989]
 texture_filter = 1
@@ -62,7 +63,13 @@ tile_set = ExtResource("1_ldjkk")
 
 [node name="TileMapLayerDecoration" type="TileMapLayer" parent="." unique_id=1428897202]
 texture_filter = 1
-tile_map_data = PackedByteArray("AAAjAAYABQAyAAMAAAAbAAYABQAyAAMAAAAfAAgABQAkAAMAAAAjAAcABQAyAAQAAAAbAAcABQAyAAQAAAAbAAgABQAyAAUAAAAjAAgABQAyAAUAAAAfAAoABQATAAIAAAAaAA8ABQAVAAIAAAAaABQABQAVAAIAAAAkAA8ABQAWAAIAAAAkABQABQAWAAIAAAAYABgAAwAQABAAAAAZABgAAwASABAAAAAmABgAAwASABAAAAAlABgAAwAQABAAAAAaAAoAAwAVAAEAAAAaAA4AAwAVAAEAAAAaABMAAwAVAAEAAAAkABcAAwAWAAEAAAAkABMAAwAWAAEAAAAkAA4AAwAWAAEAAAAkAAoAAwAWAAEAAAAmABsAAwAWAAEAAAAmACIAAwAWAAEAAAAYACIAAwAVAAEAAAAYABsAAwAVAAEAAAAcAAkAAwATAAEAAAAiAAkAAwATAAEAAAAcAAoAAwATAAUAAAAiAAoAAwATAAUAAAAcABgAAwATAAEAAAAiABgAAwATAAEAAAAcACEAAwATAAEAAAAiACEAAwATAAEAAAAcACIAAwATAAUAAAAiACIAAwATAAUAAAAiABkAAwATAAUAAAAcABkAAwATAAUAAAAaABcAAwAVAAEAAAAeACkABQAKABUAAAAfACkABQALABUAAAAgACkABQAMABUAAAA=")
+tile_map_data = PackedByteArray("AAAfAAoABQATAAIAAAAaAA8ABQAVAAIAAAAaABQABQAVAAIAAAAkAA8ABQAWAAIAAAAkABQABQAWAAIAAAAeACkABQAKABUAAAAfACkABQALABUAAAAgACkABQAMABUAAAAfAAgABQAkAAMAAAA=")
+tile_set = ExtResource("1_ldjkk")
+
+[node name="TileMapLayerDecoration2" type="TileMapLayer" parent="." unique_id=29750012]
+z_index = 1
+texture_filter = 1
+tile_map_data = PackedByteArray("AAAjAAYABQAyAAMAAAAbAAYABQAyAAMAAAAjAAcABQAyAAQAAAAbAAcABQAyAAQAAAAbAAgABQAyAAUAAAAjAAgABQAyAAUAAAAYABgAAwAQABAAAAAZABgAAwASABAAAAAmABgAAwASABAAAAAlABgAAwAQABAAAAAaAAoAAwAVAAEAAAAaAA4AAwAVAAEAAAAaABMAAwAVAAEAAAAkABcAAwAWAAEAAAAkABMAAwAWAAEAAAAkAA4AAwAWAAEAAAAkAAoAAwAWAAEAAAAmABsAAwAWAAEAAAAmACIAAwAWAAEAAAAYACIAAwAVAAEAAAAYABsAAwAVAAEAAAAcAAkAAwATAAEAAAAiAAkAAwATAAEAAAAcAAoAAwATAAUAAAAiAAoAAwATAAUAAAAcABgAAwATAAEAAAAiABgAAwATAAEAAAAcACEAAwATAAEAAAAiACEAAwATAAEAAAAcACIAAwATAAUAAAAiACIAAwATAAUAAAAiABkAAwATAAUAAAAcABkAAwATAAUAAAAaABcAAwAVAAEAAAAeACkABQAKABUAAAAfACkABQALABUAAAAgACkABQAMABUAAAA=")
 tile_set = ExtResource("1_ldjkk")
 
 [node name="Player" parent="." unique_id=489475279 instance=ExtResource("2_13ebx")]
@@ -85,16 +92,14 @@ noiseTex = SubResource("NoiseTexture2D_bfe6v")
 zoom = Vector2(2, 2)
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=437055628]
-color = Color(0.74978, 0.74978, 0.74977994, 1)
+color = Color(0.5330367, 0.5330367, 0.5330366, 1)
 
 [node name="Lights" type="Node2D" parent="." unique_id=773210860]
 
 [node name="Candle Light" type="PointLight2D" parent="Lights" unique_id=160698706]
 texture_filter = 1
-position = Vector2(6.919998, -108.08002)
-color = Color(1, 0.85433334, 0.53999996, 1)
-energy = 0.7
-shadow_enabled = true
+position = Vector2(388, 547)
+color = Color(1, 0.7941667, 0.35000002, 1)
 shadow_filter_smooth = 6.0
 texture = SubResource("GradientTexture2D_73bac")
 texture_scale = 3.47
@@ -102,10 +107,8 @@ script = ExtResource("3_g2xf8")
 
 [node name="Candle Light2" type="PointLight2D" parent="Lights" unique_id=581040039]
 texture_filter = 1
-position = Vector2(103.92, -108.08002)
-color = Color(1, 0.85433334, 0.53999996, 1)
-energy = 0.7
-shadow_enabled = true
+position = Vector2(456, 531)
+color = Color(1, 0.7941667, 0.35000002, 1)
 shadow_filter_smooth = 6.0
 texture = SubResource("GradientTexture2D_73bac")
 texture_scale = 3.47
@@ -113,10 +116,8 @@ script = ExtResource("3_g2xf8")
 
 [node name="Candle Light3" type="PointLight2D" parent="Lights" unique_id=1113151582]
 texture_filter = 1
-position = Vector2(184, -108)
-color = Color(1, 0.85433334, 0.53999996, 1)
-energy = 0.7
-shadow_enabled = true
+position = Vector2(551, 531)
+color = Color(1, 0.7941667, 0.35000002, 1)
 shadow_filter_smooth = 6.0
 texture = SubResource("GradientTexture2D_73bac")
 texture_scale = 3.47
@@ -124,10 +125,8 @@ script = ExtResource("3_g2xf8")
 
 [node name="Candle Light4" type="PointLight2D" parent="Lights" unique_id=524475232]
 texture_filter = 1
-position = Vector2(279, -108)
-color = Color(1, 0.85433334, 0.53999996, 1)
-energy = 0.7
-shadow_enabled = true
+position = Vector2(620, 545)
+color = Color(1, 0.7941667, 0.35000002, 1)
 shadow_filter_smooth = 6.0
 texture = SubResource("GradientTexture2D_73bac")
 texture_scale = 3.47
@@ -135,10 +134,8 @@ script = ExtResource("3_g2xf8")
 
 [node name="Candle Light5" type="PointLight2D" parent="Lights" unique_id=1424724745]
 texture_filter = 1
-position = Vector2(216, -219)
-color = Color(1, 0.85433334, 0.53999996, 1)
-energy = 0.7
-shadow_enabled = true
+position = Vector2(387, 434)
+color = Color(1, 0.7941667, 0.35000002, 1)
 shadow_filter_smooth = 6.0
 texture = SubResource("GradientTexture2D_73bac")
 texture_scale = 3.47
@@ -146,36 +143,150 @@ script = ExtResource("3_g2xf8")
 
 [node name="Candle Light6" type="PointLight2D" parent="Lights" unique_id=1900823273]
 texture_filter = 1
-position = Vector2(71, -219)
-color = Color(1, 0.85433334, 0.53999996, 1)
-energy = 0.7
+position = Vector2(620, 434)
+color = Color(1, 0.7941667, 0.35000002, 1)
+shadow_filter_smooth = 6.0
+texture = SubResource("GradientTexture2D_73bac")
+texture_scale = 3.47
+script = ExtResource("3_g2xf8")
+
+[node name="Candle Light7" type="PointLight2D" parent="Lights" unique_id=714863354]
+texture_filter = 1
+position = Vector2(456, 388)
+color = Color(1, 0.7941667, 0.35000002, 1)
+shadow_filter_smooth = 6.0
+texture = SubResource("GradientTexture2D_73bac")
+texture_scale = 3.47
+script = ExtResource("3_g2xf8")
+
+[node name="Candle Light8" type="PointLight2D" parent="Lights" unique_id=608964854]
+texture_filter = 1
+position = Vector2(420, 370)
+color = Color(1, 0.7941667, 0.35000002, 1)
 shadow_enabled = true
 shadow_filter_smooth = 6.0
 texture = SubResource("GradientTexture2D_73bac")
 texture_scale = 3.47
 script = ExtResource("3_g2xf8")
 
+[node name="Candle Light9" type="PointLight2D" parent="Lights" unique_id=1803399284]
+texture_filter = 1
+position = Vector2(551, 389)
+color = Color(1, 0.7941667, 0.35000002, 1)
+shadow_filter_smooth = 6.0
+texture = SubResource("GradientTexture2D_73bac")
+texture_scale = 3.47
+script = ExtResource("3_g2xf8")
+
+[node name="Candle Light10" type="PointLight2D" parent="Lights" unique_id=932119839]
+texture_filter = 1
+position = Vector2(589, 370)
+color = Color(1, 0.7941667, 0.35000002, 1)
+shadow_enabled = true
+shadow_filter_smooth = 6.0
+texture = SubResource("GradientTexture2D_73bac")
+texture_scale = 3.47
+script = ExtResource("3_g2xf8")
+
+[node name="Candle Light11" type="PointLight2D" parent="Lights" unique_id=770075691]
+texture_filter = 1
+position = Vector2(419, 306)
+color = Color(1, 0.7941667, 0.35000002, 1)
+shadow_filter_smooth = 6.0
+texture = SubResource("GradientTexture2D_73bac")
+texture_scale = 3.47
+script = ExtResource("3_g2xf8")
+
+[node name="Candle Light12" type="PointLight2D" parent="Lights" unique_id=2088426609]
+texture_filter = 1
+position = Vector2(589, 305)
+color = Color(1, 0.7941667, 0.35000002, 1)
+shadow_filter_smooth = 6.0
+texture = SubResource("GradientTexture2D_73bac")
+texture_scale = 3.47
+script = ExtResource("3_g2xf8")
+
+[node name="Candle Light13" type="PointLight2D" parent="Lights" unique_id=2018081286]
+texture_filter = 1
+position = Vector2(420, 224)
+color = Color(1, 0.7941667, 0.35000002, 1)
+shadow_filter_smooth = 6.0
+texture = SubResource("GradientTexture2D_73bac")
+texture_scale = 3.47
+script = ExtResource("3_g2xf8")
+
+[node name="Candle Light14" type="PointLight2D" parent="Lights" unique_id=1813808025]
+texture_filter = 1
+position = Vector2(587, 225)
+color = Color(1, 0.7941667, 0.35000002, 1)
+shadow_filter_smooth = 6.0
+texture = SubResource("GradientTexture2D_73bac")
+texture_scale = 3.47
+script = ExtResource("3_g2xf8")
+
+[node name="Candle Light15" type="PointLight2D" parent="Lights" unique_id=105346007]
+texture_filter = 1
+position = Vector2(420, 162)
+color = Color(1, 0.7941667, 0.35000002, 1)
+shadow_filter_smooth = 6.0
+texture = SubResource("GradientTexture2D_73bac")
+texture_scale = 3.47
+script = ExtResource("3_g2xf8")
+
+[node name="Candle Light16" type="PointLight2D" parent="Lights" unique_id=1569258005]
+texture_filter = 1
+position = Vector2(455, 147)
+color = Color(1, 0.7941667, 0.35000002, 1)
+shadow_filter_smooth = 6.0
+texture = SubResource("GradientTexture2D_73bac")
+texture_scale = 3.47
+script = ExtResource("3_g2xf8")
+
+[node name="Candle Light17" type="PointLight2D" parent="Lights" unique_id=746059175]
+texture_filter = 1
+position = Vector2(552, 147)
+color = Color(1, 0.7941667, 0.35000002, 1)
+shadow_filter_smooth = 6.0
+texture = SubResource("GradientTexture2D_73bac")
+texture_scale = 3.47
+script = ExtResource("3_g2xf8")
+
+[node name="Candle Light18" type="PointLight2D" parent="Lights" unique_id=1876337587]
+texture_filter = 1
+position = Vector2(588, 163)
+color = Color(1, 0.7941667, 0.35000002, 1)
+shadow_filter_smooth = 6.0
+texture = SubResource("GradientTexture2D_73bac")
+texture_scale = 3.47
+script = ExtResource("3_g2xf8")
+
 [node name="EunuchThrone" parent="." unique_id=607847649 instance=ExtResource("5_l2w01")]
+texture_filter = 1
 position = Vector2(586, 461)
 dialogue_timeline_name = "eunuch_throne"
 
 [node name="Lavois" parent="." unique_id=1405082143 instance=ExtResource("6_68jnw")]
+texture_filter = 1
 position = Vector2(425, 424)
 dialogue_timeline_name = "lavois"
 
 [node name="Tenaius" parent="." unique_id=1729446940 instance=ExtResource("7_0rku0")]
+texture_filter = 1
 position = Vector2(567, 333)
 dialogue_timeline_name = "tenaius"
 
 [node name="Gurrigen" parent="." unique_id=625761746 instance=ExtResource("8_46rbl")]
+texture_filter = 1
 position = Vector2(438, 262)
 dialogue_timeline_name = "gurrigen"
 
 [node name="Felani" parent="." unique_id=209896505 instance=ExtResource("9_om1q8")]
+texture_filter = 1
 position = Vector2(561, 231)
 dialogue_timeline_name = "felani"
 
 [node name="PeasantFemale12" parent="." unique_id=1113225415 instance=ExtResource("9_l2w01")]
+texture_filter = 1
 position = Vector2(419, 579)
 dialogue_timeline_name = "peasant_12"
 

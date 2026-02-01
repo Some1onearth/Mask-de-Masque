@@ -16,6 +16,7 @@ script = ExtResource("1_81drl")
 shape = SubResource("RectangleShape2D_7n8xq")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1905979975]
+texture_filter = 1
 texture = ExtResource("2_81drl")
 
 [node name="chatDetection" type="Area2D" parent="." unique_id=916553418]
