@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://bhnksl2iuw0j7"]
 
 [ext_resource type="TileSet" uid="uid://c2vy5x5qolqcr" path="res://sprites/tilemaps/tile_set.tres" id="1_ldjkk"]
-[ext_resource type="Script" uid="uid://dsmf4fltqp532" path="res://scripts/tile_map_layer_floor.gd" id="2_0rku0"]
+[ext_resource type="Script" path="res://scripts/tile_map_layer_floor.gd" id="2_0rku0"]
 [ext_resource type="PackedScene" uid="uid://nx7f0qyeodsh" path="res://scenes/player.tscn" id="2_13ebx"]
 [ext_resource type="Script" uid="uid://c3niwrngpmhjo" path="res://scripts/flicker_light.gd" id="3_g2xf8"]
 [ext_resource type="PackedScene" uid="uid://b6am2lkvarakd" path="res://scenes/characters/Eunuch2.tscn" id="5_l2w01"]
@@ -311,8 +311,9 @@ scale = Vector2(3, 1)
 [node name="Spawn" parent="balcony_door" index="1" unique_id=518652434]
 position = Vector2(0, -24)
 
-[node name="Guardsman1" parent="." unique_id=26523779 instance=ExtResource("11_0rku0")]
+[node name="Guardsman3" parent="." unique_id=26523779 instance=ExtResource("11_0rku0")]
 position = Vector2(485, 146)
+dialogue_timeline_name = "guardsman3"
 
 [editable path="Felani"]
 [editable path="balcony_door"]

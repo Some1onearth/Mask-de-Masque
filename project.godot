@@ -55,6 +55,7 @@ directories/dtl_directory={
 "fonao_opening": "res://Dialogic/timelines/fonao_opening.dtl",
 "guardsman1": "res://Dialogic/timelines/guardsman1.dtl",
 "guardsman2": "res://Dialogic/timelines/guardsman2.dtl",
+"guardsman3": "res://Dialogic/timelines/guardsman3.dtl",
 "gurrigen": "res://Dialogic/timelines/gurrigen.dtl",
 "jurin": "res://Dialogic/timelines/jurin.dtl",
 "lavois": "res://Dialogic/timelines/lavois.dtl",
@@ -120,6 +121,7 @@ audio/type_sound_bus="SFX"
 
 window/size/viewport_width=960
 window/size/viewport_height=720
+window/size/mode=3
 window/stretch/mode="viewport"
 
 [editor_plugins]
@@ -203,3 +205,4 @@ mask_4={
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true

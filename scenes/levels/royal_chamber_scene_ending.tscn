@@ -1,40 +1,18 @@
 [gd_scene format=4 uid="uid://bhe4y5u35hl31"]
 
 [ext_resource type="TileSet" uid="uid://c2vy5x5qolqcr" path="res://sprites/tilemaps/tile_set.tres" id="1_8asfs"]
-[ext_resource type="Script" uid="uid://c2hmkjc571jkj" path="res://scripts/main_menu.gd" id="1_g2mg3"]
+[ext_resource type="Script" uid="uid://dq1r5dy6yiqk0" path="res://scripts/ending_scene.gd" id="1_dv1fb"]
 [ext_resource type="PackedScene" uid="uid://nx7f0qyeodsh" path="res://scenes/player.tscn" id="2_cb0mq"]
 [ext_resource type="Script" uid="uid://c3niwrngpmhjo" path="res://scripts/flicker_light.gd" id="3_v0xja"]
 [ext_resource type="PackedScene" uid="uid://k7q61nako2ac" path="res://scenes/characters/Ruler.tscn" id="4_g2mg3"]
 [ext_resource type="Texture2D" uid="uid://c512xai57i8oy" path="res://sprites/slash.png" id="6_v0xja"]
+[ext_resource type="FontFile" uid="uid://d2junjjrm2g55" path="res://addons/ErraticCursive_Font_1_0/Web Open Font Format (.woff)/ErraticCursive-Regular.woff" id="7_dv1fb"]
 [ext_resource type="Texture2D" uid="uid://7b41a758df21" path="res://sprites/NPCs/MC-RulerMask.png" id="7_g2mg3"]
 [ext_resource type="StyleBox" uid="uid://d0mil3c4uu112" path="res://scenes/buttonfocustheme.tres" id="8_dv1fb"]
+[ext_resource type="Script" uid="uid://bt6x3ym5ea17f" path="res://scripts/controller_button.gd" id="10_ulcy5"]
 
-[sub_resource type="Animation" id="Animation_v0xja"]
+[sub_resource type="Animation" id="Animation_5flb4"]
 length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../Lights/Ruler Highlight:energy")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.5]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("../Lights/Ruler Highlight:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(136, -119)]
-}
 
 [sub_resource type="Animation" id="Animation_cb0mq"]
 resource_name = "ending cutscene"
@@ -198,7 +176,7 @@ tracks/12/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_v0xja"]
 _data = {
-&"RESET": SubResource("Animation_v0xja"),
+&"RESET": SubResource("Animation_5flb4"),
 &"ending cutscene": SubResource("Animation_cb0mq")
 }
 
@@ -263,7 +241,7 @@ corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 
 [node name="RoyalChamber" type="Node2D" unique_id=1680860714]
-script = ExtResource("1_g2mg3")
+script = ExtResource("1_dv1fb")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1063968160]
 root_node = NodePath("../Player")
@@ -299,6 +277,9 @@ tile_set = ExtResource("1_8asfs")
 position = Vector2(280, 220)
 motion_mode = 1
 SPEED = 150.0
+
+[node name="Sprite2D" parent="Player" index="1" unique_id=1091469843]
+frame = 1
 
 [node name="PointLight2D" type="PointLight2D" parent="Player" unique_id=950577058]
 visible = false
@@ -376,7 +357,6 @@ position = Vector2(279, 202)
 dialogue_timeline_name = "ruler"
 
 [node name="Slash" type="Sprite2D" parent="." unique_id=1332402731]
-visible = false
 modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 position = Vector2(279.00003, 197)
@@ -391,6 +371,7 @@ scale = Vector2(0.25000036, 0.25000036)
 texture = ExtResource("7_g2mg3")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1230432694]
+visible = false
 z_index = 3
 offset_left = 183.0
 offset_top = 166.0
@@ -403,27 +384,30 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -952.5
-offset_right = 952.5
-offset_bottom = 530.0
+offset_left = -78.0
+offset_top = 13.0
+offset_right = 78.0
+offset_bottom = 83.0
 grow_horizontal = 2
 
 [node name="Programmers" type="RichTextLabel" parent="ColorRect/VBoxContainer" unique_id=1944831500]
 layout_mode = 2
 size_flags_vertical = 0
+theme_override_colors/font_shadow_color = Color(0.5509131, 0.3182946, 0.9443583, 1)
+theme_override_fonts/normal_font = ExtResource("7_dv1fb")
 theme_override_font_sizes/normal_font_size = 20
 theme_override_font_sizes/bold_font_size = 20
 theme_override_font_sizes/bold_italics_font_size = 20
 theme_override_font_sizes/italics_font_size = 20
 theme_override_font_sizes/mono_font_size = 20
-bbcode_enabled = true
-text = "[pulse freq=1][rainbow freq=1][center]Congratulations"
+text = "Congratulations"
 fit_content = true
 tab_size = 24
+horizontal_alignment = 1
 
 [node name="Programmers2" type="Label" parent="ColorRect/VBoxContainer" unique_id=436990350]
 layout_mode = 2
-theme_override_font_sizes/font_size = 19
+theme_override_font_sizes/font_size = 13
 text = "You are the
 new Ruler!"
 horizontal_alignment = 1
@@ -431,15 +415,16 @@ horizontal_alignment = 1
 [node name="Main Menu" type="Button" parent="ColorRect" unique_id=364775536]
 layout_mode = 0
 offset_left = 55.0
-offset_top = 91.0
+offset_top = 86.0
 offset_right = 147.0
-offset_bottom = 113.0
+offset_bottom = 104.0
 size_flags_vertical = 8
-theme_override_font_sizes/font_size = 15
+theme_override_font_sizes/font_size = 12
 theme_override_styles/normal = SubResource("StyleBoxFlat_ulcy5")
 theme_override_styles/hover = SubResource("StyleBoxFlat_ba5bf")
 theme_override_styles/focus = ExtResource("8_dv1fb")
 text = "Main Menu"
+script = ExtResource("10_ulcy5")
 
 [connection signal="pressed" from="ColorRect/Main Menu" to="." method="_on_main_menu_pressed"]
 

@@ -87,6 +87,7 @@ offset_bottom = 819.0
 
 [node name="Start" type="Button" parent="VBoxContainer" unique_id=91299204]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_8ln24")
 theme_override_font_sizes/font_size = 43
 theme_override_styles/normal = SubResource("StyleBoxFlat_pwqkt")
 theme_override_styles/hover_pressed = ExtResource("4_g3nua")
@@ -96,6 +97,7 @@ script = ExtResource("4_cwbyw")
 
 [node name="Credits" type="Button" parent="VBoxContainer" unique_id=2115426057]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_8ln24")
 theme_override_font_sizes/font_size = 43
 theme_override_styles/normal = SubResource("StyleBoxFlat_5xen7")
 theme_override_styles/hover = SubResource("StyleBoxFlat_m6qpe")
@@ -104,6 +106,7 @@ text = "Credits"
 
 [node name="Quit" type="Button" parent="VBoxContainer" unique_id=1446540604]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_8ln24")
 theme_override_font_sizes/font_size = 43
 theme_override_styles/normal = SubResource("StyleBoxFlat_5xen7")
 theme_override_styles/hover = SubResource("StyleBoxFlat_m6qpe")
@@ -111,6 +114,7 @@ theme_override_styles/focus = ExtResource("4_g3nua")
 text = "Quit"
 
 [node name="CreditsWindow" type="CanvasLayer" parent="." unique_id=242482935]
+visible = false
 
 [node name="ColorRect" type="ColorRect" parent="CreditsWindow" unique_id=514617265]
 anchors_preset = 15

@@ -1,6 +1,7 @@
-[background arg="res://sprites/Portraits/RulerHappyHalf.png" fade="0.0"]
+[background arg="res://sprites/Portraits/RulerAngryHalf.png" fade="0.0"]
 No no! I’m not ready to reveal my winning beauty to the guests yet!
 …
+[background arg="res://sprites/Portraits/RulerHappyHalf.png" fade="0.0"]
 What’s this? Can’t say that I recognise your face.
 audio "res://audio/SFX/NPC, MC, Interaction/RulerQuestion1.ogg"
 What business can I help you with?
@@ -37,4 +38,6 @@ What business can I help you with?
 
 Fonao: Not anymore.
 [background arg="res://sprites/Portraits/RulerAngryHalf.png" fade="0.0"]
+audio "res://audio/SFX/NPC, MC, Interaction/Eerie Haunt.ogg"
+do audio_manager.stop_music()
 do game_manager.change_scene("royal_chamber_scene_ending")

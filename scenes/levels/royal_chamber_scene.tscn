@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://b5aqkxi2qxe28"]
 
 [ext_resource type="TileSet" uid="uid://c2vy5x5qolqcr" path="res://sprites/tilemaps/tile_set.tres" id="1_r1orf"]
-[ext_resource type="Script" uid="uid://dsmf4fltqp532" path="res://scripts/tile_map_layer_floor.gd" id="2_36bae"]
+[ext_resource type="Script" path="res://scripts/tile_map_layer_floor.gd" id="2_36bae"]
 [ext_resource type="PackedScene" uid="uid://nx7f0qyeodsh" path="res://scenes/player.tscn" id="2_a8ofo"]
 [ext_resource type="Script" uid="uid://c3niwrngpmhjo" path="res://scripts/flicker_light.gd" id="3_36bae"]
 [ext_resource type="PackedScene" uid="uid://k7q61nako2ac" path="res://scenes/characters/Ruler.tscn" id="4_40ahv"]
@@ -107,7 +107,7 @@ script = ExtResource("3_36bae")
 noiseTex = SubResource("NoiseTexture2D_icf51")
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1514802338]
-zoom = Vector2(2, 2)
+zoom = Vector2(5.005, 5.005)
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1573380049]
 color = Color(0.61745477, 0.6174547, 0.61745507, 1)
