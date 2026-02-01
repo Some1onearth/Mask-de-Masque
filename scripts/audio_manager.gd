@@ -35,11 +35,18 @@ class_name AudioManager extends Node
 	],
 }
 
-#Audio Management
+#Music
 func switch_track(track:AudioStream):
 	music_player.stream = track
 	music_player.play()
 
+func stop_music():
+	music_player.stop()
+	
+func play_music():
+	music_player.play()
+
+#SFX stuff
 func play_oneshot_audio(sound_clip:AudioStream):
 	var audio_player = AudioStreamPlayer2D.new()
 	audio_player.bus = &"SFX"
