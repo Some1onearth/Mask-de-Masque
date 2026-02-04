@@ -120,6 +120,7 @@ visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_bottom = 66.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.09411765, 0.09411765, 0.09411765, 0.9372549)
@@ -155,7 +156,7 @@ horizontal_alignment = 1
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
 text = "dinopoke
-jonathan.wang18
+Orkagan
 jemztones"
 horizontal_alignment = 1
 
@@ -171,7 +172,7 @@ theme_override_font_sizes/bold_italics_font_size = 20
 theme_override_font_sizes/italics_font_size = 20
 theme_override_font_sizes/mono_font_size = 20
 bbcode_enabled = true
-text = "Programming, Writer, Level Design"
+text = "Pixel Artist, Audio Composer & SFX, Writer"
 fit_content = true
 tab_size = 24
 horizontal_alignment = 1
@@ -182,7 +183,7 @@ theme_override_font_sizes/font_size = 20
 text = "Lyrical Lark"
 horizontal_alignment = 1
 
-[node name="Artists4" type="RichTextLabel" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=1132452614]
+[node name="Character Art" type="RichTextLabel" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=1132452614]
 layout_mode = 2
 size_flags_vertical = 0
 theme_override_colors/default_color = Color(0.9852814, 0.9852814, 0.9852814, 1)
@@ -194,7 +195,7 @@ theme_override_font_sizes/bold_italics_font_size = 20
 theme_override_font_sizes/italics_font_size = 20
 theme_override_font_sizes/mono_font_size = 20
 bbcode_enabled = true
-text = "Programming, Writer, Level Design"
+text = "Character Art"
 fit_content = true
 tab_size = 24
 horizontal_alignment = 1
@@ -205,7 +206,7 @@ theme_override_font_sizes/font_size = 20
 text = "Kazuna Astral"
 horizontal_alignment = 1
 
-[node name="Artists6" type="RichTextLabel" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=1165174476]
+[node name="Logo" type="RichTextLabel" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=1165174476]
 layout_mode = 2
 size_flags_vertical = 0
 theme_override_colors/default_color = Color(0.9852814, 0.9852814, 0.9852814, 1)
@@ -217,7 +218,7 @@ theme_override_font_sizes/bold_italics_font_size = 20
 theme_override_font_sizes/italics_font_size = 20
 theme_override_font_sizes/mono_font_size = 20
 bbcode_enabled = true
-text = "Programming, Writer, Level Design"
+text = "Logo"
 fit_content = true
 tab_size = 24
 horizontal_alignment = 1
@@ -228,7 +229,7 @@ theme_override_font_sizes/font_size = 20
 text = "Soalxlia"
 horizontal_alignment = 1
 
-[node name="Artists8" type="RichTextLabel" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=1514030943]
+[node name="Voice SFX" type="RichTextLabel" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=1514030943]
 layout_mode = 2
 size_flags_vertical = 0
 theme_override_colors/default_color = Color(0.9852814, 0.9852814, 0.9852814, 1)
@@ -240,7 +241,7 @@ theme_override_font_sizes/bold_italics_font_size = 20
 theme_override_font_sizes/italics_font_size = 20
 theme_override_font_sizes/mono_font_size = 20
 bbcode_enabled = true
-text = "Programming, Writer, Level Design"
+text = "Voice SFX"
 fit_content = true
 tab_size = 24
 horizontal_alignment = 1
@@ -263,7 +264,7 @@ theme_override_font_sizes/bold_italics_font_size = 12
 theme_override_font_sizes/italics_font_size = 12
 theme_override_font_sizes/mono_font_size = 12
 bbcode_enabled = true
-text = "Programming, Writer, Level Design"
+text = "Producer, Writer, Level Designer, Glorified Admin"
 fit_content = true
 tab_size = 24
 horizontal_alignment = 1
@@ -286,28 +287,30 @@ theme_override_font_sizes/bold_italics_font_size = 15
 theme_override_font_sizes/italics_font_size = 15
 theme_override_font_sizes/mono_font_size = 15
 bbcode_enabled = true
-text = "Programming, Writer, Level Design"
+text = "External Assets"
 fit_content = true
 tab_size = 24
 horizontal_alignment = 1
 
-[node name="Artists9" type="Label" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=1371576302]
+[node name="Assets" type="Label" parent="CreditsWindow/ColorRect/VBoxContainer" unique_id=1371576302]
 layout_mode = 2
 theme_override_font_sizes/font_size = 15
-text = "KennyNL
+text = "KennyNL:
 https://kenney.nl/assets/tiny-town 
 https://kenney.nl/assets/tiny-dungeon
 https://kenney.nl/assets/roguelike-rpg-pack
 https://kenney.nl/assets/roguelike-indoors
-Dialogic plugin
-https://github.com/dialogic-godot/dialogic "
+Dialogic plugin:
+https://github.com/dialogic-godot/dialogic 
+GGBotNet Erratic Cursive Font:
+https://ggbot.itch.io/erratic-cursive-font"
 horizontal_alignment = 1
 
 [node name="Back" type="Button" parent="CreditsWindow" unique_id=135489902]
-offset_left = 246.0
-offset_top = 628.0
-offset_right = 750.0
-offset_bottom = 691.0
+offset_left = 232.0
+offset_top = 658.0
+offset_right = 736.0
+offset_bottom = 721.0
 size_flags_vertical = 8
 theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxFlat_5xen7")
