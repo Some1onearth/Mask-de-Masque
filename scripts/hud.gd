@@ -4,6 +4,10 @@ extends CanvasLayer
 @export var current_mask_text:RichTextLabel
 @export var social_text_label:RichTextLabel
 
+enum ControlScheme {KEYBOARD_AND_MOUSE, GAMEPAD}
+@export var current_control_scheme:ControlScheme = ControlScheme.KEYBOARD_AND_MOUSE
+signal control_scheme_changed(new_control_scheme:ControlScheme)
+
 func _ready() -> void:
 	visible = false
 	current_mask_text.text = ""
@@ -36,3 +40,17 @@ func _on_dialogic_variable_changed(info: Dictionary):
 
 func _on_game_started():
 	visible = true
+
+#Read player input to show keyboard or controller prompts
+func _input(event: InputEvent) -> void:
+	#checks if current control scheme is different to latest input event
+	match current_control_scheme:
+		ControlScheme.KEYBOARD_AND_MOUSE:
+			# change to controller UI
+			if event is InputEventJoypadButton or event is InputEventJoypadMotion:
+				control_scheme_changed.emit(ControlScheme.GAMEPAD)
+		ControlScheme.GAMEPAD:
+			# change to keyboard UI
+			if event is InputEventKey or event is InputEventMouseMotion:
+				control_scheme_changed.emit(ControlScheme.KEYBOARD_AND_MOUSE)
+				pass
