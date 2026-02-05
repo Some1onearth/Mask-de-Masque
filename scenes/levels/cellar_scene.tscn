@@ -90,7 +90,7 @@ noiseTex = SubResource("NoiseTexture2D_bfe6v")
 minEnergy = 1.0
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1997019367]
-zoom = Vector2(5, 5)
+zoom = Vector2(4, 4)
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=437055628]
 color = Color(0.3515629, 0.3515629, 0.35156286, 1)

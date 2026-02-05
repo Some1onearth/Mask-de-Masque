@@ -29,17 +29,20 @@ grow_vertical = 2
 size_flags_horizontal = 0
 
 [node name="CurrentMaskRect" type="TextureRect" parent="VBoxContainer" unique_id=1485727153]
+texture_filter = 1
 layout_mode = 2
 texture = SubResource("AtlasTexture_oo0fn")
 
 [node name="MaskTextLabel" type="RichTextLabel" parent="VBoxContainer" unique_id=1296805431]
 layout_mode = 2
 size_flags_vertical = 4
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5019608)
 bbcode_enabled = true
 text = "[center]Peasant[/center]"
 fit_content = true
 
 [node name="SocialScoreTextureRect" type="TextureRect" parent="VBoxContainer" unique_id=450013994]
+texture_filter = 1
 layout_mode = 2
 texture = SubResource("AtlasTexture_6fi6k")
 stretch_mode = 3
@@ -47,6 +50,7 @@ stretch_mode = 3
 [node name="SocialTextLabel" type="RichTextLabel" parent="VBoxContainer" unique_id=1603008651]
 layout_mode = 2
 size_flags_vertical = 4
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5019608)
 bbcode_enabled = true
 text = "[center]10[/center]"
 fit_content = true

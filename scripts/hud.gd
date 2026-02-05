@@ -32,7 +32,7 @@ func swap_hud_mask(mask_name:String):
 
 func _on_dialogic_variable_changed(info: Dictionary):
 	if(info['variable'] == "SocialPoints"):
-		social_text_label.text = "[center]%s[/center]" %info['new_value']
+		social_text_label.text = "[center]%d[/center]" % info['new_value']
 
 func _on_game_started():
 	visible = true

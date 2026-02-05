@@ -23,7 +23,7 @@ func _physics_process(delta: float) -> void:
 	# Custom gameplay actions set in Project > Project Settings > Input Map.
 	var direction := Input.get_vector("left", "right", "up", "down")
 	if direction:
-		velocity = direction * SPEED
+		velocity = direction.clampf(-1,1) * SPEED
 	else:
 		velocity = velocity.move_toward(Vector2.ZERO, SPEED) #Vector2 version of the function
 	
