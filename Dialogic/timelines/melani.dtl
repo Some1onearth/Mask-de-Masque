@@ -1,17 +1,24 @@
 if {CurrentMask} == "wild":
+	audio "res://audio/SFX/NPC, MC, Interaction/EunFemNeg1.ogg"
 	WOAH
 	You look crazy.
 	I would offer you some nicer clothes for this party if I weren’t waiting for the King to come out.
 elif {CurrentMask} == "peasant":
+	audio "res://audio/SFX/NPC, MC, Interaction/EunFemNeg1.ogg"
 	My clothes aren’t cheap.
 	You’ll have to settle for imitations from a charity sewing guild.
 elif {CurrentMask} == "eunuch":
+	audio "res://audio/SFX/NPC, MC, Interaction/EunFemPos1.ogg"
 	Hey.
 	If you see my sister in the Throne Room can you tell her I know she took my dress.
 	The guards aren’t letting me go because I’m not dressed well enough for the celebration.
 	Can’t believe I’m stuck because I didn’t make any spares.
+	if {SocialPoints} < {ThresholdBalcony}:
+		set {SocialPoints} += 1
 elif {CurrentMask} == "noble":
+	audio "res://audio/SFX/NPC, MC, Interaction/EunFemPos1.ogg"
 	Nice to meet you!
 	Could I interest you in some custom clothes?
 else:
+	audio "res://audio/SFX/NPC, MC, Interaction/EunFemNeg1.ogg"
 	BALD! BALD! MY EYES!!!!

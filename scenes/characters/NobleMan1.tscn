@@ -4,11 +4,12 @@
 [ext_resource type="Texture2D" uid="uid://bc7lgh6vyekqn" path="res://sprites/NPCs/NobleMan1.png" id="2_u21kx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7n8xq"]
+size = Vector2(64, 64)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4wlns"]
 radius = 48.0
 
-[node name="NPC" type="CharacterBody2D" unique_id=1113225415]
+[node name="NobleMan1" type="CharacterBody2D" unique_id=1113225415]
 scale = Vector2(0.25, 0.25)
 script = ExtResource("1_u21kx")
 

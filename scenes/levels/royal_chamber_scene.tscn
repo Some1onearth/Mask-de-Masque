@@ -1,0 +1,182 @@
+[gd_scene format=4 uid="uid://b5aqkxi2qxe28"]
+
+[ext_resource type="TileSet" uid="uid://c2vy5x5qolqcr" path="res://sprites/tilemaps/tile_set.tres" id="1_r1orf"]
+[ext_resource type="Script" path="res://scripts/tile_map_layer_floor.gd" id="2_36bae"]
+[ext_resource type="PackedScene" uid="uid://nx7f0qyeodsh" path="res://scenes/player.tscn" id="2_a8ofo"]
+[ext_resource type="Script" uid="uid://c3niwrngpmhjo" path="res://scripts/flicker_light.gd" id="3_36bae"]
+[ext_resource type="PackedScene" uid="uid://k7q61nako2ac" path="res://scenes/characters/Ruler.tscn" id="4_40ahv"]
+[ext_resource type="PackedScene" uid="uid://cwpixmk5pgve4" path="res://scenes/door_trigger.tscn" id="5_a8ofo"]
+
+[sub_resource type="Gradient" id="Gradient_5ec7d"]
+offsets = PackedFloat32Array(0, 0.6082474, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0.35738832, 0.35738832, 0.35738832, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_uqlxv"]
+gradient = SubResource("Gradient_5ec7d")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.8803419, 0.12820514)
+
+[sub_resource type="Gradient" id="Gradient_ismyy"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_ismyy"]
+noise_type = 0
+frequency = 0.0265
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_icf51"]
+noise = SubResource("FastNoiseLite_ismyy")
+color_ramp = SubResource("Gradient_ismyy")
+
+[sub_resource type="Gradient" id="Gradient_pgbu0"]
+offsets = PackedFloat32Array(0, 0.096219935, 0.16494845, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0.6706895, 0.6706895, 0.6706895, 1, 0.38703823, 0.38703823, 0.38703823, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_gkqnc"]
+gradient = SubResource("Gradient_pgbu0")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.8076923, 0.1923077)
+
+[sub_resource type="Gradient" id="Gradient_a8ofo"]
+interpolation_mode = 2
+offsets = PackedFloat32Array(0, 0.2244389, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0.16887236, 0.16887236, 0.16887236, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_36bae"]
+gradient = SubResource("Gradient_a8ofo")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.82905984, 0.13247864)
+
+[node name="RoyalChamber" type="Node2D" unique_id=1680860714]
+y_sort_enabled = true
+
+[node name="TileMapLayerBase" type="TileMapLayer" parent="." unique_id=1119344093]
+y_sort_enabled = true
+texture_filter = 1
+tile_set = ExtResource("1_r1orf")
+navigation_enabled = false
+script = ExtResource("2_36bae")
+
+[node name="TileMapLayerFloor" type="TileMapLayer" parent="." unique_id=2069368519]
+z_index = -1
+y_sort_enabled = true
+texture_filter = 1
+tile_map_data = PackedByteArray("AAAFAPj/BQAJAAIAAAAFAPn/BQAJAAIAAAAFAPr/BQAJAAIAAAAFAPv/BQAJAAIAAAAFAPz/BQAJAAIAAAAFAP3/BQAJAAIAAAAFAP7/BQAJAAIAAAAGAPj/BQAJAAIAAAAGAPn/BQAJAAIAAAAGAPr/BQAJAAIAAAAGAPv/BQAJAAIAAAAGAPz/BQAJAAIAAAAGAP3/BQAJAAIAAAAGAP7/BQAJAAIAAAAHAPj/BQAJAAIAAAAHAPn/BQAJAAIAAAAHAPr/BQAJAAIAAAAHAPv/BQAJAAIAAAAHAPz/BQAJAAIAAAAHAP3/BQAJAAIAAAAHAP7/BQAJAAIAAAAIAPj/BQAJAAIAAAAIAPn/BQAJAAIAAAAIAPr/BQAJAAIAAAAIAPv/BQAJAAIAAAAIAPz/BQAJAAIAAAAIAP3/BQAJAAIAAAAIAP7/BQAJAAIAAAAJAPj/BQAJAAIAAAAJAPn/BQAJAAIAAAAJAPr/BQAJAAIAAAAJAPv/BQAJAAIAAAAJAPz/BQAJAAIAAAAJAP3/BQAJAAIAAAAJAP7/BQAJAAIAAAAKAPj/BQAJAAIAAAAKAPn/BQAJAAIAAAAKAPr/BQAJAAIAAAAKAPv/BQAJAAIAAAAKAPz/BQAJAAIAAAAKAP3/BQAJAAIAAAAKAP7/BQAJAAIAAAALAPj/BQAJAAIAAAALAPn/BQAJAAIAAAALAPr/BQAJAAIAAAALAPv/BQAJAAIAAAALAPz/BQAJAAIAAAALAP3/BQAJAAIAAAALAP7/BQAJAAIAAAAMAPj/BQAJAAIAAAAMAPn/BQAJAAIAAAAMAPr/BQAJAAIAAAAMAPv/BQAJAAIAAAAMAPz/BQAJAAIAAAAMAP3/BQAJAAIAAAAMAP7/BQAJAAIAAAACAPj/BQAJAAIAAAACAPn/BQAJAAIAAAACAPr/BQAJAAIAAAACAPv/BQAJAAIAAAACAPz/BQAJAAIAAAACAP3/BQAJAAIAAAACAP7/BQAJAAIAAAADAPj/BQAJAAIAAAADAPn/BQAJAAIAAAADAPr/BQAJAAIAAAADAPv/BQAJAAIAAAADAPz/BQAJAAIAAAADAP3/BQAJAAIAAAADAP7/BQAJAAIAAAAEAPj/BQAJAAIAAAAEAPn/BQAJAAIAAAAEAPr/BQAJAAIAAAAEAPv/BQAJAAIAAAAEAPz/BQAJAAIAAAAEAP3/BQAJAAIAAAAEAP7/BQAJAAIAAAANAPj/BQAJAAIAAAANAPn/BQAJAAIAAAANAPr/BQAJAAIAAAANAPv/BQAJAAIAAAANAPz/BQAJAAIAAAANAP3/BQAJAAIAAAANAP7/BQAJAAIAAAAOAPj/BQAJAAIAAAAOAPn/BQAJAAIAAAAOAPr/BQAJAAIAAAAOAPv/BQAJAAIAAAAOAPz/BQAJAAIAAAAOAP3/BQAJAAIAAAAOAP7/BQAJAAIAAAACAPT/BQAJAAIAAAACAPX/BQAJAAIAAAACAPb/BQAJAAIAAAACAPf/BQAJAAIAAAADAPT/BQAJAAIAAAADAPX/BQAJAAIAAAADAPb/BQAJAAIAAAADAPf/BQAJAAIAAAAEAPT/BQAJAAIAAAAEAPX/BQAJAAIAAAAEAPb/BQAJAAIAAAAEAPf/BQAJAAIAAAAFAPT/BQAJAAIAAAAFAPX/BQAJAAIAAAAFAPb/BQAJAAIAAAAFAPf/BQAJAAIAAAAGAPT/BQAJAAIAAAAGAPX/BQAJAAIAAAAGAPb/BQAJAAIAAAAGAPf/BQAJAAIAAAAHAPT/BQAJAAIAAAAHAPX/BQAJAAIAAAAHAPb/BQAJAAIAAAAHAPf/BQAJAAIAAAAIAPT/BQAJAAIAAAAIAPX/BQAJAAIAAAAIAPb/BQAJAAIAAAAIAPf/BQAJAAIAAAAJAPT/BQAJAAIAAAAJAPX/BQAJAAIAAAAJAPb/BQAJAAIAAAAJAPf/BQAJAAIAAAAKAPT/BQAJAAIAAAAKAPX/BQAJAAIAAAAKAPb/BQAJAAIAAAAKAPf/BQAJAAIAAAALAPT/BQAJAAIAAAALAPX/BQAJAAIAAAALAPb/BQAJAAIAAAALAPf/BQAJAAIAAAAMAPT/BQAJAAIAAAAMAPX/BQAJAAIAAAAMAPb/BQAJAAIAAAAMAPf/BQAJAAIAAAANAPT/BQAJAAIAAAANAPX/BQAJAAIAAAANAPb/BQAJAAIAAAANAPf/BQAJAAIAAAAOAPT/BQAJAAIAAAAOAPX/BQAJAAIAAAAOAPb/BQAJAAIAAAAOAPf/BQAJAAIAAAAIAP//BQAJAAIAAAAIAAAABQAJAAIAAAA=")
+tile_set = ExtResource("1_r1orf")
+navigation_enabled = false
+script = ExtResource("2_36bae")
+
+[node name="TileMapLayerFloor2" type="TileMapLayer" parent="." unique_id=1836143849]
+z_index = -1
+y_sort_enabled = true
+texture_filter = 1
+tile_map_data = PackedByteArray("AAAFAPf/BQAKABAAAAAFAPj/BQAKABEAAAAFAPn/BQAKABEAAAAFAPr/BQAKABEAAAAFAPv/BQAKABEAAAAFAPz/BQAKABEAAAAFAP3/BQAKABEAAAAFAP7/BQAKABIAAAAGAPf/BQALABAAAAAGAPj/BQALABEAAAAGAPn/BQALABEAAAAGAPr/BQALABEAAAAGAPv/BQALABEAAAAGAPz/BQALABEAAAAGAP3/BQALABEAAAAGAP7/BQALABIAAAAHAPf/BQALABAAAAAHAPj/BQALABEAAAAHAPn/BQALABEAAAAHAPr/BQALABEAAAAHAPv/BQALABEAAAAHAPz/BQALABEAAAAHAP3/BQALABEAAAAHAP7/BQALABIAAAAIAPf/BQALABAAAAAIAPj/BQALABEAAAAIAPn/BQALABEAAAAIAPr/BQALABEAAAAIAPv/BQALABEAAAAIAPz/BQALABEAAAAIAP3/BQALABEAAAAIAP7/BQALABIAAAAJAPf/BQALABAAAAAJAPj/BQALABEAAAAJAPn/BQALABEAAAAJAPr/BQALABEAAAAJAPv/BQALABEAAAAJAPz/BQALABEAAAAJAP3/BQALABEAAAAJAP7/BQALABIAAAAKAPf/BQALABAAAAAKAPj/BQALABEAAAAKAPn/BQALABEAAAAKAPr/BQALABEAAAAKAPv/BQALABEAAAAKAPz/BQALABEAAAAKAP3/BQALABEAAAAKAP7/BQALABIAAAALAPf/BQAMABAAAAALAPj/BQAMABEAAAALAPn/BQAMABEAAAALAPr/BQAMABEAAAALAPv/BQAMABEAAAALAPz/BQAMABEAAAALAP3/BQAMABEAAAALAP7/BQAMABIAAAA=")
+tile_set = ExtResource("1_r1orf")
+navigation_enabled = false
+script = ExtResource("2_36bae")
+
+[node name="TileMapLayerWalls" type="TileMapLayer" parent="." unique_id=538387089]
+y_sort_enabled = true
+texture_filter = 1
+tile_map_data = PackedByteArray("AAACAP//BQAeAA0AAAACAAAABQAfAA8AAAADAP//BQAcAAwAAAADAAAABQAgAA8AAAAEAAAABQAgAA8AAAAEAP//BQAcAAwAAAACAP7/BQAdAA0AAAACAP3/BQAdAA0AAAACAPz/BQAdAA0AAAACAPv/BQAdAA0AAAACAPr/BQAdAA0AAAACAPn/BQAdAA0AAAACAPj/BQAdAA0AAAACAPb/BQAdAA0AAAACAPT/BQAdAA0AAAANAPT/BQAbAA8AAAACAPX/BQAdAA0AAAACAPf/BQAdAA0AAAANAP//BQAcAAwAAAAMAP//BQAcAAwAAAALAP//BQAcAAwAAAAKAP//BQAcAAwAAAAFAP//BQAcAAwAAAADAPT/BQAbAA8AAAAEAPT/BQAbAA8AAAAFAPT/BQAbAA8AAAAGAPT/BQAbAA8AAAAHAPT/BQAbAA8AAAAIAPT/BQAbAA8AAAAJAPT/BQAbAA8AAAAKAPT/BQAbAA8AAAALAPT/BQAbAA8AAAAMAPT/BQAbAA8AAAAGAP//BQAcAAwAAAAHAP//BQAdAAwAAAAFAAAABQAgAA8AAAAGAAAABQAgAA8AAAAHAAAABQAhAA8AAAAJAAAABQAfAA8AAAAKAAAABQAgAA8AAAALAAAABQAgAA8AAAAMAAAABQAgAA8AAAANAAAABQAgAA8AAAAOAPX/BQAdAA0AAAAOAPb/BQAdAA0AAAAOAPf/BQAdAA0AAAAOAPj/BQAdAA0AAAAOAPn/BQAdAA0AAAAOAPr/BQAdAA0AAAAOAPv/BQAdAA0AAAAOAPz/BQAdAA0AAAAOAP3/BQAdAA0AAAAOAP7/BQAdAA0AAAAOAP//BQAfAA0AAAAOAPT/BQAdAA0AAAAOAAAABQAhAA8AAAADAPP/BQAgAA8AAAAEAPP/BQAgAA8AAAAFAPP/BQAgAA8AAAAGAPP/BQAgAA8AAAAHAPP/BQAgAA8AAAAIAPP/BQAgAA8AAAAJAPP/BQAgAA8AAAAKAPP/BQAgAA8AAAALAPP/BQAgAA8AAAAMAPP/BQAgAA8AAAANAPP/BQAgAA8AAAADAPL/BQAgAA8AAAAEAPL/BQAgAA8AAAAFAPL/BQAgAA8AAAAGAPL/BQAgAA8AAAAHAPL/BQAgAA8AAAAIAPL/BQAgAA8AAAAJAPL/BQAgAA8AAAAKAPL/BQAgAA8AAAALAPL/BQAgAA8AAAAMAPL/BQAgAA8AAAANAPL/BQAgAA8AAAACAPP/BQAdAA0AAAACAPL/BQAdAA0AAAAOAPP/BQAdAA0AAAAOAPL/BQAdAA0AAAACAPH/BQAeAAwAAAANAPH/BQAcAAwAAAAOAPH/BQAfAAwAAAAMAPH/BQAcAAwAAAALAPH/BQAcAAwAAAAKAPH/BQAcAAwAAAAJAPH/BQAcAAwAAAAIAPH/BQAcAAwAAAAHAPH/BQAcAAwAAAAGAPH/BQAcAAwAAAAFAPH/BQAcAAwAAAAEAPH/BQAcAAwAAAADAPH/BQAcAAwAAAAHAPX/AwAMAAcAAAAIAPX/AwANAAcAAAAIAPb/AwALAAUAAAAHAPb/AwAKAAUAAAAJAPX/AwADAAMAAAANAPv/AwAaAAkAAAANAPr/AwAaAAgAAAAJAP//BQAbAAwAAAA=")
+tile_set = ExtResource("1_r1orf")
+navigation_enabled = false
+
+[node name="TileMapLayerDecoration" type="TileMapLayer" parent="." unique_id=511100698]
+y_sort_enabled = true
+texture_filter = 1
+tile_map_data = PackedByteArray("AAADAPL/BQAxAAMAAAANAPL/BQAxAAMAAAADAPP/BQAxAAQAAAANAPP/BQAxAAQAAAANAPT/BQAxAAUAAAADAPT/BQAxAAUAAAANAPb/AwAUAAUAAAANAPX/AwAUAAEAAAADAPb/AwAUAAUAAAADAPX/AwAUAAEAAAADAP3/AwAUAAEAAAANAP3/AwAUAAEAAAADAP7/AwAUAAUAAAANAP7/AwAUAAUAAAAHAPP/AwAWABAAAAAHAPT/AwAWABEAAAAIAPP/AwAWABAAAAAIAPT/AwAWABEAAAALAPP/BQAvAAIAAAAFAPP/BQAvAAIAAAALAPT/BQAvAAMAAAAFAPT/BQAvAAMAAAA=")
+tile_set = ExtResource("1_r1orf")
+navigation_enabled = false
+
+[node name="Player" parent="." unique_id=489475279 instance=ExtResource("2_a8ofo")]
+position = Vector2(136, -26)
+motion_mode = 1
+SPEED = 150.0
+
+[node name="PointLight2D" type="PointLight2D" parent="Player" unique_id=950577058]
+visible = false
+texture_filter = 1
+color = Color(1, 0.85433334, 0.53999996, 1)
+shadow_enabled = true
+shadow_filter_smooth = 6.0
+texture = SubResource("GradientTexture2D_uqlxv")
+texture_scale = 3.65
+script = ExtResource("3_36bae")
+noiseTex = SubResource("NoiseTexture2D_icf51")
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1514802338]
+zoom = Vector2(5.005, 5.005)
+
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1573380049]
+color = Color(0.61745477, 0.6174547, 0.61745507, 1)
+
+[node name="Lights" type="Node2D" parent="." unique_id=1899403537]
+
+[node name="Candle Light2" type="PointLight2D" parent="Lights" unique_id=1213902669]
+texture_filter = 1
+position = Vector2(55, -170)
+color = Color(1, 0.85433334, 0.53999996, 1)
+energy = 0.7
+shadow_enabled = true
+shadow_filter_smooth = 6.0
+texture = SubResource("GradientTexture2D_gkqnc")
+texture_scale = 3.47
+script = ExtResource("3_36bae")
+
+[node name="Candle Light3" type="PointLight2D" parent="Lights" unique_id=541350396]
+texture_filter = 1
+position = Vector2(214, -170)
+color = Color(1, 0.85433334, 0.53999996, 1)
+energy = 0.7
+shadow_enabled = true
+shadow_filter_smooth = 6.0
+texture = SubResource("GradientTexture2D_gkqnc")
+texture_scale = 3.47
+script = ExtResource("3_36bae")
+
+[node name="Candle Light5" type="PointLight2D" parent="Lights" unique_id=1065165511]
+texture_filter = 1
+position = Vector2(216, -41)
+color = Color(1, 0.85433334, 0.53999996, 1)
+energy = 0.7
+shadow_enabled = true
+shadow_filter_smooth = 6.0
+texture = SubResource("GradientTexture2D_gkqnc")
+texture_scale = 3.47
+script = ExtResource("3_36bae")
+
+[node name="Candle Light6" type="PointLight2D" parent="Lights" unique_id=461827254]
+texture_filter = 1
+position = Vector2(56.999992, -42)
+color = Color(1, 0.85433334, 0.53999996, 1)
+energy = 0.7
+shadow_enabled = true
+shadow_filter_smooth = 6.0
+texture = SubResource("GradientTexture2D_gkqnc")
+texture_scale = 3.47
+script = ExtResource("3_36bae")
+
+[node name="Ruler Highlight" type="PointLight2D" parent="Lights" unique_id=713712839]
+texture_filter = 1
+position = Vector2(136, -119)
+energy = 0.5
+shadow_filter_smooth = 6.0
+texture = SubResource("GradientTexture2D_36bae")
+texture_scale = 1.75
+
+[node name="Ruler" parent="." unique_id=1113225415 instance=ExtResource("4_40ahv")]
+texture_filter = 1
+position = Vector2(136, -112)
+dialogue_timeline_name = "ruler"
+
+[node name="throne_room_door" parent="." unique_id=1784326111 instance=ExtResource("5_a8ofo")]
+position = Vector2(136, 8)
+next_scene = "throne_room_scene"
+connected_door = "royal_chamber_door"
+
+[node name="Spawn" parent="throne_room_door" index="1" unique_id=518652434]
+position = Vector2(0, -24)
+
+[editable path="throne_room_door"]

@@ -1,0 +1,17 @@
+if {CurrentMask} == "wild":
+	audio "res://audio/SFX/NPC, MC, Interaction/PesFemNeg2.ogg"
+	Scary face!
+elif {CurrentMask} == "peasant":
+	audio "res://audio/SFX/NPC, MC, Interaction/PesFemPos2.ogg"
+	Do you think he will notice me?
+	if {SocialPoints} < {ThresholdMainHall}:
+		set {SocialPoints} += 1
+elif {CurrentMask} == "eunuch":
+	audio "res://audio/SFX/NPC, MC, Interaction/PesFemPos2.ogg"
+	Can I help you with anything?
+elif {CurrentMask} == "noble":
+	audio "res://audio/SFX/NPC, MC, Interaction/PesFemPos2.ogg"
+	Good evening
+else:
+	audio "res://audio/SFX/NPC, MC, Interaction/PesFemNeg2.ogg"
+	BALD! BALD! MY EYES!!!!

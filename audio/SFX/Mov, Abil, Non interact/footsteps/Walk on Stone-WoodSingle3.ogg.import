@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://g052ew7ubh0j"
+path="res://.godot/imported/Walk on Stone-WoodSingle3.ogg-265ec7b52a01902771274e4e31f278b8.oggvorbisstr"
+
+[deps]
+
+source_file="res://audio/SFX/Mov, Abil, Non interact/footsteps/Walk on Stone-WoodSingle3.ogg"
+dest_files=["res://.godot/imported/Walk on Stone-WoodSingle3.ogg-265ec7b52a01902771274e4e31f278b8.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

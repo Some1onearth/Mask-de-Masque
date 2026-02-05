@@ -4,15 +4,17 @@
 [ext_resource type="Texture2D" uid="uid://b1n58yjy885t3" path="res://sprites/NPCs/Eunuch2.png" id="2_r5uyh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7n8xq"]
+size = Vector2(64, 60)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4wlns"]
 radius = 48.0
 
-[node name="NPC" type="CharacterBody2D" unique_id=1113225415]
+[node name="Eunuch2" type="CharacterBody2D" unique_id=1113225415]
 scale = Vector2(0.25, 0.25)
 script = ExtResource("1_r5uyh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1883437279]
+position = Vector2(0, 2)
 shape = SubResource("RectangleShape2D_7n8xq")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1905979975]

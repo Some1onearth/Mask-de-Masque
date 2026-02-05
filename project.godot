@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Mask De Mask"
-run/main_scene="uid://c51hsecpo0x6"
+run/main_scene="uid://jny4tar0qf1v"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -22,7 +22,10 @@ buses/default_bus_layout="uid://c8sqv718auldk"
 [autoload]
 
 Dialogic="*uid://ds2q0uclmolvu"
-game_manager="*uid://c2g2f0njsiuo6"
+game_manager="*uid://pnnhoe0gdckr"
+audio_manager="*uid://c23pymqpv0kj3"
+DialogicVariableListener="*uid://dnxnojfldr7tx"
+Hud="*uid://d1bb4rdqo7xo6"
 
 [dialogic]
 
@@ -30,6 +33,7 @@ directories/dch_directory={
 "Andrevus": "res://Dialogic/characters/Andrevus.dch",
 "Coreen": "res://Dialogic/characters/Coreen.dch",
 "Felani": "res://Dialogic/characters/Felani.dch",
+"Fonao": "res://Dialogic/characters/Fonao.dch",
 "Gurrigen": "res://Dialogic/characters/Gurrigen.dch",
 "Jurin": "res://Dialogic/characters/Jurin.dch",
 "Lavois": "res://Dialogic/characters/Lavois.dch",
@@ -45,13 +49,25 @@ directories/dtl_directory={
 "andrevus": "res://Dialogic/timelines/andrevus.dtl",
 "cellar_keeper_convo": "res://Dialogic/timelines/cellar_keeper_convo.dtl",
 "coreen": "res://Dialogic/timelines/coreen.dtl",
+"eunuch2": "res://Dialogic/timelines/eunuch2.dtl",
+"eunuch_throne": "res://Dialogic/timelines/eunuch_throne.dtl",
 "felani": "res://Dialogic/timelines/felani.dtl",
+"fonao_opening": "res://Dialogic/timelines/fonao_opening.dtl",
+"guardsman1": "res://Dialogic/timelines/guardsman1.dtl",
+"guardsman2": "res://Dialogic/timelines/guardsman2.dtl",
+"guardsman3": "res://Dialogic/timelines/guardsman3.dtl",
 "gurrigen": "res://Dialogic/timelines/gurrigen.dtl",
 "jurin": "res://Dialogic/timelines/jurin.dtl",
 "lavois": "res://Dialogic/timelines/lavois.dtl",
 "melani": "res://Dialogic/timelines/melani.dtl",
 "narcisan": "res://Dialogic/timelines/narcisan.dtl",
 "peasant_12": "res://Dialogic/timelines/peasant_12.dtl",
+"peasant_female2": "res://Dialogic/timelines/peasant_female2.dtl",
+"peasant_male1": "res://Dialogic/timelines/peasant_male1.dtl",
+"peasant_male2": "res://Dialogic/timelines/peasant_male2.dtl",
+"peasant_male3": "res://Dialogic/timelines/peasant_male3.dtl",
+"peasant_male4": "res://Dialogic/timelines/peasant_male4.dtl",
+"ruler": "res://Dialogic/timelines/ruler.dtl",
 "tenaius": "res://Dialogic/timelines/tenaius.dtl",
 "test_timeline": "res://Dialogic/timelines/test_timeline.dtl"
 }
@@ -60,7 +76,11 @@ layout/style_list=[]
 layout/default_style=""
 glossary/default_case_sensitive=true
 variables={
-"CurrentMask": "wild"
+"CurrentMask": "wild",
+"SocialPoints": 0,
+"ThresholdBalcony": 5,
+"ThresholdMainHall": 4,
+"ThresholdThrone": 10
 }
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.02
@@ -101,8 +121,7 @@ audio/type_sound_bus="SFX"
 
 window/size/viewport_width=960
 window/size/viewport_height=720
-window/size/resizable=false
-window/size/borderless=true
+window/stretch/mode="viewport"
 
 [editor_plugins]
 
@@ -114,12 +133,25 @@ register_templates=true
 
 [input]
 
+ui_accept={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":4194309,"physical_keycode":0,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":4194310,"physical_keycode":0,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":32,"physical_keycode":0,"key_label":0,"unicode":32,"location":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":0,"pressure":0.0,"pressed":true,"script":null)
+]
+}
+ui_cancel={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":4194305,"physical_keycode":0,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":1,"pressure":0.0,"pressed":true,"script":null)
+]
+}
 left={
 "deadzone": 0.2,
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194319,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
 , Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":65,"key_label":0,"unicode":97,"location":0,"echo":false,"script":null)
 , Object(InputEventJoypadMotion,"resource_local_to_scene":false,"resource_name":"","device":-1,"axis":0,"axis_value":-1.0,"script":null)
-, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":13,"pressure":0.0,"pressed":true,"script":null)
 ]
 }
 right={
@@ -127,7 +159,6 @@ right={
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194321,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
 , Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":68,"key_label":0,"unicode":100,"location":0,"echo":false,"script":null)
 , Object(InputEventJoypadMotion,"resource_local_to_scene":false,"resource_name":"","device":-1,"axis":0,"axis_value":1.0,"script":null)
-, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":14,"pressure":0.0,"pressed":true,"script":null)
 ]
 }
 up={
@@ -135,7 +166,6 @@ up={
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194320,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
 , Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":87,"key_label":0,"unicode":119,"location":0,"echo":false,"script":null)
 , Object(InputEventJoypadMotion,"resource_local_to_scene":false,"resource_name":"","device":-1,"axis":1,"axis_value":-1.0,"script":null)
-, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":11,"pressure":0.0,"pressed":true,"script":null)
 ]
 }
 down={
@@ -143,7 +173,6 @@ down={
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194322,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
 , Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":83,"key_label":0,"unicode":115,"location":0,"echo":false,"script":null)
 , Object(InputEventJoypadMotion,"resource_local_to_scene":false,"resource_name":"","device":-1,"axis":1,"axis_value":1.0,"script":null)
-, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":12,"pressure":0.0,"pressed":true,"script":null)
 ]
 }
 dialogic_default_action={
@@ -153,6 +182,30 @@ dialogic_default_action={
 , Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":32,"physical_keycode":0,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
 , Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":88,"physical_keycode":0,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
 , Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":0,"pressure":0.0,"pressed":false,"script":null)
+]
+}
+mask_1={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":49,"key_label":0,"unicode":49,"location":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":12,"pressure":0.0,"pressed":true,"script":null)
+]
+}
+mask_2={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":50,"key_label":0,"unicode":50,"location":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":13,"pressure":0.0,"pressed":true,"script":null)
+]
+}
+mask_3={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":51,"key_label":0,"unicode":51,"location":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":14,"pressure":0.0,"pressed":true,"script":null)
+]
+}
+mask_4={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":52,"key_label":0,"unicode":52,"location":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":11,"pressure":0.0,"pressed":true,"script":null)
 ]
 }
 
@@ -165,3 +218,4 @@ dialogic_default_action={
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true

@@ -27,6 +27,7 @@ texture_filter = 1
 tile_set = ExtResource("1_eftjd")
 
 [node name="Player" parent="." unique_id=489475279 instance=ExtResource("2_eftjd")]
+visible = false
 position = Vector2(418, 366)
 SPEED = 150.0
 

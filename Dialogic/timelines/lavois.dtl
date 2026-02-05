@@ -1,22 +1,29 @@
 if {CurrentMask} == "wild":
+	audio "res://audio/SFX/NPC, MC, Interaction/NobleMaleNeg1.ogg"
 	AH!
 	Oh sorry, its not your face.
 	You see I’m just warming up my voice to cheer for the King.
 elif {CurrentMask} == "peasant":
+	audio "res://audio/SFX/NPC, MC, Interaction/NobleMalePos1.ogg"
 	Oh!
 	You must have walked a lot to get here.
 	Don’t worry.
 	I think that everyone should be able to see the King.
 	You can stick with me if you like.
+	if {SocialPoints} < {ThresholdThrone}:
+		set {SocialPoints} += 1
 elif {CurrentMask} == "eunuch":
+	audio "res://audio/SFX/NPC, MC, Interaction/NobleMalePos1.ogg"
 	Do you know if the king likes loud voices?
 	I want to show him my admiration through my voice.
 	But what if he gets scared?
 	Would I get in trouble?
 elif {CurrentMask} == "noble":
+	audio "res://audio/SFX/NPC, MC, Interaction/NobleMalePos1.ogg"
 	Us nobles are actually quite different from each other.
 	Sure we shop at the same tailor.
 	But I’m the only one to have perfected the art of cheering really loud.
 	Don’t know if that’s a useful skill.
 else:
+	audio "res://audio/SFX/NPC, MC, Interaction/NobleMaleNeg1.ogg"
 	BALD! BALD! MY EYES!!!!

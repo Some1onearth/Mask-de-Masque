@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c23pymqpv0kj3"]
+
+[ext_resource type="Script" uid="uid://bmk8uvi7hafjp" path="res://scripts/audio_manager.gd" id="1_8qd8g"]
+[ext_resource type="AudioStream" uid="uid://bv1tdghjrkwfx" path="res://audio/music/De Maskus Main Theme1.wav" id="2_aoitu"]
+[ext_resource type="AudioStream" uid="uid://cgh0ddq2vp5bx" path="res://audio/music/MaskTitleTheme.wav" id="3_3asnw"]
+[ext_resource type="AudioStream" uid="uid://dikpbtjc8nv44" path="res://audio/SFX/Mov, Abil, Non interact/Switch Mask.wav" id="4_aoitu"]
+[ext_resource type="AudioStream" uid="uid://ctn6i6t201cb7" path="res://audio/SFX/Mov, Abil, Non interact/Social Point.wav" id="5_njtn3"]
+
+[node name="AudioManager" type="Node" unique_id=601865044]
+script = ExtResource("1_8qd8g")
+main_theme = ExtResource("2_aoitu")
+title_theme = ExtResource("3_3asnw")
+mask_switch_sound = ExtResource("4_aoitu")
+social_point_sound = ExtResource("5_njtn3")
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="." unique_id=182650246]
+stream = ExtResource("2_aoitu")

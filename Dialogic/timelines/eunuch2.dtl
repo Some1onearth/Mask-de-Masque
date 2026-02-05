@@ -1,0 +1,15 @@
+if {CurrentMask} == "wild":
+	audio "res://audio/SFX/NPC, MC, Interaction/EunFemNeg2.ogg"
+	Good lord! What are you?
+elif {CurrentMask} == "peasant":
+	audio "res://audio/SFX/NPC, MC, Interaction/EunFemPos2.ogg"
+	How you are you finding this event?
+elif {CurrentMask} == "eunuch":
+	audio "res://audio/SFX/NPC, MC, Interaction/EunFemPos2.ogg"
+	Shouldn't you be upstairs?
+elif {CurrentMask} == "noble":
+	audio "res://audio/SFX/NPC, MC, Interaction/EunFemPos2.ogg"
+	Toss a coin for your wencher?
+else:
+	audio "res://audio/SFX/NPC, MC, Interaction/EunFemNeg2.ogg"
+	BALD! BALD! MY EYES!!!!
