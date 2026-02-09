@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Mask De Mask"
+config/name="De Maskus"
 run/main_scene="uid://jny4tar0qf1v"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
@@ -119,8 +119,9 @@ audio/type_sound_bus="SFX"
 
 [display]
 
-window/size/viewport_width=960
-window/size/viewport_height=720
+window/size/viewport_width=1280
+window/size/viewport_height=800
+window/size/mode=3
 window/stretch/mode="viewport"
 
 [editor_plugins]
