@@ -2,6 +2,7 @@ extends Node2D
 
 func _ready() -> void:
 	audio_manager.switch_track(audio_manager.title_theme)
+	audio_manager.play_music()
 
 func _on_start_pressed() -> void:
 	audio_manager.switch_track(audio_manager.main_theme)

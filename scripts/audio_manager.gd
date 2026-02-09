@@ -36,9 +36,9 @@ class_name AudioManager extends Node
 }
 
 func _ready() -> void:
-	#small delay before playing music on first load
-	await get_tree().create_timer(0.5).timeout
-	music_player.play()
+	#Plays music on start for other scenes (just for testing in editor really)
+	if get_tree().current_scene.name != "main_menu":
+		music_player.play()
 
 #Music
 ##Switches the music track (NOTE: Must call play_music() to actually play the sound)
