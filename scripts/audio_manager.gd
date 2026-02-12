@@ -52,9 +52,9 @@ func play_music():
 	music_player.play()
 
 #SFX stuff
-func play_oneshot_audio(sound_clip:AudioStream):
+func play_oneshot_audio(sound_clip:AudioStream, audio_bus_name:String = &"SFX"):
 	var audio_player = AudioStreamPlayer2D.new()
-	audio_player.bus = &"SFX"
+	audio_player.bus = audio_bus_name
 	audio_player.stream = sound_clip
 	get_tree().root.add_child(audio_player)
 	audio_player.play()
